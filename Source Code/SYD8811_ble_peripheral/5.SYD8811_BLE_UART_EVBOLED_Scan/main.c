@@ -305,7 +305,7 @@ static void sendToUart(void)
 	}
 }
 
-static void timer_0_callback(void)
+static void timer_1_callback(void)
 {
 	uart_delay_cnt++;
 	if((uart_rx_buf.header == uart_rx_buf.tail) && (uart_delay_cnt>3))
@@ -316,7 +316,7 @@ static void timer_0_callback(void)
 //			GAPConnectionLatencyMode(true);
 //			DBGPRINTF(("Latency Enabled!\r\n"));
 			
-			timer_0_disable();
+			timer_1_disable();
 //		}
 	}
 }
@@ -336,7 +336,7 @@ static void send_to_master(void)
 			latency_state=1;
 			//DBGPRINTF(("Latency Disabled!\r\n"));
 			uart_delay_cnt = 0;
-			timer_0_enable(32768/200, timer_0_callback);
+			timer_1_enable(32768/200, timer_1_callback);
 		}
 	}
 	else

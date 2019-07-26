@@ -137,7 +137,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U20090928 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC5000 -FN1 -FF0SYD8811_512kB_Flash_new -FS010000000 -FL080000</Name>
+          <Name>-U20120928 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC5000 -FN1 -FF0SYD8811_512kB_Flash -FS010000000 -FL080000</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -248,7 +248,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
@@ -334,7 +334,7 @@
       <GroupNumber>2</GroupNumber>
       <FileNumber>7</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
@@ -376,7 +376,7 @@
 
   <Group>
     <GroupName>::Device</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>

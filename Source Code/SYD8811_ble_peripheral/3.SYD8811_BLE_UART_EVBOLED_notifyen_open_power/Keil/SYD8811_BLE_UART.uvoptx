@@ -100,7 +100,10 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>6</nTsel>
+        <bEvRecOn>1</bEvRecOn>
+        <bSchkAxf>0</bSchkAxf>
+        <bTchkAxf>0</bTchkAxf>
+        <nTsel>4</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -211,6 +214,16 @@
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
+      <bAutoGenD>0</bAutoGenD>
+      <LntExFlags>0</LntExFlags>
+      <pMisraName></pMisraName>
+      <pszMrule></pszMrule>
+      <pSingCmds></pSingCmds>
+      <pMultCmds></pMultCmds>
+      <pMisraNamep></pMisraNamep>
+      <pszMrulep></pszMrulep>
+      <pSingCmdsp></pSingCmdsp>
+      <pMultCmdsp></pMultCmdsp>
     </TargetOption>
   </Target>
 
@@ -225,7 +238,6 @@
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\main.c</PathWithFileName>
@@ -238,7 +250,6 @@
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\uart_protocol.c</PathWithFileName>
@@ -251,7 +262,6 @@
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Driver\delay.c</PathWithFileName>
@@ -264,7 +274,6 @@
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\oled.c</PathWithFileName>
@@ -285,7 +294,6 @@
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\ble\ota.c</PathWithFileName>
@@ -298,7 +306,6 @@
       <FileNumber>6</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Driver\gpio.c</PathWithFileName>
@@ -311,7 +318,6 @@
       <FileNumber>7</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\uart.c</PathWithFileName>
@@ -324,7 +330,6 @@
       <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\timer_handler.c</PathWithFileName>
@@ -337,7 +342,6 @@
       <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\rtc_handler.c</PathWithFileName>
@@ -350,7 +354,6 @@
       <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Driver\i2c.c</PathWithFileName>
@@ -371,7 +374,6 @@
       <FileNumber>11</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Lib\syd8811_ble_lib.lib</PathWithFileName>
@@ -384,7 +386,6 @@
       <FileNumber>12</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Lib\Syd8811_softtimer_lib.lib</PathWithFileName>
@@ -405,7 +406,6 @@
       <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Rtt\SEGGER_RTT.c</PathWithFileName>
@@ -418,7 +418,6 @@
       <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Rtt\SEGGER_RTT_printf.c</PathWithFileName>
@@ -431,7 +430,6 @@
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Rtt\SEGGER_RTT_Syscalls_KEIL.c</PathWithFileName>

@@ -1,7 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT
--I "F:\SYD8801\SYD52832\SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_XTAL\Keil\RTE"
--I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
--I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include
--D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
--o .\output\timer_handler.o --omf_browse .\output\timer_handler.crf --depend .\output\timer_handler.d --feedback ".\Output\Ble_Vendor_Service.fed" "..\timer_handler.c"
