@@ -3,9 +3,17 @@
 1.第一版
 
 
+
+
+
+
 2019-1-24
 
 1.修改触摸的驱动使其有自动校正的功能！
+
+
+
+
 
 
 2019-3-22
@@ -21,6 +29,10 @@
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART\ble\syd8811_ble_lib.lib"
 
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\2.SYD8811_UART_Capdet_Touch\ble\syd8811_ble_lib.lib"
+
+
+
+
 
 
 2019-5-22
@@ -54,6 +66,10 @@
 9.增加文件："SYD8811_SDK\Documentation\SYD8811_pinmux_table_20190527.xlsx"，对SYD8811的pinmux进行介绍
 
 
+
+
+
+
 2019-6-10 
 
 修改《SYDTEK Studio  release20190610v3.5.0 》
@@ -75,6 +91,10 @@
 8.修改Hpwm的驱动，主要体现在：HPWM_IRQHandler和Hpwm_Init函数！     
 
 
+
+
+
+
 2019-7-5
 
 1.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_XTAL》
@@ -84,6 +104,10 @@
 3.使用最新版本的《SYDTEK Studio》，版本号为《V3.8.9 20190628.7z》
 
 4.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\CLK_XO16_To_Gpio》
+
+
+
+
 
 
 2019-7-15
