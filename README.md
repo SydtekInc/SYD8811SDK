@@ -1,19 +1,9 @@
 # SYD8811SDK
 SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从这里下载与使用，如果有问题，也建议将问题发布到这里，如果我看到，会做回复的！
 
-
-2018-12-26
-
-1.第一版
-
-2019-1-24
-
-1.修改触摸的驱动使其有自动校正的功能！
-
-
 2019-3-22
-
-1.更新SDK中各个工程的协议栈lib文档，涉及的文件如下：
+1.修改触摸的驱动使其有自动校正的功能！
+2.更新SDK中各个工程的协议栈lib文档，涉及的文件如下：
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\3.SYD8811_HID\ble\syd8811_ble_lib.lib"
 "SYD8811_SDK\Source Code\ble\syd8811_ble_lib.lib"
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART original\ble\syd8811_ble_lib.lib"
@@ -53,24 +43,12 @@ SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从�
 2019-6-10 
 
 修改《SYDTEK Studio  release20190610v3.5.0 》这里务必使用最新的tool，原来的tool可能会出现意想不到的情况！
-
-
-2019-6-12  
-
 增加文章"SYD8811_SDK release\Documentation\SYD8811内存和代码的分布.pdf"
 修改了所有带BLE的工程的“profile”文件夹，在OTA的服务中增加上“write without Rspone"属性
-
-
-2019-6-17  
-
 增加工程《SPI_Master_FLASH_limiting_speed》
 增加工程《uart1_debug》
 增加工程《4.SYD8811_BLE_UART_GPIO_open_power》
 增加工程《5.SYD8811_BLE_UART_EVBOLED_Scan》
-            
-            
-2019-6-26   
-
 修改Hpwm的驱动，主要体现在：HPWM_IRQHandler和Hpwm_Init函数！     
 
 2019-7-1
