@@ -2,6 +2,7 @@
 SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从这里下载与使用，如果有问题，也建议将问题发布到这里，如果我看到，会做回复的！
 
 2019-3-22
+
 1.修改触摸的驱动使其有自动校正的功能！
 2.更新SDK中各个工程的协议栈lib文档，涉及的文件如下：
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\3.SYD8811_HID\ble\syd8811_ble_lib.lib"
