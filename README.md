@@ -26,16 +26,24 @@
 <3>、Lib文件夹存放协议栈lib、软件定时器lib、触摸lib
 <4>、SYD8811_ble_peripheral文件夹存放8811 BLE相关例程（透传、HID）
 <5>、SYD8811_peripheral文件夹存放8811外设相关例程（ADC、PWM、IIC、TIMER、RTC等）
+
 2、更新协议栈lib    "SYD8811_SDK\Source Code\Lib\syd8811_ble_lib.lib"
+
 3、按照规定格式，整理SYD8811_ble_peripheral文件夹和SYD8811_peripheral文件夹的各个工程
+
 4、更新Documentation文件下8811手册
 <1>、《SYD8811_BLE_DS_v1p1_CN_20190508》
 <2>、《SYD8811_BLE_DS_v1p2_EN_20190508》
+
 5、更新tool文件夹下SYDTEK Studio tool
 <1>、《SYDTEK Studio release20190521》
+
 6.更新《SYD8811_SDK\Source Code\SYD8811_peripheral》目录下各工程头文件引索目录，比如ADC工程中把“..\adc”改成“..\”
+
 7.修改《SYD8811_SDK\Source Code\SYD8811_peripheral》目录下各工程的《config.h》文件，增加“#define _DEBUG_”一句话，使用宏“_DEBUG_”让工程往UART输出log
+
 8.删除《SYD8811_SDK\Source Code\Include\syd_type.h》文件以及各个工程对其的引用
+
 9.增加文件："SYD8811_SDK\Documentation\SYD8811_pinmux_table_20190527.xlsx"，对SYD8811的pinmux进行介绍
 
 
