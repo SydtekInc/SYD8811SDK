@@ -1,5 +1,5 @@
 # SYD8811SDK
-SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从这里下载与使用，如果有问题，也建议将问题发布到这里，如果我看到，会做回复的！
+SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从这里下载与使用，也建议您将遇到的技术难点发布到这里，如果我看到，会做回复的！
 
 2019-3-22
 
@@ -43,7 +43,7 @@ SYD8811SDK  这里有SYD8811最新的SDK与更新日志，大家可以直接从�
 
 2019-6-10 
 
-修改《SYDTEK Studio  release20190610v3.5.0 》这里务必使用最新的tool，原来的tool可能会出现意想不到的情况！
+修改《SYDTEK Studio  release20190610v3.5.0 》这里请使用最新的tool以便回去最新的功能1
 增加文章"SYD8811_SDK release\Documentation\SYD8811内存和代码的分布.pdf"
 修改了所有带BLE的工程的“profile”文件夹，在OTA的服务中增加上“write without Rspone"属性
 增加工程《SPI_Master_FLASH_limiting_speed》
