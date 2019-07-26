@@ -11,10 +11,15 @@
 2019-3-22
 
 1.更新SDK中各个工程的协议栈lib文档，涉及的文件如下：
+
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\3.SYD8811_HID\ble\syd8811_ble_lib.lib"
+
 "SYD8811_SDK\Source Code\ble\syd8811_ble_lib.lib"
+
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART original\ble\syd8811_ble_lib.lib"
+
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART\ble\syd8811_ble_lib.lib"
+
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\2.SYD8811_UART_Capdet_Touch\ble\syd8811_ble_lib.lib"
 
 
@@ -32,7 +37,9 @@
 3、按照规定格式，整理SYD8811_ble_peripheral文件夹和SYD8811_peripheral文件夹的各个工程
 
 4、更新Documentation文件下8811手册
+
 <1>、《SYD8811_BLE_DS_v1p1_CN_20190508》
+
 <2>、《SYD8811_BLE_DS_v1p2_EN_20190508》
 
 5、更新tool文件夹下SYDTEK Studio tool
@@ -50,34 +57,59 @@
 2019-6-10 
 
 修改《SYDTEK Studio  release20190610v3.5.0 》
+
 1.这里务必使用最新的tool，原来的tool可能会出现意想不到的情况！
+
 2.增加文章"SYD8811_SDK release\Documentation\SYD8811内存和代码的分布.pdf"
+
 3.修改了所有带BLE的工程的“profile”文件夹，在OTA的服务中增加上“write without Rspone"属性
+
 4.增加工程《SPI_Master_FLASH_limiting_speed》
+
 5.增加工程《uart1_debug》
+
 6.增加工程《4.SYD8811_BLE_UART_GPIO_open_power》
+
 7.增加工程《5.SYD8811_BLE_UART_EVBOLED_Scan》
+
 8.修改Hpwm的驱动，主要体现在：HPWM_IRQHandler和Hpwm_Init函数！     
 
 
 2019-7-5
+
 1.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_XTAL》
+
 2.修改RTT的驱动，使其能够输出浮点函数，替换       
+
 3.使用最新版本的《SYDTEK Studio》，版本号为《V3.8.9 20190628.7z》
+
 4.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\CLK_XO16_To_Gpio》
 
 
 2019-7-15
+
 1.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\flash_internal_custom_3k"》
+
 2.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\flash_internal_custom_Anysize"》
+
 3.把涉及到BLE的项目使用timer0改为使用timer1，因为软件定时器系统也使用timer0，涉及到的项目有：
+
 A.SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
+
 B.SYD8811_SDK\Source Code\SYD8811_ble_peripheral\3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power
+
 C.SYD8811_SDK\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power
+
 E.SYD8811_SDK\Source Code\SYD8811_ble_peripheral\5.SYD8811_BLE_UART_EVBOLED_Scan
+
 F.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_MAC
+
 G.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_verdor_datas
+
 H.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_XTAL
+
 I.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_LowPower
+
 J.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_power_restartadv
+
 修改在send_to_master和timer_1_callback两个函数中
