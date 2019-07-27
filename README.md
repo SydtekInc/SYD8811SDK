@@ -54,7 +54,7 @@ A、Driver、Include、Rtt存放8811相关的外设驱动文件
 4.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\CLK_XO16_To_Gpio》  
 <br/><br/><br/><br/><br/><br/>
 
-2019-7-15
+2019-7-15  
 1.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\flash_internal_custom_3k"》  
 2.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\flash_internal_custom_Anysize"》  
 3.把涉及到BLE的项目使用timer0改为使用timer1，因为软件定时器系统也使用timer0，涉及到的项目有：  
