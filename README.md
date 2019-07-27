@@ -3,11 +3,11 @@
 
 2018-12-26  
 1.第一版
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-1-24  
 1.修改触摸的驱动使其有自动校正的功能！
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-3-22  
 1.更新SDK中各个工程的协议栈lib文档，涉及的文件如下：
@@ -16,7 +16,7 @@
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART original\ble\syd8811_ble_lib.lib"
 "SYD8811_SDK\Source Code\SYD8811_ble_peripheral\1.SYD8811_UART\ble\syd8811_ble_lib.lib"
 "SYD8811_SDK\SourceCode\SYD8811_ble_peripheral\2.SYD8811_UART_Capdet_Touch\ble\syd8811_ble_lib.lib"
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-5-22  
 1、整理Source Code工程的架构，各个文件功能说明如下  
@@ -36,7 +36,7 @@ A、Driver、Include、Rtt存放8811相关的外设驱动文件
 7.修改《SYD8811_SDK\Source Code\SYD8811_peripheral》目录下各工程的《config.h》文件，增加“#define _DEBUG_”一句话，使用宏“_DEBUG_”让工程往UART输出log  
 8.删除《SYD8811_SDK\Source Code\Include\syd_type.h》文件以及各个工程对其的引用  
 9.增加文件："SYD8811_SDK\Documentation\SYD8811_pinmux_table_20190527.xlsx"，对SYD8811的pinmux进行介绍   
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-6-10   
 修改《SYDTEK Studio  release20190610v3.5.0 》  
@@ -48,14 +48,14 @@ A、Driver、Include、Rtt存放8811相关的外设驱动文件
 6.增加工程《4.SYD8811_BLE_UART_GPIO_open_power》  
 7.增加工程《5.SYD8811_BLE_UART_EVBOLED_Scan》  
 8.修改Hpwm的驱动，主要体现在：HPWM_IRQHandler和Hpwm_Init函数！       
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-7-5  
 1.增加工程《SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notifyen_open_power_XTAL》  
 2.修改RTT的驱动，使其能够输出浮点函数，替换         
 3.使用最新版本的《SYDTEK Studio》，版本号为《V3.8.9 20190628.7z》  
 4.增加工程《SYD8811_SDK\Source Code\SYD8811_peripheral_misc\CLK_XO16_To_Gpio》  
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 2019-7-15  
 1.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\flash_internal_custom_3k"》  
@@ -71,4 +71,4 @@ H.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_EVBOLED_notify
 I.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_LowPower  
 J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_power_restartadv   
 修改在send_to_master和timer_1_callback两个函数中
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
