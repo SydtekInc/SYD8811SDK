@@ -1,3 +1,6 @@
+# SYD8811SDK  
+## 本程序版权属于成都盛芯微科技SYDTEK，更多内容请看官网：<a href="http://www.sydtek.com/" title="Title">http://www.sydtek.com/</a>
+
 2018-12-26  
 1.第一版
 <br/><br/><br/><br/><br/><br/>
