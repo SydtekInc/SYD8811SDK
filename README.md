@@ -72,3 +72,8 @@ I.SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_LowPower
 J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_power_restartadv   
 修改在send_to_master和timer_1_callback两个函数中
 <br/><br/><br/>
+
+20190729  
+1.修改RTT驱动，让keil显示实际使用的内存，涉及到所有使用RTT的程序,修改的文件是"Source Code\Rtt\SEGGER_RTT.C""和"\Source Code\RTT\SEGGER_RTT_Conf.h"  
+2.更新最新版本的“SYDTEK_Studio”，版本号为V4.2.2  
+<br/><br/><br/>
