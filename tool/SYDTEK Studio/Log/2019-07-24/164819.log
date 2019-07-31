@@ -1,0 +1,19 @@
+04:48:19:743: Information: SYDTEK_Studio initialize satat
+04:48:20:027: Information: SYDTEK_Studio initialize end
+04:48:30:079: Debug: SWD Start:20007f00
+04:48:31:414: Debug: SWD Start:20007f00
+04:48:31:542: Debug: RTT pBuffer:20003780
+RTT acID:SEGGER RTT
+05:00:47:698: Debug: SWD Start:20007f00
+05:00:48:065: Debug: RTT pBuffer:20003780
+RTT acID:SEGGER RTT
+05:03:33:066: Debug: SWD Start:20007f00
+05:03:33:434: Debug: RTT pBuffer:20003780
+RTT acID:SEGGER RTT
+05:11:57:512: Debug: SWD Start:20007f00
+05:11:58:852: Debug: SWD Start:20007f00
+05:11:58:984: Debug: RTT pBuffer:20003780
+RTT acID:SEGGER RTT
+05:17:49:308: Debug: SWD Start:20007f00
+05:17:49:676: Debug: RTT pBuffer:20003780
+RTT acID:SEGGER RTT

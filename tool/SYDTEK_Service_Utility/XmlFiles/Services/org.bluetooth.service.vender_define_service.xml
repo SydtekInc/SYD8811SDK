@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Service xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/service.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="org.bluetooth.service.vender_define_service" 
+last-modified="2016-07-13" uuid="0000" name="Vender Define Service">
+<InformativeText>
+    <Abstract>Vender Define Service</Abstract>
+</InformativeText>
+    <Dependencies>
+        <Dependency>This service is a vender define service.</Dependency>
+	</Dependencies>
+
+
+    
+</Service>
