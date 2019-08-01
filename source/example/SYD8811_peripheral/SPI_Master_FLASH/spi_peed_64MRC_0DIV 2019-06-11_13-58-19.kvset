@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <global>
+        <version>3.2.3</version>
+        <disAnimateZoom/>
+        <viewState/>
+        <colorWaveform/>
+        <userLang>zh-CN</userLang>
+        <devModel>7</devModel>
+        <windowPosition>58,-716,1280,696</windowPosition>
+        <windowMaximized>0</windowMaximized>
+        <DisWidth>0</DisWidth>
+        <DisPeriod>0</DisPeriod>
+        <DisDutyCycle>0</DisDutyCycle>
+        <DisFrequency>0</DisFrequency>
+        <DisTimingMarkers>0</DisTimingMarkers>
+        <EnaMoreMarkers>0</EnaMoreMarkers>
+        <DisRisingEdges>0</DisRisingEdges>
+        <EnaFallingEdges>0</EnaFallingEdges>
+        <EnaPositivePulses>0</EnaPositivePulses>
+        <EnaNegativePulses>0</EnaNegativePulses>
+        <chnShowIndex/>
+        <chnShowMultip/>
+        <chnShowName0/>
+        <chnShowName1/>
+        <chnShowName2/>
+        <chnShowName3/>
+        <chnShowName4/>
+        <chnShowName5/>
+        <chnShowName6/>
+        <chnShowName7/>
+        <chnShowName8/>
+        <chnShowName9/>
+        <chnShowName10/>
+        <chnShowName11/>
+        <chnShowName12/>
+        <chnShowName13/>
+        <chnShowName14/>
+        <chnShowName15/>
+        <disAutoUpdate/>
+        <lastUpdate>2019-06-06_16:29:20</lastUpdate>
+        <zeroSmpCnt/>
+        <ratioSasPix>35.9479</ratioSasPix>
+        <lastPath>F:/SYD8801/SYD52832/SYD8811_SDK/Source Code/SYD8811_peripheral/SPI_Master_FLASH</lastPath>
+    </global>
+    <devices>
+        <LA5016>
+            <smpFrequIndex>1</smpFrequIndex>
+            <smpDepthIndex>8</smpDepthIndex>
+            <trgPosition>5</trgPosition>
+            <chnTrig>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</chnTrig>
+            <chnEnable>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</chnEnable>
+            <chnLevel>3.3V CMOS</chnLevel>
+            <chnVth>1.65</chnVth>
+        </LA5016>
+        <LA2016>
+            <smpFrequIndex>0</smpFrequIndex>
+            <smpDepthIndex>9</smpDepthIndex>
+            <trgPosition>5</trgPosition>
+            <chnTrig>4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</chnTrig>
+            <chnEnable>1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0</chnEnable>
+            <chnLevel>3.3V CMOS</chnLevel>
+            <chnVth>1.65</chnVth>
+        </LA2016>
+    </devices>
+    <analyzers>
+        <item0>
+            <fileName>SPI.dll</fileName>
+            <parameters>KingstSpiAnalyzer,3,0,1,0,2,0,0,0,0,8,0,0,0,1,</parameters>
+            <format>2</format>
+        </item0>
+    </analyzers>
+</settings>
