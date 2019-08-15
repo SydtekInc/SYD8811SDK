@@ -77,3 +77,9 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 1.修改RTT驱动，让keil显示实际使用的内存，涉及到所有使用RTT的程序,修改的文件是"Source Code\Rtt\SEGGER_RTT.C""和"\Source Code\RTT\SEGGER_RTT_Conf.h"  
 2.更新最新版本的“SYDTEK_Studio”，版本号为V4.2.2  
 <br/><br/><br/>
+
+20190812  
+1.增加工程《"SYD8811_SDK\Source Code\SYD8811_ble_peripheral\6.SYD8811_ANCS"》    
+2.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_UART_OTA"》    
+3.修改工程《“SYD8811_SDK\Source Code\SYD8811_ble_peripheral\2.SYD8811_HID”》  
+<br/><br/><br/>

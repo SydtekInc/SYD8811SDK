@@ -4,7 +4,7 @@
 #include "ARMCM0.h"
 #include "lib.h"
 
-//#define _SYD_RTT_DEBUG_
+#define _SYD_RTT_DEBUG_
 
 #define _DEBUG_
 
