@@ -61,8 +61,8 @@ uint8_t BLE_SendData(uint8_t *buf, uint8_t len);
 uint8_t ADV_DATA[] = {
 		0x03,//0 length
 		0x19,//1 
-		0x00,//2
-		0x00,//3
+		0xc1,//2
+		0x03,//3
 		0x02,//4 length
 		0x01,//5 AD Type: Flags
 		0x05,//6 LE Limited Discoverable Mode & BR/EDR Not Supported
@@ -202,70 +202,70 @@ static void ble_gatt_read(struct gap_att_read_evt evt)
 	}
 	else if(evt.uuid == BLE_APPEARANCE_UUID)
 	{
-		uint8_t gatt_buf[]={0xff, 0xff};
+		uint8_t gatt_buf[]={0xc1, 0x03};
 		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
 		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
 	}
-	else if(evt.uuid == BLE_MANUFACTURER_NAME_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={'S','Y','D',' ','I', 'n', 'c', '.'};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//	else if(evt.uuid == BLE_MANUFACTURER_NAME_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={'S','Y','D',' ','I', 'n', 'c', '.'};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_MODEL_NUMBER_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={'B', 'L', 'E', ' ', '1', '.', '0'};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_MODEL_NUMBER_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={'B', 'L', 'E', ' ', '1', '.', '0'};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_SERIAL_NUMBER_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={'1','.','0','.','0'};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_SERIAL_NUMBER_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={'1','.','0','.','0'};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_HARDWARE_REVISION_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={'2','.','0','0'};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_HARDWARE_REVISION_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={'2','.','0','0'};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_FIRMWARE_REVISION_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={'3','.','0','0'};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_FIRMWARE_REVISION_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={'3','.','0','0'};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_SOFTWARE_REVISION_STRING_UUID)
-	{
-		uint8_t gatt_buf[]={SOFTWARE_REVISION_STR};
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_SOFTWARE_REVISION_STRING_UUID)
+//	{
+//		uint8_t gatt_buf[]={SOFTWARE_REVISION_STR};
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_PNP_ID_UUID)
-	{
-		uint8_t gatt_buf[]={ 0x02, 						//		Vendor ID Source
-						    0x3a,0x09,					//		USB Vendor ID
-						    0x05,0x0a,					//		Product ID
-						    0x02,0x00					//		Product Version
-												 };
-		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_PNP_ID_UUID)
+//	{
+//		uint8_t gatt_buf[]={ 0x02, 						//		Vendor ID Source
+//						    0x3a,0x09,					//		USB Vendor ID
+//						    0x05,0x0a,					//		Product ID
+//						    0x02,0x00					//		Product Version
+//												 };
+//		uint8_t gatt_buf_sz = sizeof(gatt_buf); 
 
-		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
-	}
-	else if(evt.uuid == BLE_WECHAT_Read_UUID)
-	{
-		uint8_t buf[]={0x00,0x01,0x03,0x04};
-		
-		BLE_SendData(buf, 4);
-	}
+//		SetGATTReadRsp(gatt_buf_sz, gatt_buf);
+//	}
+//	else if(evt.uuid == BLE_WECHAT_Read_UUID)
+//	{
+//		uint8_t buf[]={0x00,0x01,0x03,0x04};
+//		
+//		BLE_SendData(buf, 4);
+//	}
 	#ifdef _OTA_
     else if(evt.uuid == BLE_OTA_Read_Write_UUID)
     {
@@ -302,6 +302,12 @@ static void ble_gatt_write(struct gap_att_write_evt evt)
 			
 		#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_) 
 		DBGHEXDUMP("msg:\r\n",evt.data,evt.sz);
+		#endif
+	}
+	else if((evt.uuid== BLE_KEYBOARD_OUTPUT_REPORT_UUID) && (evt.hdl== BLE_KEYBOARD_OUTPUT_REPORT_VALUE_HANDLE))
+	{		
+		#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_) 
+		DBGHEXDUMP("hid keyboard msg:\r\n",evt.data,evt.sz);
 		#endif
 	}
     #ifdef _OTA_
@@ -636,28 +642,28 @@ void gpio_init(void)
     {
         switch(i)
         {
-        //输入上拉取反,不取反
-        //key 1,2,3,4
-        case KEY1:
-        case KEY2:
-        case KEY3:
-        case KEY4:
-            io_input |=U32BIT(i);
-            io_pull |=U32BIT(i);
-            io_invert |=U32BIT(i);
-        break;
-         //UART
-        case GPIO_6:
-        case GPIO_8:
-            break;
-        
-        //LED 2,3,4
-        case LED1:
-        case LED2:
-        case LED3:
-        case LED4:
-            io_output |=U32BIT(i);   //默认输出高电平
-        break;
+//        //输入上拉取反,不取反
+//        //key 1,2,3,4
+//        case KEY1:
+//        case KEY2:
+//        case KEY3:
+//        case KEY4:
+//            io_input |=U32BIT(i);
+//            io_pull |=U32BIT(i);
+//            io_invert |=U32BIT(i);
+//        break;
+//         //UART
+//        case GPIO_6:
+//        case GPIO_8:
+//            break;
+//        
+//        //LED 2,3,4
+//        case LED1:
+//        case LED2:
+//        case LED3:
+//        case LED4:
+//            io_output |=U32BIT(i);   //默认输出高电平
+//        break;
 
         default:   //默认上拉输入
             io_input |=U32BIT(i);

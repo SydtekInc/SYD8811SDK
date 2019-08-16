@@ -4,7 +4,7 @@
                       <Field Name="Name" Value="SYD BLE Mouse" IsReverse="True" Format=""/>
               </Characteristic>
               <Characteristic XmlName="org.bluetooth.characteristic.gap.appearance" Name="APPEARANCE" Uuid="2A01" Properties="2" Handle="0004" ValueHandle="0005" IsEncrypt="False">
-                      <Field Name="Category" Value="0x03 0xC2" IsReverse="True" Format=""/>
+                      <Field Name="Category" Value="0x03 0xC1" IsReverse="True" Format=""/>
               </Characteristic>
               <Characteristic XmlName="org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters" Name="Peripheral Preferred Connection Parameters" Uuid="2A04" Properties="2" Handle="0006" ValueHandle="0007" IsEncrypt="False">
                       <Field Name="Minimum Connection Interval" Value="0x0006" IsReverse="True" Format=""/>
@@ -130,6 +130,13 @@
                       <Descriptor XmlName="org.bluetooth.descriptor.report_reference" Name="REPORT_REFERENCE" Uuid="2908" Handle="0044" IsEncrypt="False">
                                       <Field Name="Report ID" Value="0x03" IsReverse="True" Format="(uint8)"/>
                                       <Field Name="Report Type" Value="0x01" IsReverse="True" Format="(uint8)"/>
+                      </Descriptor>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.report" Name="KEYBOARD_OUTPUT_REPORT" Uuid="2A4D" Properties="14" Handle="0041" ValueHandle="0042" IsEncrypt="True">
+                      <Field Name="Report Value" Value="0x00" IsReverse="True" Format="(uint8)"/>
+                      <Descriptor XmlName="org.bluetooth.descriptor.report_reference" Name="REPORT_REFERENCE" Uuid="2908" Handle="0044" IsEncrypt="False">
+                                      <Field Name="Report ID" Value="0x01" IsReverse="True" Format="(uint8)"/>
+                                      <Field Name="Report Type" Value="0x02" IsReverse="True" Format="(uint8)"/>
                       </Descriptor>
               </Characteristic>
               <Characteristic XmlName="org.bluetooth.characteristic.report_map" Name="REPORT_MAP" Uuid="2A4B" Properties="2" Handle="0045" ValueHandle="0046" IsEncrypt="True">
