@@ -3,6 +3,9 @@
 
 #include "ARMCM0.h"
 
+#define TIMER_INPUT_FEQ		32768
+
+
 extern void timer_0_enable(uint32_t interval, void *  p_callback); // 32.768KHz
 extern void timer_0_disable(void);
 extern void timer_0_delay_32us(uint32_t cnt);
@@ -18,8 +21,8 @@ extern void timer_3_disable(void);
 extern uint32_t timer_3_get_val(void);
 
 typedef enum {
-    H_TIMER_PERSCALER_1 = 0,
-    H_TIMER_PERSCALER_2 = 1,
+	H_TIMER_PERSCALER_1 = 0,
+	H_TIMER_PERSCALER_2 = 1,
 	H_TIMER_PERSCALER_4 = 2,
 	H_TIMER_PERSCALER_8 = 3,
 	H_TIMER_PERSCALER_16 = 4,

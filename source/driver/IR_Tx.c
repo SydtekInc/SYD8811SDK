@@ -5,6 +5,7 @@
 #include "lib.h"
 
 static IR_Tx_CTRL_TYPE * IR_Tx_CTRL	= ((IR_Tx_CTRL_TYPE *)		IR_Tx_CTRL_BASE);
+static uint8_t tr_ok;
 
 void IR_Tx_Init(void)
 {
@@ -12,7 +13,9 @@ void IR_Tx_Init(void)
 	uint8_t  logicbit;
 	uint8_t  clk;
 	
-	PIN_CONFIG->PIN_4_SEL = PIN_SEL_IR_OUT;
+//	PIN_CONFIG->PIN_4_SEL = PIN_SEL_IR_OUT;
+	
+	tr_ok=1;
 	
 	//Disable
 	IR_Tx_CTRL->IREN = 0;
@@ -71,7 +74,8 @@ void IR_Tx_SendData(uint16_t usrCode, uint8_t data)
 	uint8_t bit_number = 0;
 	uint16_t first_half_time; 
 	uint16_t last_half_time;
-
+	
+	tr_ok=0;
 #if 1	
 	//引导码 : type1
 	first_half_time = 9000/(1000000.0/IR_CARR_FREQ);		/* 9ms载波 */
@@ -129,6 +133,12 @@ void IR_Tx_SendData(uint16_t usrCode, uint8_t data)
 #endif
 }
 
+
+uint8_t getTrState(void)
+{
+	return tr_ok;
+}
+
 void IR_Tx_IRQHandler(void)
 {
 	static uint32_t repeat = 0;
@@ -151,13 +161,14 @@ void IR_Tx_IRQHandler(void)
 
 		//演示通过变量repeat控制重复码发送次数
 		repeat++;
-		if(repeat == 4)			//只发送2次重复码(4个重复码)
+		if(repeat == 2)			//只发送2次重复码(4个重复码)
 		{
 			//stop sending repeat code
 			IR_Tx_CTRL->REPEN = 0;
 			IR_Tx_CTRL->CMDIE = 0;
 			IR_Tx_CTRL->rcmdfifoclr = 1;
 			repeat = 0;
+			tr_ok=1;
 		}
 	}
 }

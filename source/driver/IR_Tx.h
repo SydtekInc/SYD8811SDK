@@ -7,6 +7,7 @@
 
 extern void IR_Tx_Init(void);
 extern void IR_Tx_SendData(uint16_t usrCode, uint8_t data);
+uint8_t getTrState(void);
 
 #endif
 
