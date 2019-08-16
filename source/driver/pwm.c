@@ -216,34 +216,34 @@ void Hpwm_Stop(void)
 
 void HPWM_IRQHandler(void)
 {
-	//动态设置占空比
-	static uint16_t compare = 1;
-//	static uint32_t t = 0;
-	
-	dbg_printf("HPWM_IRQHandler\r\n");
-	
-	if(HPWM_CTRL->EVENTS & HPWM_INT_PERIOD)
-	{	
-		compare++;
-		if(compare == HPWM_CTRL->COUNTER_TOP)
-		{	
-			compare = 1;
-			
-			dbg_printf("COUNTER_TOP Can stop pwm there!\r\n");
-//			t++;
-//			if(t == 4)
-//			{
-//				Hpwm_Stop();
-//				return;
-//			}
-		}
-		Hpwm_Set_duty(HPWM_CHALL, compare);
-	}
-	
-	if(HPWM_CTRL->EVENTS & HPWM_INT_TASK_STOP)
-	{
+//	//动态设置占空比
+//	static uint16_t compare = 1;
+////	static uint32_t t = 0;
+//	
+//	dbg_printf("HPWM_IRQHandler\r\n");
+//	
+//	if(HPWM_CTRL->EVENTS & HPWM_INT_PERIOD)
+//	{	
+//		compare++;
+//		if(compare == HPWM_CTRL->COUNTER_TOP)
+//		{	
+//			compare = 1;
+//			
+//			dbg_printf("COUNTER_TOP Can stop pwm there!\r\n");
+////			t++;
+////			if(t == 4)
+////			{
+////				Hpwm_Stop();
+////				return;
+////			}
+//		}
+//		Hpwm_Set_duty(HPWM_CHALL, compare);
+//	}
+//	
+//	if(HPWM_CTRL->EVENTS & HPWM_INT_TASK_STOP)
+//	{
 
-	}
+//	}
 
 	HPWM_CTRL->EVENTS = HPWM_INT_ALL;		//clr INT
 }

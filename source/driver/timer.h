@@ -34,6 +34,7 @@ typedef enum {
 extern void Htimer_enable(uint16_t interval, void (*p_callback)(void));
 extern uint16_t Htimer_get_val(void);
 extern void Htimer_disable(void);
+void Htimer_setPreScaler(H_TIMER_PERSCALER_TYPE scale);
 
 #endif
 

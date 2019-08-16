@@ -56,4 +56,14 @@ void dbg_hexdump(char *title, uint8_t *buf, uint16_t sz)
 	dbg_printf("\r\n");
 }
 
+void dbg_u32dump(char* title,uint32_t* buf,uint32_t sz)
+{
+	if(title) dbg_printf(title);
+	for(uint32_t i=0;i<sz;i++){
+		dbg_printf("%d ",buf[i]);
+	}
+	dbg_printf("\r\n");
+}
+
+
 #endif

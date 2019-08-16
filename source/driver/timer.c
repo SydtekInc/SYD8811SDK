@@ -191,6 +191,12 @@ void TIMER2_IRQHandler(void)
 static H_TIMER_CTRL_TYPE * H_TIMER_CTRL = ((H_TIMER_CTRL_TYPE *) H_TIMER_CTRL_BASE);
 static void (*htimer_callback)(void);
 
+
+void Htimer_setPreScaler(H_TIMER_PERSCALER_TYPE scale)
+{
+	H_TIMER_CTRL->PRESCALER = scale;	
+}
+
 /*************************************************************
 高速定时器 配置函数
 参数: 
@@ -207,8 +213,6 @@ void Htimer_enable(uint16_t interval, void (*p_callback)(void))
 
 	H_TIMER_CTRL->ONE_TIME = 0;
 	H_TIMER_CTRL->COUNTER_TOP = interval;
-
-	H_TIMER_CTRL->PRESCALER = H_TIMER_PERSCALER_1;	
 
 	htimer_callback = p_callback;
 	H_TIMER_CTRL->EVENT = 1;		//clr Int
