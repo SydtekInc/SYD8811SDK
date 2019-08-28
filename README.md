@@ -83,3 +83,12 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 2.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_UART_OTA"》    
 3.修改工程《“SYD8811_SDK\Source Code\SYD8811_ble_peripheral\2.SYD8811_HID”》  
 <br/><br/><br/>
+
+
+
+20190828 172839
+1.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_dtm_tx"》    
+2.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_dtm_rx"》  
+3.修改RTC驱动Syd8811_softtimer_lib.lib   
+4.SYDTEK Studio更新到V4.4.8版本<SYDTEK Studio  release V4.4.8 20190828 173034>   
+<br/><br/><br/>
