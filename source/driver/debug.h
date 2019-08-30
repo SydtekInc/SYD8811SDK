@@ -19,7 +19,10 @@
 		#define DBGPRINTF(...)	 		
 		#define DBGHEXDUMP(title,buf,sz)
 		#define dbg_init()
+		#define dbg_hexdump(title,buf,sz)
 		#define dbg_u32dump(title,buf,sz)
+		#define dbg_printf(...)
+		
 	#else
 		#include"debug.h"
 		#define dbg_init()	DebugLogInit()
