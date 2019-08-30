@@ -1747,6 +1747,290 @@ typedef struct {
 	/* 0x80 */
 	__IO  uint8_t  SS_BUF[128];
 } MISC_CTRL_TYPE;
+
+/* ============================ LLC ============================= */
+typedef struct {
+	/* 0x00 */
+	__IO  uint8_t  SR_A:1;		// reset all link-layer state machine and registers
+	__IO  uint8_t  SR_P:1;		// reset all link-layer state machine except registers
+	__IO  uint8_t  RSVD00:6;
+	/* 0x01 */
+	/*__IO  uint8_t  TXINT:1;	// TX interrupt status when transmitting a packet and ack-ed
+	__IO  uint8_t  RXINT:1;		// RX interrupt status when received a valid packet
+	__IO  uint8_t  ADVSCANEND:1;	// Advertising or Scan interval end interrupt status
+	__IO  uint8_t  CONNSETUP:1;	// Connection set-up interrupt status
+	__IO  uint8_t  CONNLOST:1;		// Connection lost interrupt status
+	__IO  uint8_t  CONNEVTEND:1;	// Connection event end interrupt status
+	__IO  uint8_t  SLEEP:1;			// Sleep event interrupt status when transaction ends in a connection interval
+	__IO  uint8_t  WAKEUP:1;*/		// Wake-up event interrupt status when a connection interval starts from sleeping
+	__IO  uint8_t  INTST;
+	/* 0x02 */
+	__IO  uint8_t  TXINTMSK:1;
+	__IO  uint8_t  RXINTMSK:1;
+	__IO  uint8_t  ADVSCANENDMSK:1;
+	__IO  uint8_t  CONNSETUPMSK:1;
+	__IO  uint8_t  CONNLOSTMSK:1;
+	__IO  uint8_t  CONNEVTENDMSK:1;
+	__IO  uint8_t  SLEEPMSK:1;
+	__IO  uint8_t  WAKEUPMSK:1;	
+	/* 0x03 */
+	__IO  uint8_t  TX_FULL:1;		// TXFIFO full
+	__IO  uint8_t  TX_EMPTY:1;	// TXFIFO empty
+	__IO  uint8_t  RX_FULL:1;		// RXFIFO full
+	__IO  uint8_t  RX_EMPTY:1;	// RXFIFO empty
+	__IO  uint8_t  RSVD03:4;	
+	/* 0x04 ~ 0x05 */
+	__IO  uint8_t  RSVD04[2];
+	/* 0x06 */
+	__IO  uint8_t  LTCY_DIS;
+	/* 0x07 */
+	__IO  uint8_t  RSVD07;
+	/* 0x08 */
+	__IO  uint8_t  ARD:4;	// RX state time-out duration -> T_timeout = 250 + ARD*150 (us)
+	__IO  uint8_t  DIS_CRC:1;	// disable send crc ?
+	__IO  uint8_t  WW_HALVED_EN:1;	// wind wide halved disconn check enable
+	__IO  uint8_t  WW_RESERVE:1;
+	__IO  uint8_t  RSVD08:1;
+	/* 0x09 */
+	__IO  uint8_t  WHITE_EN:1;	// enable whitening function, (rx & tx)
+	__IO  uint8_t  CRC_ALLOW:1;	// disable CRC check
+	__IO  uint8_t  RSVD090:2;
+	__IO  uint8_t  CRC_PASS:1;	// status of CRC_PASS of received packet
+	__IO  uint8_t  SENDING_ACK:1;	// status of received a packet and not yet acked
+	__IO  uint8_t  RSVD091:2;
+	/* 0x0A */
+	__IO  uint8_t  CH_SEL;	// obsolete
+	/* 0x0B */
+	__IO  uint8_t  T_TXSTR;	// TX start-up time (config rf tx to tx data delay time, unit: 2us)
+	/* 0x0C */
+	__IO  uint8_t  T_R2TSTR;	// RX-to-TX time (rx end to config rf tx delay time, unit: 2us)
+	/* 0x0D */
+	__IO  uint8_t  FIXED_CH;	// when set, TX channel is set to CH_USER(0x62) in physical channel order
+	/* 0x0E */
+	__IO  uint8_t  T_STBYLEN;	// Standby time between RX and TX
+	/* 0x0F */
+	__IO  uint8_t  FSM_STATE;	// Internal state machine ?
+	/* 0x10 */
+	__IO  uint8_t  ADV_EN:1;		//start adv
+	__IO  uint8_t  ADV_DLY_EN:1;	//enable delay of adv event(note: delay is a pseu-rand with range of 0~10ms).
+	__IO  uint8_t  FILTERPOLICY:2;		//filter policy, adv & connect filter
+	__IO  uint8_t  FIL_ADR_TYPE:1;	//filter addr type
+	__IO  uint8_t  FIL_ADVA_EN:1;		//enable AdvA check of white-list check in advertising mode
+	__IO  uint8_t  RSVD10:2;
+	/* 0x11 */
+	__IO  uint8_t  ADV_RND:7;	//round number of adv event
+	__IO  uint8_t  RSVD11:1;
+	/* 0x12 ~ 0x13 */
+	__IO  uint16_t  ADV_ITV;	//adv interval, unit: 625us
+	/* 0x14 */
+	__IO  uint8_t  ADV_PITV;	//adv chn(37/38/39) interval, unit: 336us
+	/* 0x15 */
+	__IO  uint8_t  ADV_CHIDX;	//bit0~2: adv chnmap
+	/* 0x16 */
+	union{
+		struct{
+			__IO  uint8_t  ADV_IND_FIL:1;
+			__IO  uint8_t  ADV_DIR_FIL:1;
+			__IO  uint8_t  ADV_NC_FIL:1;
+			__IO  uint8_t  SCAN_REQ_FIL:1;
+			__IO  uint8_t  SCAN_RSP_FIL:1;
+			__IO  uint8_t  CONN_REQ_FIL:1;
+			__IO  uint8_t  ADV_SCAN_FIL:1;
+			__IO  uint8_t  ALL_FIL:1;
+		};
+		__IO  uint8_t  FILTER_POLICY;
+	};
+	/* 0x17 */
+	__IO  uint8_t  RSVD17;
+	/* 0x18 */
+	//__IO  uint8_t  A_SLP_INT_R:1;		///
+	//__IO  uint8_t  S_SLP_INT_R:1;		///
+	//__IO  uint8_t  A_WAKE_INT_R:1;	///
+	//__IO  uint8_t  S_WAKE_INT_R:1;	///
+	//__IO  uint8_t  RSVD18:4;
+	__IO  uint8_t  LLC2_INTST;			
+	/* 0x19 */
+	__IO  uint8_t  A_SLP_INT_MSK:1;	///
+	__IO  uint8_t  S_SLP_INT_MSK:1;	///
+	__IO  uint8_t  A_WAKE_INT_MSK:1;	///
+	__IO  uint8_t  S_WAKE_INT_MSK:1;	///
+	__IO  uint8_t  RSVD19:4;
+	/* 0x1A */
+	__IO  uint8_t  CONN_AUTOSLP_EN:1;	///
+	__IO  uint8_t  ADV_AUTOSLP_EN:1;		///
+	__IO	  uint8_t  AUTOSLP_CLKGATE_EN:1;	///
+	__IO  uint8_t  LTCY_WW_EN:1;			///
+	__IO  uint8_t  RSVD2A:4;
+	/* 0x1B ~ 0x1F */
+	__IO  uint8_t  RSVD1B[5];	
+	/* 0x20 ~ 0x21 */
+	__IO  uint16_t  CONN_EVTCNT;	//connection event counter
+	/* 0x22 */
+	__IO  uint8_t  CONN_UPDATE:1;	//enable connection update
+	__IO  uint8_t  CHMAP_UPDATE:1;	//enable channel-map update
+	__IO  uint8_t  RSVD22:6;
+	/* 0x23 */
+	__IO  uint8_t  CONN_CRCERRTH:3;	//?
+	__IO  uint8_t  RSVD230:1;
+	__IO  uint8_t  STOP_REPLY:1;	//stop reply ack
+	__IO  uint8_t  RSVD231:3;
+	/* 0x24 */
+	__IO  uint8_t  RSVD24;
+	/* 0x25 */
+	__IO  uint8_t  HOP_INC;	//Hopping increment parameter
+	/* 0x26 ~ 0x27 */
+	__IO  uint16_t  CONN_GO;	//Connection window offset parameter in 1.25ms unit
+	/* 0x28 */
+	__IO  uint8_t  CONN_WS;	//Connection window size in 1.25ms unit
+	/* 0x29 */
+	__IO  uint8_t  RSVD29;	
+	/* 0x2A ~ 0x2B */
+	__IO  uint16_t  CONN_ITV;	//Connection interval in 1.25ms unit
+	/* 0x2C ~ 0x2D */
+	__IO  uint16_t  CONN_LTCY;	//Slave latency
+	/* 0x2E ~ 0x2F */
+	__IO  uint16_t  CONN_STO;		//Supervision time-out in 10ms unit
+	/* 0x30 ~ 0x31 */
+	__IO  uint16_t  CONN_INS;		//Connection update instant
+	/* 0x32 ~ 0x33 */
+	__IO  uint16_t  CONN_WO;		//Connection window offset[obsolete]
+	/* 0x34 */
+	__IO  uint8_t  CONN_WW_OFFSET:4;	
+	__IO  uint8_t  RSVD34:4;	
+	/* 0x35 */
+	__IO  uint8_t  LOST_SUPER:1;	//Connection lost reason: supervision timeout
+	__IO  uint8_t  LOST_WWEXT:1;	//window-widening exceed limit
+	__IO  uint8_t  LOST_6NC:1;	//starting 6 packets not received
+	__IO  uint8_t  LOST_INS:1;		//connection update instant invalid
+	__IO  uint8_t  RSVD35:4;	
+	/* 0x36 ~ 37 */
+	__IO  uint16_t  CONN_WW_SETUP;	//Window-widening during guard time, in LPO clock unit		
+	/* 0x38 ~ 0x39 */
+	__IO  uint16_t  CONN_INS_CH;	//channel map update instant
+	/* 0x3A ~ 0x3B */
+	__IO  uint16_t  CONN_WW;	//Window-widening during connection, in LPO clock unit
+	/* 0x3C ~ 0x3F */
+	__IO  uint8_t  RSVD3C[4];
+	/* 0x40 */
+	__IO  uint8_t  DTM_EN:1;	//enable DTM mode
+	__IO  uint8_t  DTM_MODE:1;	//DTM_TX(1), DTM_RX(0)
+	__IO  uint8_t  BER_TEST:1;		//enable BER test
+	__IO  uint8_t  RSVD40:5;	
+	/* 0x41 */
+	__IO  uint8_t  BER_LEN;		//BER test packet length
+	/* 0x42 ~ 0x43 */
+	__IO  uint8_t  RSVD42[2];
+	/* 0x44 ~ 0x45 */
+	__IO  uint16_t  DTM_RCNT;		//DTM_RX received packet counter
+	/* 0x46 ~ 0x47 */
+	__IO  uint16_t  DTM_TCNT;		//DTM_TX transmitted packet counter
+	/* 0x48 ~ 0x4F */
+	__IO  uint8_t  RSVD48[8];
+	/* 0x50 */
+	__IO  uint8_t  SEC_TX:1;	//Security mode enable:enable TX security
+	__IO  uint8_t  SEC_RX:1;	//enable RX security
+	__IO  uint8_t  RSVD50:6;	
+	/* 0x51 */
+	__IO  uint8_t  SEC_MIC_OK:1;	//MIC ok of current incoming packet
+	__IO  uint8_t  SEC_BUSY:1;	//Security engine is busy
+	__IO  uint8_t  RSVD51:6;
+	/* 0x52 ~ 0x53 */
+	__IO  uint8_t  RSVD52[2];
+	/* 0x54 */
+	__IO  uint8_t  SEC_AES_REQ:1;		//enable manual AES mode ?
+	__IO  uint8_t  RSVD54:7;
+	/* 0x55 */
+	__IO  uint8_t  RAND_NUM;			//random number generator
+	/* 0x56 ~ 0x5F */
+	__IO  uint8_t  RSVD56[10];
+	/* 0x60 */
+	__IO  uint8_t  SCAN_EN:1;		//enable scan mode
+	__IO  uint8_t  SCAN_TYPE:1;	//active(1), passive(0)
+	__IO  uint8_t  INIT_EN:1;		//conn init ?
+	__IO  uint8_t  RSVD60:5;	
+	/* 0x61 */
+	__IO  uint8_t  SCAN_ROUND;	//Round number of scan event
+	/* 0x62 */
+	__IO  uint8_t  CH_USER;	//User-defined channel during DTM and scan mode
+	/* 0x63 */
+	__IO  uint8_t  RSVD63;	
+	/* 0x64 ~ 0x65 */
+	__IO  uint16_t  SCAN_WINDOW;	//Scanning window in 580us unit
+	/* 0x66 ~ 0x67 */
+	__IO  uint16_t  SCAN_ITV;			//Scanning interval in 580us unit
+	/* 0x68 ~ 0x6F */
+	__IO  uint8_t  RSVD68[8];
+	/* 0x70 */
+	__IO  uint8_t  TH_LAST;	//Threshold of last replying packet in LPO period unit
+	/* 0x71 */
+	__IO  uint8_t  TH_SLEEP;	//Threshold of sleep time indicator in LPO period unit
+	/* 0x72 */
+	__IO  uint8_t  OVER_SLPTH;	//Timing exceeds sleep time indicator
+	/* 0x73 */
+	__IO  uint8_t  T_CLKWAKE;		//XO clock settling time in LPO period unit
+	/* 0x74 */
+	__IO  uint8_t  ADV_CH0;	//Advertising channel 0, default is channel 37
+	/* 0x75 */
+	__IO  uint8_t  ADV_CH1;	//Advertising channel 1, default is channel 38
+	/* 0x76 */
+	__IO  uint8_t  ADV_CH2;	//Advertising channel 2, default is channel 39
+	/* 0x77 */
+	__IO  uint8_t  DIS_LOST_LINK:1;
+	__IO  uint8_t  EN_MORE_DATA:1;
+	__IO  uint8_t  RSVD770:2;	
+	__IO  uint8_t  EN_FW_LTCY_CHG:1;		// enable fw latency change
+	__IO  uint8_t  RSVD771:3;	
+	/* 0x78 */
+	__IO  uint8_t  WW_MINUS1_CNT:5;	//Window-widening tuning[obsolete]
+	__IO  uint8_t  RSVD78:3;	
+	/* 0x79 */
+	__IO  uint8_t  OVER_0P5:1;	//Window-widening tuning[obsolete]
+	__IO  uint8_t  RSVD79:7;		
+	/* 0x7A ~ 0x7F */
+	__IO  uint8_t  RSVD7A[6];
+	/* 0x80 ~ 0x85*/
+	__IO  uint8_t  MAC_ADDR[6];	//Own MAC address
+	/* 0x86 ~ 0x87*/
+	__IO  uint8_t  RSVD86[2];
+	/* 0x88 ~ 0x8B*/
+	__IO  uint8_t  ACC_CODE[4];	//Own access code
+	/* 0x8C ~ 0x91*/
+	__IO  uint8_t  WHITE_LIST[6];	//filter addr
+	/* 0x92 ~ 0x93*/
+	__IO  uint8_t  RSVD92[2];
+	/* 0x94 ~ 0x96*/
+	__IO  uint8_t  INIT_CRC[3];	//CRC initial value
+	/* 0x97*/
+	__IO  uint8_t  RSVD97;
+	/* 0x98 ~ 0x9C*/
+	__IO  uint8_t  CHMAP[5];	//Channel map
+	/* 0x9D ~ 0x9F*/
+	__IO  uint8_t  RSVD9D[3];	
+	/* 0xA0 ~ 0xAF*/
+	__IO  uint8_t  SEC_LTK[16];	//Security long term key
+	/* 0xB0 ~ 0xBF*/
+	__IO  uint8_t  SEC_IV[16];		//Security initial vector	
+	/* 0xC0*/
+	__IO  uint8_t  TXD0;	//TXFIFO0 entry port
+	/* 0xC1*/
+	__IO  uint8_t  TXD1;	//TXFIFO1 entry port
+	/* 0xC2 ~ 0xC3*/
+	__IO  uint8_t  RSVDC2[2];
+	/* 0xC4*/
+	__IO  uint8_t  RXD;	//RXFIFO port
+	/* 0xC5 ~ 0xC7*/
+	__IO  uint8_t  RSVDC5[3];
+	/* 0xC8*/
+	__IO  uint8_t  TXFF_DONE;	//After writing each byte to TXFIFO, set txff_done to finish the process
+	/* 0xC9*/
+	__IO  uint8_t  RXFF_DONE;	//After reading bytes from RXFIFO, set rxff_done to finish the process
+	/* 0xCA ~ 0xCE*/
+	__IO  uint8_t  CHUPDATE[5];	//Channel map used by channel-map update
+	/* 0xCF*/
+	__IO  uint8_t  RSVDCF;
+	/* 0xD0 ~ 0xD3 */
+	__IO  uint8_t  LLC_DBG[4];	//LLC debug
+} LL_CTRL_TYPE;
 #pragma pack()
 
 /* --------------------  End of section using anonymous unions  ------------------- */
