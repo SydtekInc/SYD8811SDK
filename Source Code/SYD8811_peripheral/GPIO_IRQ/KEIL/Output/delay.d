@@ -1,0 +1,9 @@
+.\output\delay.o: ..\..\..\Driver\delay.c
+.\output\delay.o: ..\..\..\Include\delay.h
+.\output\delay.o: ..\..\..\Include\ARMCM0.h
+.\output\delay.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0.h
+.\output\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\delay.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\output\delay.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\output\delay.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\output\delay.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
