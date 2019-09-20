@@ -820,6 +820,8 @@ struct GAP_smart_update_ctrol {
 	
 	extern uint8_t Setting4kUpdate(uint8_t *data,  uint32_t checksum,  uint8_t Xor);
 	extern void SetDevAddr_toflash(struct gap_ble_addr* p_dev);
+	
+    extern uint8_t flash_peotect_key_confirm(uint32_t key,uint32_t key1);
 #endif
 
 #endif
