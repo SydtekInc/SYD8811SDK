@@ -1,0 +1,13 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\debug.o"
+".\output\delay.o"
+".\output\gpio.o"
+".\output\uart.o"
+"..\..\..\Lib\syd8811_ble_lib.lib"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib --strict --scatter ".\Output\Syd8811_Peripheral.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Output\Syd8811_Peripheral.map" -o .\Output\Syd8811_Peripheral.axf
