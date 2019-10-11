@@ -96,7 +96,7 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 
 
 
-20190918 164058
+20190918 164058  
 1.增加工程《"SYD8811_SDK\Source Code\SYD8811_peripheral\GPIO_IRQ"》    
 2.增加文件《SYD8810_pinmux_table_20190917 144554》    
 3.在“Documentation”目录中增加SYD8810规格书并且更新SYD8811规格书    
@@ -104,6 +104,9 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 5.增加工程“Source Code\SYD8811_peripheral_misc\flash peotect”    
 6.增加工程“flash_internal_custom_CodeB”    
 7.更新插件“SYD8811_512kB_Flash.FLM”    
+
+20191011 202207  
+1.更新"tool"目录下，SYDTEK Studio版本到V4.7.9    
 <br/><br/><br/>
 
 
