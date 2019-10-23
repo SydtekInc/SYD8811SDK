@@ -1,7 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT
--I "F:\SYD8801\SYD52832\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\5.SYD8811_BLE_UART_EVBOLED_Scan\Keil\RTE"
--I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
--I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include
--D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
--o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d --feedback ".\Output\Ble_Vendor_Service.fed" "RTE\Device\ARMCM0\system_ARMCM0.c"

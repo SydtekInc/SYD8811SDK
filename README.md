@@ -106,7 +106,8 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 7.更新插件“SYD8811_512kB_Flash.FLM”    
 
 20191011 202207  
-1.更新"tool"目录下，SYDTEK Studio版本到V4.7.9    
+1.更新"tool"目录下，SYDTEK Studio版本到V4.9.5    
+2.更新插件“SYD8811_512kB_Flash.FLM”    
 <br/><br/><br/>
 
 
