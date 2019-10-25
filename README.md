@@ -108,6 +108,8 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 20191011 202207  
 1.更新"tool"目录下，SYDTEK Studio版本到V4.9.5    
 2.更新插件“SYD8811_512kB_Flash.FLM”    
+3.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_dtm_tx_adjust_power”    
+4.更新协议栈lib为“syd8811_ble_lib20191025.lib”  
 <br/><br/><br/>
 
 
