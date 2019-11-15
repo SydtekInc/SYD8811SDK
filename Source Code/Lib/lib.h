@@ -838,6 +838,7 @@ typedef enum {
 	extern uint8_t ReadCodeB(uint32_t addr, uint16_t len, uint8_t *p_buf);
 	extern uint8_t WriteCodeB(uint32_t addr, uint16_t len, uint8_t *p_buf);
 	extern void ble_SetTxPower(BLE_TX_POWER value);
+	extern uint8_t FlashDataUpdate( uint32_t sz, uint16_t checksum);
 #endif
 
 #endif

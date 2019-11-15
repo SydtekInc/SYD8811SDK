@@ -111,6 +111,27 @@ static void CmdFwUpgradev20(struct cmd_fw_upgrade_V20 *p_cmd)
 	EvtCommandComplete(CMD_FW_UPGRADE, (uint8_t *)&Ret, sizeof (Ret));
 }
 
+static void CmdFlashdataUpgradev30(struct cmd_fw_upgrade_V20 *p_cmd)
+{
+	struct ret_fw_erase_cmd	Ret;
+	uint8_t temp = 0;
+	
+	#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+	DBGPRINTF("ota sz:%x checksum:%x ",p_cmd->sz,p_cmd->checksum);
+	#endif
+	temp = FlashDataUpdate(p_cmd->sz, p_cmd->checksum);
+	#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+	DBGPRINTF("CodeUpdatev30=%d\r\n", temp);
+	#endif
+
+	if(temp==0)
+		Ret.status = ERR_COMMAND_FAILED;
+	else 
+		Ret.status = ERR_COMMAND_SUCCESS;
+	
+	EvtCommandComplete(CMD_FW_UPGRADE, (uint8_t *)&Ret, sizeof (Ret));
+}
+
 void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 {
 	struct hci_cmd *pcmd = (struct hci_cmd*)p_cmd;
@@ -158,6 +179,30 @@ void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 				dbg_printf("CMD_FW_WRITE_START offset:%x,size:%x checksum:%x\r\n",pcmd->cmdparm.CmdFwWriteStart.offset,ota_section_size,pcmd->cmdparm.CmdFwWriteStart.checksum);
 				#endif
 				break;
+			case CMD_FLASHDATA_ERASE:
+				BLSetConnectionUpdate(0);  //ota
+				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+					dbg_printf("FLASHDATA_ERASE \r\n");
+				#endif
+				//EraseFlashData(0, 30);  //假设FLASHDATA区域大小为120KB扇区数目为120KB/4KB=30  这里擦除需要比较长的时间，所以APP那端要延时一下
+				Timer_Evt_Start(EVT_1S_OTA);
+			    ota_state=7;
+				ota_section_offset=0;
+				break;
+			case CMD_FLASHDATA_START:
+				ota_section_size=pcmd->cmdparm.CmdFwWriteStart.sz;
+				ota_section_check=pcmd->cmdparm.CmdFwWriteStart.checksum;
+				ota_section_offset=pcmd->cmdparm.CmdFwWriteStart.offset;
+				ota_receive_size=0;
+				ota_receive_check=0;
+				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+				dbg_printf("FLASHDATA_WRITE_START offset:%x,size:%x checksum:%x\r\n",pcmd->cmdparm.CmdFwWriteStart.offset,ota_section_size,pcmd->cmdparm.CmdFwWriteStart.checksum);
+				#endif
+				break;
+			case CMD_FLASHDATA_UPGRADEV30:
+				CmdFlashdataUpgradev30(&pcmd->cmdparm.CmdFwUpgradeV20);
+				ota_state=3;
+				break;
 		}
 	}
 	else
@@ -171,17 +216,39 @@ void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 		if(((int)p_cmd % 4)!=0)
 		{
 			memcpy(ota_w.buf,p_cmd,sz);
-			CodeWrite(ota_section_offset+ota_receive_size, sz, ota_w.buf);
-//			#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
-//			dbg_printf("CodeWrite noalign  ");
-//			#endif
+			if(ota_state==2)
+			{
+				CodeWrite(ota_section_offset+ota_receive_size, sz, ota_w.buf);
+//				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+//				dbg_printf("CodeWrite noalign  ");
+//				#endif
+			}
+			else if(ota_state==8)
+			{
+				WriteFlashData(ota_section_offset+ota_receive_size, sz, ota_w.buf);
+//				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+//				dbg_printf("FlashData noalign  ");
+//				#endif
+			}
+
 		}
 		else
 		{
-			CodeWrite(ota_section_offset+ota_receive_size, sz, p_cmd);
-//			#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
-//			dbg_printf("CodeWrite align  ");
-//			#endif
+			if(ota_state==2)
+			{
+				CodeWrite(ota_section_offset+ota_receive_size, sz, p_cmd);
+//				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+//				dbg_printf("CodeWrite align  ");
+//				#endif
+			}
+			else if(ota_state==8)
+			{
+				WriteFlashData(ota_section_offset+ota_receive_size, sz, p_cmd);
+//				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
+//				dbg_printf("FlashData align  ");
+//				#endif
+			}
+
 		}
 		
 //		#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)

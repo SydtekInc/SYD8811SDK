@@ -110,6 +110,9 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 2.更新插件“SYD8811_512kB_Flash.FLM”    
 3.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_dtm_tx_adjust_power”    
 4.更新协议栈lib为“syd8811_ble_lib20191025.lib”  
+5.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_OTA_FLASHDATA”  
+6.更新协议栈lib为“syd8811_ble_lib20191113.lib”  
+7.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_BLE_Duplex  
 <br/><br/><br/>
 
 
