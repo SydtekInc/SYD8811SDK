@@ -781,7 +781,7 @@ int main(void)
 			}
 			#endif
 		}
-		
+		if( ota_state == 1)  ota_manage();     //OTA擦除命令到来，马上擦除
 		if(start_tx & 0x01)		//connected
 		{
 			//UartEn(true);	//不允许RF sleep时关闭XO
