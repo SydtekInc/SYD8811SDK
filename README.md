@@ -119,6 +119,7 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 20191120 163458  
 1.更新协议栈lib为“syd8811_ble_lib20191115.lib”    
 2.修改各个带蓝牙OTA的工程，在睡眠前加上“if( ota_state == 1)  ota_manage();     //OTA擦除命令到来，马上擦除”    
+3.更新协议栈lib为“syd881120191122.lib”    
 <br/><br/><br/>
 
 
