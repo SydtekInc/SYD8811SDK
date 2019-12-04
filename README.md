@@ -122,6 +122,7 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 3.更新协议栈lib为“syd881120191122.lib”    
 4.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_OTA_FLASHDATA_size”  
 5.syd8811_ble_lib20191128.lib”    
+6.更新HID例程的Profilem,请看“\Source Code\SYD8811_ble_peripheral\2.SYD8811_HID”    
 <br/><br/><br/>
 
 
