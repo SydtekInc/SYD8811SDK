@@ -123,6 +123,7 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 4.增加工程“Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_OTA_FLASHDATA_size”  
 5.syd8811_ble_lib20191128.lib”    
 6.更新HID例程的Profilem,请看“\Source Code\SYD8811_ble_peripheral\2.SYD8811_HID”    
+7.增加工程“Source Code\SYD8811_peripheral_misc\adc_VBAT”并且更新gpadc.c文件，使之能够计算出VBAT    
 <br/><br/><br/>
 
 

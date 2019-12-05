@@ -6,6 +6,8 @@ GPADC_CTRL_TYPE * GPADC	= ((GPADC_CTRL_TYPE *)	GPADC_CTRL_BASE);
 
 uint8_t channel = 0;
 
+extern uint8_t adc_state;
+
 /**********************************************************
 		GPIO2				ADCGP_CH[0]
 		GPIO3				ADCGP_CH[1]
@@ -183,9 +185,18 @@ void GPADC_IRQHandler(void)
 		uint16_t adc = GPADC_get_value();	
 		GPADC->EVENTS = 0;
 		GPADC->DA_GPADC_EN = 0;
-
-		vat=(float)adc*3.6/1024;  
+        adc=adc&0xfffe;
+		
+		if(channel==8)   //VBAT通道
+		{
+			vat=(float)adc*3.6/483;  
+		}
+		else   //GPIO通道
+		{
+			vat=(float)adc*3.6/1024;  
+		}
 		dbg_printf("ch:%02d adc : %04x vat: %4.3f\r\n",channel,adc,vat);
+		adc_state=1;
 	}	
 }
 

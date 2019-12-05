@@ -1,0 +1,7 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I..\..\..\BLE -I..\..\..\Include -I..\..\..\Lib -I..\
+-I "F:\SYD8801\SYD8811\SYD8811_SDK\Source Code\SYD8811_peripheral_misc\adc_VBAT\KEIL\RTE"
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include
+-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
+-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d --feedback ".\Output\Syd8811_Peripheral.fed" "..\main.c"
