@@ -39,7 +39,7 @@ compiling gpadc.c...
 assembling startup_ARMCM0.s...
 compiling system_ARMCM0.c...
 linking...
-Program Size: Code=18216 RO-data=224 RW-data=160 ZI-data=1272  
+Program Size: Code=18312 RO-data=224 RW-data=160 ZI-data=1272  
 ".\Output\Syd8811_Peripheral.axf" - 0 Error(s), 0 Warning(s).
 
 *** Performing Cross-Module-Optimization:
@@ -52,7 +52,7 @@ compiling uart.c...
 compiling gpadc.c...
 compiling system_ARMCM0.c...
 linking...
-Program Size: Code=15688 RO-data=224 RW-data=160 ZI-data=1272  
+Program Size: Code=15784 RO-data=224 RW-data=160 ZI-data=1272  
 compiling main.c...
 compiling delay.c...
 compiling gpio.c...
@@ -62,16 +62,16 @@ compiling uart.c...
 compiling gpadc.c...
 compiling system_ARMCM0.c...
 linking...
-Program Size: Code=15688 RO-data=224 RW-data=160 ZI-data=1272  
+Program Size: Code=15784 RO-data=224 RW-data=160 ZI-data=1272  
 FromELF: creating hex file...
 After Build - User command #1: "Output\HEX2BIN.EXE" "Output\Syd8811_Peripheral.hex"
 hex2bin v1.0.6, Copyright (C) 1998 Jacques Pelletier
 checksum extensions Copyright (C) 2004 Rockwell Automation
 improved P.G. 2007
 Lowest address  = 00000000
-Highest address = 00003EC7
+Highest address = 00003F27
 Pad Byte        = FF
-8-bit Checksum = BA
+8-bit Checksum = 85
 After Build - User command #2: fromelf -c  .\output\Syd8811_Peripheral.axf  -o  .\output\Syd52832_Peripheral.txt
 ".\Output\Syd8811_Peripheral.axf" - 0 Error(s), 0 Warning(s).
 *** Completed Cross-Module-Optimization after 3 iteration(s).
@@ -80,10 +80,10 @@ After Build - User command #2: fromelf -c  .\output\Syd8811_Peripheral.axf  -o  
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
-                ARM::CMSIS:CORE:4.3.0
+                ARM::Device:Startup:1.0.1
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 4.3.0
    * Component: Startup Version: 1.0.1
+   * Component: CORE Version: 4.3.0
 
 <h2>Collection of Component include folders:</h2>
   F:\SYD8801\SYD8811\SYD8811_SDK\Source Code\SYD8811_peripheral_misc\adc_VBAT\KEIL\RTE
@@ -92,13 +92,13 @@ Package Vendor: ARM
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:4.3.0
-
    * Component: ARM::Device:Startup:1.0.1
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
       Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
       Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
-      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
-Build Time Elapsed:  00:00:07
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

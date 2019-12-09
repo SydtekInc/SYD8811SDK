@@ -127,3 +127,9 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 <br/><br/><br/>
 
 
+
+
+20191209 145405
+1.更新协议栈lib为“syd8811_ble_lib20191209.lib”        
+2.修改ADC校准方式，涉及工程为“SYD8811_SDK\Source Code\SYD8811_peripheral\adc”和“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\adc_VBAT”        
+<br/><br/><br/>
