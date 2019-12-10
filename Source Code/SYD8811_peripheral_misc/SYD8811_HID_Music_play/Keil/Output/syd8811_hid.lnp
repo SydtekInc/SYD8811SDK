@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\debug.o"
+".\output\gpio.o"
+".\output\uart.o"
+".\output\delay.o"
+".\output\ota.o"
+".\output\timer_handler.o"
+".\output\rtc_handler.o"
+"..\..\..\Lib\Syd8811_softtimer_lib.lib"
+"..\..\..\Lib\syd8811_ble_lib.lib"
+".\output\segger_rtt.o"
+".\output\segger_rtt_printf.o"
+".\output\segger_rtt_syscalls_keil.o"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib
+--feedback ".\Output\syd8811_hid.fed" --feedback_image=none
+--strict --scatter ".\Output\syd8811_hid.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\syd8811_hid.map" -o .\Output\syd8811_hid.axf

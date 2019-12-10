@@ -839,6 +839,11 @@ typedef enum {
 	extern uint8_t WriteCodeB(uint32_t addr, uint16_t len, uint8_t *p_buf);
 	extern void ble_SetTxPower(BLE_TX_POWER value);
 	extern uint8_t FlashDataUpdate( uint32_t sz, uint16_t checksum);
+	extern uint32_t  flash_data_size_get(void);
+	extern uint8_t  code_idx_get(void);
+	extern uint8_t  flash_data_size_set(uint32_t sz);
+	extern uint8_t GPADC_Get_Calibration(void);
+	extern uint8_t  Get_RSSI_Last_RX(void);
 #endif
 
 #endif
