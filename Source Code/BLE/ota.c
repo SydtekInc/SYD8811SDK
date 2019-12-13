@@ -146,7 +146,7 @@ void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 				#endif
 				//CmdFwErase();//最好放到main函数while(1)处理
 				Timer_Evt_Start(EVT_1S_OTA);
-			  ota_state=1;
+				ota_state=1;
 				ota_section_offset=0;
 				break;
 			case CMD_4KSETTING_ERASE:
@@ -216,14 +216,14 @@ void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 		if(((int)p_cmd % 4)!=0)
 		{
 			memcpy(ota_w.buf,p_cmd,sz);
-			if(ota_state==2)
+			if((ota_state==2) || (ota_state==1))
 			{
-				CodeWrite(ota_section_offset+ota_receive_size, sz, ota_w.buf);
+				idx=CodeWrite(ota_section_offset+ota_receive_size, sz, ota_w.buf);
 //				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
-//				dbg_printf("CodeWrite noalign  ");
+//				dbg_printf("CodeWrite noalign:%x %x",ota_section_offset+ota_receive_size,idx);
 //				#endif
 			}
-			else if(ota_state==8)
+			else if((ota_state==8)  || (ota_state==7))
 			{
 				WriteFlashData(ota_section_offset+ota_receive_size, sz, ota_w.buf);
 //				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
@@ -234,14 +234,14 @@ void ota_cmd(uint8_t *p_cmd, uint8_t sz)
 		}
 		else
 		{
-			if(ota_state==2)
+			if((ota_state==2) || (ota_state==1))
 			{
-				CodeWrite(ota_section_offset+ota_receive_size, sz, p_cmd);
+				idx=CodeWrite(ota_section_offset+ota_receive_size, sz, p_cmd);
 //				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)
-//				dbg_printf("CodeWrite align  ");
+//				dbg_printf("CodeWrite align:%x %x",ota_section_offset+ota_receive_size,idx);
 //				#endif
 			}
-			else if(ota_state==8)
+			else if((ota_state==8)  || (ota_state==7))
 			{
 				WriteFlashData(ota_section_offset+ota_receive_size, sz, p_cmd);
 //				#if defined(_DEBUG_) || defined(_SYD_RTT_DEBUG_)

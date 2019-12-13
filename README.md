@@ -134,4 +134,5 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 2.修改ADC校准方式，涉及工程为“SYD8811_SDK\Source Code\SYD8811_peripheral\adc”和“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\adc_VBAT”        
 3.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_power_RSSI”        
 4.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_HID_Music_play”        
+5.修改OTA.C文件，在ota_cmd函数中的“if(((int)p_cmd % 4)!=0)”及其else分子中把“if(ota_state==2)”条件改为“if((ota_state==2) || (ota_state==1))”，“if(ota_state==8)”条件改为“if((ota_state==8) || (ota_state==7))”，本次修改涉及到SDK中所有带有OTA功能的工程！        
 <br/><br/><br/>
