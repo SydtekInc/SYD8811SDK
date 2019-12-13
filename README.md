@@ -135,4 +135,5 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 3.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_power_RSSI”        
 4.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_HID_Music_play”        
 5.修改OTA.C文件，在ota_cmd函数中的“if(((int)p_cmd % 4)!=0)”及其else分子中把“if(ota_state==2)”条件改为“if((ota_state==2) || (ota_state==1))”，“if(ota_state==8)”条件改为“if((ota_state==8) || (ota_state==7))”，本次修改涉及到SDK中所有带有OTA功能的工程！        
+6.更新"tool"目录下，SYDTEK Studio版本到V4.9.8 20191213 145803    
 <br/><br/><br/>
