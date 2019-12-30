@@ -138,4 +138,5 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 6.更新"tool"目录下，SYDTEK Studio版本到V4.9.8 20191213 145803    
 7.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\GPIO_Speed  
 8.更新文件“"Documentation\SYD8810_pinmux_table_20191225 144444.xlsx"”  
+9.增加工程“SYD8811_SDK\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_calender”  
 <br/><br/><br/>
