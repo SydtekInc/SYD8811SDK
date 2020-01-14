@@ -145,3 +145,9 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 13.更新"tool"目录下，SYDTEK Studio版本到SYDTEK Studio  release V5.2.0 20200110 145356    
 14.更新"tool"目录下，SYD Service Utility版本到SYD Service Utility release V2.2 20200110 102733    
 <br/><br/><br/>
+
+
+
+20200114 155843
+1.更新文件“SYD8810_pinmux_table_20200114 155902”、“SYD8811_pinmux_table_20200114 155924.xlsx”            
+<br/><br/><br/>
