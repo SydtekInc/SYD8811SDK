@@ -150,4 +150,6 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 
 20200114 155843
 1.更新文件“SYD8810_pinmux_table_20200114 155902”、“SYD8811_pinmux_table_20200114 155924.xlsx”            
+2.增加工程“\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_Reset_at_Gpio21”  
+3.在“Documentation”目录增加文件：SYD_8811_BLE_Library.pdf，SYD8811_Register_Discription_V1.xls    
 <br/><br/><br/>
