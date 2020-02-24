@@ -152,4 +152,6 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 1.更新文件“SYD8810_pinmux_table_20200114 155902”、“SYD8811_pinmux_table_20200114 155924.xlsx”            
 2.增加工程“\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_Reset_at_Gpio21”  
 3.在“Documentation”目录增加文件：SYD_8811_BLE_Library.pdf，SYD8811_Register_Discription_V1.xls    
+4.更新文档“SYD8811_pinmux_table.xlsx”和“SYD8810_pinmux_table.xlsx”   
+5.修改“lib.h”中的“SYSTEM_CLOCK_16M_XOSC”为“SYSTEM_CLOCK_32M_XOSC”   
 <br/><br/><br/>

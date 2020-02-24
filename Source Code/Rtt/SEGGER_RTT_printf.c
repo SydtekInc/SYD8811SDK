@@ -70,6 +70,7 @@ Revision: $Rev: 4351 $
 
 #include "SEGGER_RTT.h"
 #include "SEGGER_RTT_Conf.h"
+#include "stdio.h"
 
 /*********************************************************************
 *
@@ -438,6 +439,23 @@ int SEGGER_RTT_vprintf(unsigned BufferIndex, const char * sFormat, va_list * pPa
         v = va_arg(*pParamList, int);
         _PrintUnsigned(&BufferDesc, (unsigned)v, 16u, NumDigits, FieldWidth, FormatFlags);
         break;
+	  case 'f':
+      case 'F':
+	  {
+		char ch[10]={0};
+		const char * s=ch;
+		double a = va_arg(*pParamList, double);
+		sprintf(ch,"%4.3f",a);
+		  do {
+            c = *s;
+            s++;
+            if (c == '\0') {
+              break;
+            }
+           _StoreChar(&BufferDesc, c);
+          } while (BufferDesc.ReturnValue >= 0);
+	  }
+	  break;
       case 's':
         {
           const char * s = va_arg(*pParamList, const char *);
