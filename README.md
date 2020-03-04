@@ -154,4 +154,8 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 3.在“Documentation”目录增加文件：SYD_8811_BLE_Library.pdf，SYD8811_Register_Discription_V1.xls    
 4.更新文档“SYD8811_pinmux_table.xlsx”和“SYD8810_pinmux_table.xlsx”   
 5.修改“lib.h”中的“SYSTEM_CLOCK_16M_XOSC”为“SYSTEM_CLOCK_32M_XOSC”   
+6.增加文件“SYD8810 透传硬件资料(layout未完成)20200304 104323.7z”和SYD8811 透传硬件资料20191106 164501.7z  
 <br/><br/><br/>
+
+
+20200225 171823
