@@ -700,6 +700,11 @@ void gpio_init(void)
         case GPIO_6:
         case GPIO_8:
             break;
+		#ifndef USER_32K_CLOCK_RCOSC 
+		case GPIO_0:
+		case GPIO_1:
+		break;
+		#endif
         
         //LED 2,3,4
         case LED1:

@@ -664,6 +664,11 @@ void gpio_init(void)
 //        case LED4:
 //            io_output |=U32BIT(i);   //默认输出高电平
 //        break;
+		#ifndef USER_32K_CLOCK_RCOSC 
+		case GPIO_0:
+		case GPIO_1:
+		break;
+		#endif
 
         default:   //默认上拉输入
             io_input |=U32BIT(i);

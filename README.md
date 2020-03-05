@@ -158,4 +158,13 @@ J.SYD8811_SDK\SourceCode\SYD8811_peripheral_misc\SYD8811_BLE_UART_notifyen_open_
 <br/><br/><br/>
 
 
-20200225 171823
+
+
+20200305 201724
+修改BLE工程中关于使用32.768KHz外部晶振的gpio管脚配置的bug，涉及到所有带BLE功能的工程，修改全部在gpio_init函数中，修改方式如下  
+#ifndef USER_32K_CLOCK_RCOSC   
+case GPIO_0:   
+case GPIO_1:   
+break;    
+#endif    
+<br/><br/><br/>

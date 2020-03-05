@@ -468,7 +468,11 @@ void gpio_init(void)
             io_pull |=U32BIT(i);
             io_invert |=U32BIT(i);
         break;
-				
+		#ifndef USER_32K_CLOCK_RCOSC 
+			case GPIO_0:
+			case GPIO_1:
+			break;
+			#endif
 
 				default:   //默认上拉输入
 				io_input |=U32BIT(i);

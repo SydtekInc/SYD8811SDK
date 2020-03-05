@@ -99,6 +99,12 @@ void gpio_init(void)
 			case GPIO_UART_RX:
 			break;
 			
+			#ifndef USER_32K_CLOCK_RCOSC 
+			case GPIO_0:
+			case GPIO_1:
+			break;
+			#endif
+			
 			case GPIO_21:
 			break;
 				
