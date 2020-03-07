@@ -1,0 +1,13 @@
+.\output\pwm.o: ..\..\..\Driver\pwm.c
+.\output\pwm.o: ..\..\..\Include\pwm.h
+.\output\pwm.o: ..\..\..\Include\ARMCM0.h
+.\output\pwm.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h
+.\output\pwm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\pwm.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h
+.\output\pwm.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
+.\output\pwm.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
+.\output\pwm.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\output\pwm.o: ..\..\..\Include\gpio.h
+.\output\pwm.o: ..\..\..\Lib\lib.h
+.\output\pwm.o: ..\..\..\Include\debug.h
+.\output\pwm.o: ..\config.h

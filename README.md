@@ -168,3 +168,10 @@ case GPIO_1:
 break;    
 #endif    
 <br/><br/><br/>
+
+
+
+
+20200307 182645
+1.增加工程：Source Code\SYD8811_peripheral_misc\HPWM_Complementary_Output,实现高速PWM的互补和死区输出！并且去掉Hpwm_Init函数重得语句：NVIC_EnableIRQ(HPWM_IRQn)，原因如下 安装原来的驱动方式，会在HPWM_IRQHandler中断函数中动态修改占空比，这样不方便测试的时候看结果，这里把中断关闭后，显示的波形就是代码设置的波形  
+<br/><br/><br/>

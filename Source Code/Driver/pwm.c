@@ -152,7 +152,7 @@ void Hpwm_Init(HPWM_PARAMETER *parameter)
 	//HPWM_CTRL->INTEN  = HPWM_INT_TASK_STOP;
 	//HPWM_CTRL->INTEN  = HPWM_INT_NONE;
 
-	NVIC_EnableIRQ(HPWM_IRQn);
+	//NVIC_EnableIRQ(HPWM_IRQn);  安装原来的驱动方式，会在HPWM_IRQHandler中断函数中动态修改占空比，这样不方便测试的时候看结果，这里把中断关闭后，显示的波形就是代码设置的波形
 }
 
 void Hpwm_Set_duty(HPWM_CHx  channels, uint16_t compare)
