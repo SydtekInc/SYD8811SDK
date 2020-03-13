@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\uart_protocol.o"
+".\output\delay.o"
+".\output\gpio.o"
+".\output\uart.o"
+".\output\timer_handler.o"
+".\output\rtc_handler.o"
+"..\..\..\Lib\syd8811_ble_lib.lib"
+"..\..\..\Lib\Syd8811_softtimer_lib.lib"
+".\output\segger_rtt.o"
+".\output\segger_rtt_printf.o"
+".\output\segger_rtt_syscalls_keil.o"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib
+--feedback ".\Output\Ble_Vendor_Service.fed" --feedback_image=none
+--strict --scatter ".\Output\Ble_Vendor_Service.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Ble_Vendor_Service.map" -o .\Output\Ble_Vendor_Service.axf

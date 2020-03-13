@@ -27,6 +27,7 @@ extern void uart_0_init(void);
 extern void uart_0_write(uint8_t  data);
 extern void uart_0_read(uint8_t *pcnt, uint8_t *pbuf);
 extern void uart_0_close(void);
+extern void uart_0_ClrFiFo(void);
 
 extern void uart_1_init(void);
 extern void uart_1_write(uint8_t  data);

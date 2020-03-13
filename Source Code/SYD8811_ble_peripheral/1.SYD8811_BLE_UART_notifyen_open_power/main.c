@@ -458,6 +458,7 @@ void ble_evt_callback(struct gap_ble_evt *p_evt)
 			{
 				start_tx |= 0x01;
 				UartEn(true);	//不允许RF sleep时关闭XO，休眠的时候因为32Mhz晶振还在，所以功耗很高
+				uart_0_ClrFiFo();
 				
 				//clr uart rx fifo
 				uart_rx_buf.header = uart_rx_buf.tail;
@@ -572,7 +573,7 @@ static void ble_init()
 	*/
 	pw_cfg.wakeup_type = SLEEP_WAKEUP;
 	pw_cfg.wdt_wakeup_en = (bool)false;
-	pw_cfg.rtc_wakeup_en = (bool)false;
+	pw_cfg.rtc_wakeup_en = (bool)true;
 	pw_cfg.timer_wakeup_en = (bool)true;
 	pw_cfg.gpi_wakeup_en = (bool)false;
 	pw_cfg.gpi_wakeup_cfg = WAKEUP_PIN;	//中断唤醒pin
@@ -623,12 +624,38 @@ void  ota_manage(void){
 
 
 
+void nvic_priority(void){
+	NVIC_SetPriority(LLC_IRQn   , 2);
+	NVIC_SetPriority(RTC_IRQn  , 2);
+	NVIC_SetPriority(SW_IRQn  , 2);
+	NVIC_SetPriority(I2C0_IRQn , 2);
+	NVIC_SetPriority(I2C1_IRQn , 2);
+	NVIC_SetPriority(UART0_IRQn, 0);
+	NVIC_SetPriority(UART1_IRQn, 2);
+	NVIC_SetPriority(TIMER0_IRQn, 2);
+	NVIC_SetPriority(TIMER1_IRQn, 2);
+	NVIC_SetPriority(TIMER2_IRQn  , 2);
+	NVIC_SetPriority(TIMER3_IRQn  , 2);
+	NVIC_SetPriority(GPIO_IRQn   , 2);
+	NVIC_SetPriority(HID_IRQn  , 2);
+	NVIC_SetPriority(SPIM_IRQn  , 2);
+	NVIC_SetPriority(CAP_IRQn , 0);
+	NVIC_SetPriority(GPADC_IRQn , 2);
+	NVIC_SetPriority(LLC2_IRQn, 2);
+	NVIC_SetPriority(ISO7816_IRQn, 2);
+	NVIC_SetPriority(IR_Tx_IRQn, 2);
+	NVIC_SetPriority(TOUCH_IRQn, 2);
+	NVIC_SetPriority(HPWM_IRQn  , 2);
+	NVIC_SetPriority(HTIMER_IRQn  , 2);
+	NVIC_SetPriority(IR_Rx_IRQn  , 2);
+}
 
 int main(void)
 {
 	__disable_irq();	
 
 	ble_init();  //蓝牙初始化，系统主时钟初始化64M,32K时钟初始化为LPO
+	nvic_priority();   //把串口优先级设置到最高
 	
 	//根据需要重新设置时钟为4M并校准
 	MCUClockSwitch(SYSTEM_CLOCK_64M_RCOSC);

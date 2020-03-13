@@ -1,0 +1,175 @@
+Dependencies for Project 'SYD8811_BLE_UART', Target 'SYD8811': (DO NOT MODIFY !)
+F (..\main.c)(0x5E6ACCE5)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Include\timer.h)(0x5D3EE988)
+I (..\..\..\Include\gpio.h)(0x5D3EE988)
+I (..\..\..\RTT\DebugLog.h)(0x5C0F51B0)
+I (..\..\..\RTT\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\RTT\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+I (..\..\..\Include\delay.h)(0x5D3EE988)
+I (..\..\..\Include\uart.h)(0x5E6ACDA8)
+I (..\..\..\BLE\ota.h)(0x5DCBF8B7)
+I (..\profile\SYD_ble_service_service.h)(0x5D3EE988)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (..\uart_protocol.h)(0x5D3EE988)
+I (..\..\..\Lib\softtimer.h)(0x5D3EE988)
+F (..\uart_protocol.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\uart_protocol.o --omf_browse .\output\uart_protocol.crf --depend .\output\uart_protocol.d)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Include\uart.h)(0x5E6ACDA8)
+I (..\uart_protocol.h)(0x5D3EE988)
+F (..\..\..\Driver\delay.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
+I (..\..\..\Include\delay.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (..\..\..\ble\ota.c)(0x5DF30071)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\ota.o --omf_browse .\output\ota.crf --depend .\output\ota.d)
+I (..\..\..\ble\ota.h)(0x5DCBF8B7)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Include\debug.h)(0x5D3EE988)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (..\..\..\Include\delay.h)(0x5D3EE988)
+I (..\..\..\Lib\softtimer.h)(0x5D3EE988)
+I (..\..\..\RTT\DebugLog.h)(0x5C0F51B0)
+I (..\..\..\RTT\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\RTT\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+F (..\..\..\Driver\gpio.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\gpio.o --omf_browse .\output\gpio.crf --depend .\output\gpio.d)
+I (..\..\..\Include\gpio.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+F (..\uart.c)(0x5E6ACDA8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d)
+I (..\..\..\Include\uart.h)(0x5E6ACDA8)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Include\gpio.h)(0x5D3EE988)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\uart_protocol.h)(0x5D3EE988)
+I (..\config.h)(0x5D3EE988)
+F (..\timer_handler.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\timer_handler.o --omf_browse .\output\timer_handler.crf --depend .\output\timer_handler.d)
+I (..\..\..\Lib\calender.h)(0x5D3EE988)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (..\..\..\Lib\softtimer.h)(0x5D3EE988)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\RTT\DebugLog.h)(0x5C0F51B0)
+I (..\..\..\RTT\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\RTT\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+F (..\rtc_handler.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\rtc_handler.o --omf_browse .\output\rtc_handler.crf --depend .\output\rtc_handler.d)
+I (..\..\..\Lib\softtimer.h)(0x5D3EE988)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (..\..\..\RTT\DebugLog.h)(0x5C0F51B0)
+I (..\..\..\RTT\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\RTT\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+F (..\..\..\Lib\syd8811_ble_lib.lib)(0x5E185054)()
+F (..\..\..\Lib\Syd8811_softtimer_lib.lib)(0x5D5A146E)()
+F (..\..\..\Rtt\SEGGER_RTT.c)(0x5D3EEB79)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt.o --omf_browse .\output\segger_rtt.crf --depend .\output\segger_rtt.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51B0)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Rtt\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\Rtt\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+F (..\..\..\Rtt\SEGGER_RTT_printf.c)(0x5E53628F)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt_printf.o --omf_browse .\output\segger_rtt_printf.crf --depend .\output\segger_rtt_printf.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51B0)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Rtt\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\Rtt\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
+F (..\..\..\Rtt\SEGGER_RTT_Syscalls_KEIL.c)(0x5AEBBBC2)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt_syscalls_keil.o --omf_browse .\output\segger_rtt_syscalls_keil.crf --depend .\output\segger_rtt_syscalls_keil.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51B0)
+I (..\config.h)(0x5D3EE988)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\lib.h)(0x5E534C6A)
+I (..\..\..\Rtt\SEGGER_RTT.h)(0x5C0E0E86)
+I (..\..\..\Rtt\SEGGER_RTT_Conf.h)(0x5D3EADE3)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55AEF5F2)
+F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5D3EE988)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\startup_armcm0.lst --xref -o .\output\startup_armcm0.o --depend .\output\startup_armcm0.d)
+F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5D3EE988)(-c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Lib -I..\profile -I..\ -I..\..\..\RTT-I "F:\SYD8801\SYD8811\SYD8811_SDK_Git_Release\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d)
+I (..\..\..\Include\ARMCM0.h)(0x5D6368EB)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)

@@ -86,6 +86,15 @@ void uart_0_read(uint8_t *pcnt, uint8_t *pbuf)
 	*pcnt = i;
 }
 
+/****************************************************************************
+UART0串口清除Rx FIFO函数
+注意: 在关闭了uarten到重新打开UARTen的时候应该清除掉RX的fifo里面的数据
+****************************************************************************/
+void uart_0_ClrFiFo(void)
+{
+	UART_0_CTRL->RX_FLUSH = 1;		/* clr rx fifo and set RX_FIFO_EMPTY */
+}
+
 void uart_0_close(void)
 {
 	UART_0_CTRL->UART_EN = 0;

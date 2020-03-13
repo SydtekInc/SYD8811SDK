@@ -174,4 +174,13 @@ break;
 
 20200307 182645
 1.增加工程：Source Code\SYD8811_peripheral_misc\HPWM_Complementary_Output,实现高速PWM的互补和死区输出！并且去掉Hpwm_Init函数重得语句：NVIC_EnableIRQ(HPWM_IRQn)，原因如下 安装原来的驱动方式，会在HPWM_IRQHandler中断函数中动态修改占空比，这样不方便测试的时候看结果，这里把中断关闭后，显示的波形就是代码设置的波形  
+2.增加工程：Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_TX,  
+3.修改SDK中透传工程中串口的bug，bug如下：  
+配置串口优先级，  
+打开定时器唤醒源  
+串口加上uart_0_ClrFiFo  
+涉及到的工程有：  
+\Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_BLE_Duplex  
+Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power  
+\Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power  
 <br/><br/><br/>
