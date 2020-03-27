@@ -183,6 +183,5 @@ break;
 \Source Code\SYD8811_peripheral_misc\SYD8811_BLE_UART_BLE_Duplex  
 Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power  
 \Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power  
+4.增加工程：Source Code\SYD8811_peripheral_misc\SYD8811_Who_Wackup,  
 <br/><br/><br/>
-
-20200321 103905
