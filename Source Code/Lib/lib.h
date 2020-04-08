@@ -844,6 +844,11 @@ typedef enum {
 	extern uint8_t  flash_data_size_set(uint32_t sz);
 	extern uint8_t GPADC_Get_Calibration(void);
 	extern uint8_t  Get_RSSI_Last_RX(void);
+	
+	extern uint8_t APP_Read_Attribute_Encrypt(uint16_t hdl,uint8_t *enc);
+	extern uint8_t APP_Write_Attribute_Encrypt(uint16_t hdl,uint8_t *enc);
+	extern uint8_t APP_Read_Charact_Permission(uint16_t hdl,uint8_t *permission);
+	extern uint8_t APP_Write_Effect(void);
 #endif
 
 #endif

@@ -185,4 +185,6 @@ Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
 \Source Code\SYD8811_ble_peripheral\4.SYD8811_BLE_UART_GPIO_open_power  
 4.增加工程：Source Code\SYD8811_peripheral_misc\SYD8811_Who_Wackup,  
 5.修改文档“SYD8810_pinmux_table”和“SYD8811_pinmux_table”，把GPIO21的默认功能改成GPIO，而不是复位    
+6.增加工程：Source Code\SYD8811_peripheral_misc\SYD8811_HID_Service_Change,    
+7.更新协议栈lib文件，syd8811_ble_lib20200408 145619.lib  
 <br/><br/><br/>
