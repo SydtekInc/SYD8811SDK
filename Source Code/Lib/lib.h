@@ -849,6 +849,7 @@ typedef enum {
 	extern uint8_t APP_Write_Attribute_Encrypt(uint16_t hdl,uint8_t *enc);
 	extern uint8_t APP_Read_Charact_Permission(uint16_t hdl,uint8_t *permission);
 	extern uint8_t APP_Write_Effect(void);
+	extern void smp_aes_encrypt(uint8_t *k, uint8_t* p, uint8_t* c);
 #endif
 
 #endif
