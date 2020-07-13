@@ -4,7 +4,7 @@
 #include "ARMCM0.h"
 #include "config.h"
 
-
+#define _DEBUG_
 
 #ifdef _DEBUG_
 	#define DBGPRINTF_TIMER(s)	 				dbg_printf s

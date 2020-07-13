@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\ble.o"
+".\output\debug.o"
+".\output\gpio.o"
+".\output\uart.o"
+".\output\croutine.o"
+".\output\event_groups.o"
+".\output\list.o"
+".\output\queue.o"
+".\output\tasks.o"
+".\output\timers.o"
+".\output\heap_4.o"
+".\output\port.o"
+"..\..\..\Lib\syd8811_ble_lib.lib"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib --strict --scatter ".\output\SYD8811_FreeRTOS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\SYD8811_FreeRTOS.map" -o .\output\SYD8811_FreeRTOS.axf

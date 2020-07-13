@@ -1,0 +1,6 @@
+-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main
+-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
+-o .\objects\system_armcm0.o --omf_browse .\objects\system_armcm0.crf --depend .\objects\system_armcm0.d --feedback ".\Objects\Module_samples.fed" "RTE\Device\ARMCM0\system_ARMCM0.c"

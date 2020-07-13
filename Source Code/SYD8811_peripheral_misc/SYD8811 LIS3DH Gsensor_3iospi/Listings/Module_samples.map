@@ -1,0 +1,827 @@
+Component: ARM Compiler 5.06 (build 20) Tool: armlink [4d35a3]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.main) refers to syd8801_debug.o(i.dbg_init) for dbg_init
+    main.o(i.main) refers to lis3dh.o(i.lis3dh_init) for lis3dh_init
+    main.o(i.main) refers to lis3dh.o(i.lis3dh_strat_accelerometer) for lis3dh_strat_accelerometer
+    main.o(i.main) refers to lis3dh.o(i.lis3dh_get_accelerometer_data) for lis3dh_get_accelerometer_data
+    main.o(i.main) refers to fflti.o(.text) for __aeabi_i2f
+    main.o(i.main) refers to fmul.o(.text) for __aeabi_fmul
+    main.o(i.main) refers to fscalb.o(.text) for __ARM_scalbnf
+    main.o(i.main) refers to fdiv.o(.text) for __aeabi_fdiv
+    main.o(i.main) refers to f2d.o(.text) for __aeabi_f2d
+    main.o(i.main) refers to syd8801_debug.o(i.dbg_printf) for dbg_printf
+    main.o(i.main) refers to syd8801_delay.o(i.delay_ms) for delay_ms
+    led.o(i.led_close) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    led.o(i.led_config) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    led.o(i.led_config) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    led.o(i.led_open) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    led.o(i.led_turn) refers to syd8801_gpio.o(i.GPIO_Pin_Turn) for GPIO_Pin_Turn
+    key.o(i.get_key) refers to syd8801_gpio.o(i.GPIO_Pin_Read) for GPIO_Pin_Read
+    key.o(i.key_config) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    key.o(i.keylong_config) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    key.o(i.keylong_config) refers to syd8801_timer.o(i.timer_0_enable) for timer_0_enable
+    key.o(i.keylong_config) refers to key.o(i.timer0_callback) for timer0_callback
+    key.o(i.timer0_callback) refers to key.o(i.get_key) for get_key
+    key.o(i.timer0_callback) refers to key.o(.data) for .data
+    oled.o(i.Draw_BMP) refers to oled.o(i.LCD_Set_Pos) for LCD_Set_Pos
+    oled.o(i.Draw_BMP) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.LCD_CLS) refers to oled.o(i.LCD_WrCmd) for LCD_WrCmd
+    oled.o(i.LCD_CLS) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.LCD_Fill) refers to oled.o(i.LCD_WrCmd) for LCD_WrCmd
+    oled.o(i.LCD_Fill) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.LCD_P6x8Str) refers to oled.o(i.LCD_Set_Pos) for LCD_Set_Pos
+    oled.o(i.LCD_P6x8Str) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.LCD_P6x8Str) refers to oled.o(.constdata) for .constdata
+    oled.o(i.LCD_P8x16Str) refers to oled.o(i.LCD_Set_Pos) for LCD_Set_Pos
+    oled.o(i.LCD_P8x16Str) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.LCD_P8x16Str) refers to oled.o(.constdata) for .constdata
+    oled.o(i.LCD_Set_Pos) refers to oled.o(i.LCD_WrCmd) for LCD_WrCmd
+    oled.o(i.LCD_WrCmd) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    oled.o(i.LCD_WrCmd) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    oled.o(i.LCD_WrDat) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    oled.o(i.LCD_WrDat) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    oled.o(i.PutGB1616) refers to oled.o(i.LCD_Set_Pos) for LCD_Set_Pos
+    oled.o(i.PutGB1616) refers to oled.o(i.LCD_WrDat) for LCD_WrDat
+    oled.o(i.PutGB1616) refers to oled.o(.constdata) for .constdata
+    oled.o(i.iospi_ioconfig) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    oled.o(i.iospi_ioconfig) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    oled.o(i.iospi_ioconfig) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    oled.o(i.oled_init) refers to oled.o(i.iospi_ioconfig) for iospi_ioconfig
+    oled.o(i.oled_init) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    oled.o(i.oled_init) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    oled.o(i.oled_init) refers to syd8801_delay.o(i.delay_ms) for delay_ms
+    oled.o(i.oled_init) refers to oled.o(i.LCD_WrCmd) for LCD_WrCmd
+    oled.o(i.oled_init) refers to oled.o(i.LCD_Fill) for LCD_Fill
+    oled.o(i.oled_init) refers to oled.o(i.LCD_Set_Pos) for LCD_Set_Pos
+    oled.o(i.oled_printf) refers to printfa.o(i.__0vsprintf) for __c89vsprintf
+    oled.o(i.oled_printf) refers to oled.o(i.LCD_P8x16Str) for LCD_P8x16Str
+    oled.o(i.oled_printf) refers to oled.o(.bss) for .bss
+    lis3dh.o(i.lis3dh_get_accelerometer_data) refers to lis3dh.o(i.lis3dh_read_reg) for lis3dh_read_reg
+    lis3dh.o(i.lis3dh_init) refers to syd8801_iospi.o(i.spi_gpio_init) for spi_gpio_init
+    lis3dh.o(i.lis3dh_init) refers to lis3dh.o(i.lis3dh_write_reg) for lis3dh_write_reg
+    lis3dh.o(i.lis3dh_init) refers to lis3dh.o(i.lis3dh_read_reg) for lis3dh_read_reg
+    lis3dh.o(i.lis3dh_init) refers to syd8801_debug.o(i.dbg_printf) for dbg_printf
+    lis3dh.o(i.lis3dh_init) refers to lis3dh.o(.constdata) for .constdata
+    lis3dh.o(i.lis3dh_read_reg) refers to syd8801_iospi.o(i.spi_gpio_read) for spi_gpio_read
+    lis3dh.o(i.lis3dh_stop_accelerometer) refers to lis3dh.o(i.lis3dh_write_reg) for lis3dh_write_reg
+    lis3dh.o(i.lis3dh_strat_accelerometer) refers to lis3dh.o(i.lis3dh_write_reg) for lis3dh_write_reg
+    lis3dh.o(i.lis3dh_write_reg) refers to syd8801_iospi.o(i.spi_gpio_write) for spi_gpio_write
+    syd8801_gpio.o(i.GPIO_IRQHandler) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Clear) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Read) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Set) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Turn) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Set_Input) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Set_Output) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.io_irq_disable) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.io_irq_enable) refers to syd8801_gpio.o(.data) for .data
+    syd8801_timer.o(i.TIMER0_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER0_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.TIMER1_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER1_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.TIMER2_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER2_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_0_delay_32us) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_1_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_2_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_uart.o(i.UART0_IRQHandler) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.UART1_IRQHandler) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.USART0_Write_String) refers to syd8801_uart.o(i.uart_0_write) for uart_0_write
+    syd8801_uart.o(i.USART1_Write_String) refers to syd8801_uart.o(i.uart_1_write) for uart_1_write
+    syd8801_uart.o(i.uart_0_init) refers to syd8801_gpio.o(.data) for PIN_CONFIG
+    syd8801_uart.o(i.uart_0_init) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_0_read) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_0_write) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_1_init) refers to syd8801_gpio.o(.data) for PIN_CONFIG
+    syd8801_uart.o(i.uart_1_init) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_1_read) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_1_write) refers to syd8801_uart.o(.data) for .data
+    syd8801_wdt.o(i.wdt_clear) refers to syd8801_wdt.o(.data) for .data
+    syd8801_wdt.o(i.wdt_disable) refers to syd8801_wdt.o(.data) for .data
+    syd8801_wdt.o(i.wdt_enable) refers to syd8801_wdt.o(.data) for .data
+    syd8801_pwm.o(i.pwm_disable) refers to syd8801_pwm.o(.data) for .data
+    syd8801_pwm.o(i.pwm_enable) refers to syd8801_pwm.o(.data) for .data
+    syd8801_pwm.o(i.pwm_enable) refers to syd8801_gpio.o(.data) for PIN_CONFIG
+    syd8801_debug.o(i.dbg_hexdump) refers to syd8801_debug.o(i.dbg_printf) for dbg_printf
+    syd8801_debug.o(i.dbg_init) refers to syd8801_uart.o(i.uart_0_init) for uart_0_init
+    syd8801_debug.o(i.dbg_printf) refers to printfa.o(i.__0vsprintf) for __c89vsprintf
+    syd8801_debug.o(i.dbg_printf) refers to syd8801_uart.o(i.uart_0_write) for uart_0_write
+    syd8801_debug.o(i.dbg_printf) refers to syd8801_debug.o(.bss) for .bss
+    syd8801_adc.o(i.adc_close) refers to syd8801_adc.o(.data) for .data
+    syd8801_adc.o(i.adc_init) refers to syd8801_adc.o(.data) for .data
+    syd8801_adc.o(i.adc_init) refers to syd8801_gpio.o(.data) for PIN_CONFIG
+    syd8801_adc.o(i.adc_open) refers to syd8801_adc.o(.data) for .data
+    syd8801_adc.o(i.get_adcval) refers to syd8801_adc.o(.data) for .data
+    syd8801_ioi2c.o(i.i2c_reg_read) refers to syd8801_ioi2c.o(i.start) for start
+    syd8801_ioi2c.o(i.i2c_reg_read) refers to syd8801_ioi2c.o(i.iic_sendid) for iic_sendid
+    syd8801_ioi2c.o(i.i2c_reg_read) refers to syd8801_ioi2c.o(i.iic_senddata) for iic_senddata
+    syd8801_ioi2c.o(i.i2c_reg_read) refers to syd8801_ioi2c.o(i.iic_receivedata) for iic_receivedata
+    syd8801_ioi2c.o(i.i2c_reg_read) refers to syd8801_ioi2c.o(i.stop) for stop
+    syd8801_ioi2c.o(i.i2c_reg_write) refers to syd8801_ioi2c.o(i.start) for start
+    syd8801_ioi2c.o(i.i2c_reg_write) refers to syd8801_ioi2c.o(i.iic_sendid) for iic_sendid
+    syd8801_ioi2c.o(i.i2c_reg_write) refers to syd8801_ioi2c.o(i.iic_senddata) for iic_senddata
+    syd8801_ioi2c.o(i.i2c_reg_write) refers to syd8801_ioi2c.o(i.stop) for stop
+    syd8801_ioi2c.o(i.iic_receivedata) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    syd8801_ioi2c.o(i.iic_receivedata) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_ioi2c.o(i.iic_receivedata) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_ioi2c.o(i.iic_receivedata) refers to syd8801_gpio.o(i.GPIO_Pin_Read) for GPIO_Pin_Read
+    syd8801_ioi2c.o(i.iic_receivedata) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    syd8801_ioi2c.o(i.iic_senddata) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_ioi2c.o(i.iic_senddata) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_ioi2c.o(i.iic_sendid) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_ioi2c.o(i.iic_sendid) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_ioi2c.o(i.ioi2c_ioconfig) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    syd8801_ioi2c.o(i.ioi2c_ioconfig) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_ioi2c.o(i.start) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_ioi2c.o(i.start) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_ioi2c.o(i.stop) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_ioi2c.o(i.stop) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_iospi.o(i.spi_gpio_init) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    syd8801_iospi.o(i.spi_gpio_init) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    syd8801_iospi.o(i.spi_gpio_init) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_iospi.o(i.spi_gpio_read) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_iospi.o(i.spi_gpio_read) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    syd8801_iospi.o(i.spi_gpio_read) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    syd8801_iospi.o(i.spi_gpio_read) refers to syd8801_gpio.o(i.GPIO_Pin_Read) for GPIO_Pin_Read
+    syd8801_iospi.o(i.spi_gpio_read) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    syd8801_iospi.o(i.spi_gpio_write) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    syd8801_iospi.o(i.spi_gpio_write) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    startup_armcm0.o(RESET) refers to startup_armcm0.o(STACK) for __initial_sp
+    startup_armcm0.o(RESET) refers to startup_armcm0.o(.text) for Reset_Handler
+    startup_armcm0.o(RESET) refers to syd8801_uart.o(i.UART0_IRQHandler) for UART0_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_uart.o(i.UART1_IRQHandler) for UART1_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER0_IRQHandler) for TIMER0_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER1_IRQHandler) for TIMER1_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER2_IRQHandler) for TIMER2_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_gpio.o(i.GPIO_IRQHandler) for GPIO_IRQHandler
+    startup_armcm0.o(.text) refers to system_armcm0.o(i.SystemInit) for SystemInit
+    startup_armcm0.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_armcm0.o(i.SystemCoreClockUpdate) refers to system_armcm0.o(.data) for .data
+    system_armcm0.o(i.SystemInit) refers to system_armcm0.o(.data) for .data
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    fscalb.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_armcm0.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_armcm0.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    fputc.o(i.fputc) refers (Special) to iusesemip.o(.text) for __I$use$semihosting$fputc
+    fputc.o(i.fputc) refers (Special) to semi.o(.text) for __semihosting_library_function
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing led.o(.rev16_text), (4 bytes).
+    Removing led.o(.revsh_text), (4 bytes).
+    Removing led.o(i.led_close), (8 bytes).
+    Removing led.o(i.led_config), (16 bytes).
+    Removing led.o(i.led_open), (8 bytes).
+    Removing led.o(i.led_turn), (8 bytes).
+    Removing key.o(.rev16_text), (4 bytes).
+    Removing key.o(.revsh_text), (4 bytes).
+    Removing key.o(i.get_key), (70 bytes).
+    Removing key.o(i.key_config), (12 bytes).
+    Removing key.o(i.keylong_config), (28 bytes).
+    Removing key.o(i.timer0_callback), (112 bytes).
+    Removing key.o(.data), (8 bytes).
+    Removing oled.o(.rev16_text), (4 bytes).
+    Removing oled.o(.revsh_text), (4 bytes).
+    Removing oled.o(i.Draw_BMP), (56 bytes).
+    Removing oled.o(i.LCD_CLS), (52 bytes).
+    Removing oled.o(i.LCD_Fill), (54 bytes).
+    Removing oled.o(i.LCD_P6x8Str), (80 bytes).
+    Removing oled.o(i.LCD_P8x16Str), (116 bytes).
+    Removing oled.o(i.LCD_Set_Pos), (34 bytes).
+    Removing oled.o(i.LCD_WrCmd), (62 bytes).
+    Removing oled.o(i.LCD_WrDat), (62 bytes).
+    Removing oled.o(i.PutGB1616), (128 bytes).
+    Removing oled.o(i.iospi_ioconfig), (28 bytes).
+    Removing oled.o(i.oled_init), (220 bytes).
+    Removing oled.o(i.oled_printf), (56 bytes).
+    Removing oled.o(.bss), (128 bytes).
+    Removing oled.o(.constdata), (2457 bytes).
+    Removing lis3dh.o(.rev16_text), (4 bytes).
+    Removing lis3dh.o(.revsh_text), (4 bytes).
+    Removing lis3dh.o(i.lis3dh_stop_accelerometer), (12 bytes).
+    Removing syd8801_gpio.o(.rev16_text), (4 bytes).
+    Removing syd8801_gpio.o(.revsh_text), (4 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Pin_Turn), (16 bytes).
+    Removing syd8801_gpio.o(i.io_irq_disable), (32 bytes).
+    Removing syd8801_gpio.o(i.io_irq_enable), (120 bytes).
+    Removing syd8801_delay.o(.rev16_text), (4 bytes).
+    Removing syd8801_delay.o(.revsh_text), (4 bytes).
+    Removing syd8801_delay.o(i.delay_us), (24 bytes).
+    Removing syd8801_timer.o(.rev16_text), (4 bytes).
+    Removing syd8801_timer.o(.revsh_text), (4 bytes).
+    Removing syd8801_timer.o(i.timer_0_delay_32us), (68 bytes).
+    Removing syd8801_timer.o(i.timer_0_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_0_enable), (88 bytes).
+    Removing syd8801_timer.o(i.timer_1_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_1_enable), (88 bytes).
+    Removing syd8801_timer.o(i.timer_2_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_2_enable), (88 bytes).
+    Removing syd8801_uart.o(.rev16_text), (4 bytes).
+    Removing syd8801_uart.o(.revsh_text), (4 bytes).
+    Removing syd8801_uart.o(i.USART0_Write_String), (24 bytes).
+    Removing syd8801_uart.o(i.USART1_Write_String), (24 bytes).
+    Removing syd8801_uart.o(i.uart_0_close), (12 bytes).
+    Removing syd8801_uart.o(i.uart_0_read), (12 bytes).
+    Removing syd8801_uart.o(i.uart_1_close), (12 bytes).
+    Removing syd8801_uart.o(i.uart_1_init), (76 bytes).
+    Removing syd8801_uart.o(i.uart_1_read), (12 bytes).
+    Removing syd8801_uart.o(i.uart_1_write), (28 bytes).
+    Removing syd8801_wdt.o(.rev16_text), (4 bytes).
+    Removing syd8801_wdt.o(.revsh_text), (4 bytes).
+    Removing syd8801_wdt.o(i.wdt_clear), (20 bytes).
+    Removing syd8801_wdt.o(i.wdt_disable), (20 bytes).
+    Removing syd8801_wdt.o(i.wdt_enable), (24 bytes).
+    Removing syd8801_wdt.o(.data), (4 bytes).
+    Removing syd8801_pwm.o(.rev16_text), (4 bytes).
+    Removing syd8801_pwm.o(.revsh_text), (4 bytes).
+    Removing syd8801_pwm.o(i.pwm_disable), (40 bytes).
+    Removing syd8801_pwm.o(i.pwm_enable), (312 bytes).
+    Removing syd8801_pwm.o(.data), (12 bytes).
+    Removing syd8801_debug.o(.rev16_text), (4 bytes).
+    Removing syd8801_debug.o(.revsh_text), (4 bytes).
+    Removing syd8801_debug.o(i.dbg_hexdump), (92 bytes).
+    Removing syd8801_adc.o(.rev16_text), (4 bytes).
+    Removing syd8801_adc.o(.revsh_text), (4 bytes).
+    Removing syd8801_adc.o(i.adc_close), (28 bytes).
+    Removing syd8801_adc.o(i.adc_init), (68 bytes).
+    Removing syd8801_adc.o(i.adc_open), (28 bytes).
+    Removing syd8801_adc.o(i.get_adcval), (60 bytes).
+    Removing syd8801_adc.o(.data), (4 bytes).
+    Removing syd8801_ioi2c.o(.rev16_text), (4 bytes).
+    Removing syd8801_ioi2c.o(.revsh_text), (4 bytes).
+    Removing syd8801_ioi2c.o(i.i2c_reg_read), (82 bytes).
+    Removing syd8801_ioi2c.o(i.i2c_reg_write), (70 bytes).
+    Removing syd8801_ioi2c.o(i.iic_receivedata), (90 bytes).
+    Removing syd8801_ioi2c.o(i.iic_senddata), (82 bytes).
+    Removing syd8801_ioi2c.o(i.iic_sendid), (112 bytes).
+    Removing syd8801_ioi2c.o(i.ioi2c_ioconfig), (28 bytes).
+    Removing syd8801_ioi2c.o(i.start), (34 bytes).
+    Removing syd8801_ioi2c.o(i.stop), (34 bytes).
+    Removing syd8801_iospi.o(.rev16_text), (4 bytes).
+    Removing syd8801_iospi.o(.revsh_text), (4 bytes).
+    Removing startup_armcm0.o(HEAP), (3072 bytes).
+    Removing system_armcm0.o(.rev16_text), (4 bytes).
+    Removing system_armcm0.o(.revsh_text), (4 bytes).
+    Removing system_armcm0.o(i.SystemCoreClockUpdate), (16 bytes).
+
+98 unused section(s) (total 9095 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
+    ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  fflti.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpscalb.c              0x00000000   Number         0  fscalb.o ABSOLUTE
+    Driver\\syd8801_adc.c                    0x00000000   Number         0  syd8801_adc.o ABSOLUTE
+    Driver\\syd8801_debug.c                  0x00000000   Number         0  syd8801_debug.o ABSOLUTE
+    Driver\\syd8801_delay.c                  0x00000000   Number         0  syd8801_delay.o ABSOLUTE
+    Driver\\syd8801_gpio.c                   0x00000000   Number         0  syd8801_gpio.o ABSOLUTE
+    Driver\\syd8801_ioi2c.c                  0x00000000   Number         0  syd8801_ioi2c.o ABSOLUTE
+    Driver\\syd8801_iospi.c                  0x00000000   Number         0  syd8801_iospi.o ABSOLUTE
+    Driver\\syd8801_pwm.c                    0x00000000   Number         0  syd8801_pwm.o ABSOLUTE
+    Driver\\syd8801_timer.c                  0x00000000   Number         0  syd8801_timer.o ABSOLUTE
+    Driver\\syd8801_uart.c                   0x00000000   Number         0  syd8801_uart.o ABSOLUTE
+    Driver\\syd8801_wdt.c                    0x00000000   Number         0  syd8801_wdt.o ABSOLUTE
+    Driver\syd8801_adc.c                     0x00000000   Number         0  syd8801_adc.o ABSOLUTE
+    Driver\syd8801_debug.c                   0x00000000   Number         0  syd8801_debug.o ABSOLUTE
+    Driver\syd8801_delay.c                   0x00000000   Number         0  syd8801_delay.o ABSOLUTE
+    Driver\syd8801_gpio.c                    0x00000000   Number         0  syd8801_gpio.o ABSOLUTE
+    Driver\syd8801_ioi2c.c                   0x00000000   Number         0  syd8801_ioi2c.o ABSOLUTE
+    Driver\syd8801_iospi.c                   0x00000000   Number         0  syd8801_iospi.o ABSOLUTE
+    Driver\syd8801_pwm.c                     0x00000000   Number         0  syd8801_pwm.o ABSOLUTE
+    Driver\syd8801_timer.c                   0x00000000   Number         0  syd8801_timer.o ABSOLUTE
+    Driver\syd8801_uart.c                    0x00000000   Number         0  syd8801_uart.o ABSOLUTE
+    Driver\syd8801_wdt.c                     0x00000000   Number         0  syd8801_wdt.o ABSOLUTE
+    Main\\key.c                              0x00000000   Number         0  key.o ABSOLUTE
+    Main\\led.c                              0x00000000   Number         0  led.o ABSOLUTE
+    Main\\lis3dh.c                           0x00000000   Number         0  lis3dh.o ABSOLUTE
+    Main\\main.c                             0x00000000   Number         0  main.o ABSOLUTE
+    Main\\oled.c                             0x00000000   Number         0  oled.o ABSOLUTE
+    Main\key.c                               0x00000000   Number         0  key.o ABSOLUTE
+    Main\led.c                               0x00000000   Number         0  led.o ABSOLUTE
+    Main\lis3dh.c                            0x00000000   Number         0  lis3dh.o ABSOLUTE
+    Main\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    Main\oled.c                              0x00000000   Number         0  oled.o ABSOLUTE
+    RTE\Device\ARMCM0\startup_ARMCM0.s       0x00000000   Number         0  startup_armcm0.o ABSOLUTE
+    RTE\Device\ARMCM0\system_ARMCM0.c        0x00000000   Number         0  system_armcm0.o ABSOLUTE
+    RTE\\Device\\ARMCM0\\system_ARMCM0.c     0x00000000   Number         0  system_armcm0.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x00006000   Section      192  startup_armcm0.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000060c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000060c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000060c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000060c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000060c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000060c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000060d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000060d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000060d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000060d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000060d4   Section       28  startup_armcm0.o(.text)
+    .text                                    0x000060f0   Section        0  fmul.o(.text)
+    .text                                    0x0000616a   Section        0  fdiv.o(.text)
+    .text                                    0x000061e6   Section        0  fscalb.o(.text)
+    .text                                    0x000061fe   Section        0  fflti.o(.text)
+    .text                                    0x00006214   Section        0  f2d.o(.text)
+    .text                                    0x0000623c   Section        0  uidiv.o(.text)
+    .text                                    0x00006268   Section        0  uldiv.o(.text)
+    .text                                    0x000062c8   Section        0  fepilogue.o(.text)
+    .text                                    0x000062c8   Section        0  iusefp.o(.text)
+    .text                                    0x0000634c   Section        0  dadd.o(.text)
+    .text                                    0x000064b0   Section        0  dmul.o(.text)
+    .text                                    0x00006580   Section        0  ddiv.o(.text)
+    .text                                    0x00006670   Section        0  dfixul.o(.text)
+    .text                                    0x000066b0   Section       40  cdrcmple.o(.text)
+    .text                                    0x000066d8   Section       36  init.o(.text)
+    .text                                    0x000066fc   Section        0  llshl.o(.text)
+    .text                                    0x0000671c   Section        0  llushr.o(.text)
+    .text                                    0x0000673e   Section        0  llsshr.o(.text)
+    .text                                    0x00006764   Section        0  depilogue.o(.text)
+    i.GPIO_IRQHandler                        0x00006824   Section        0  syd8801_gpio.o(i.GPIO_IRQHandler)
+    i.GPIO_Pin_Clear                         0x0000689c   Section        0  syd8801_gpio.o(i.GPIO_Pin_Clear)
+    i.GPIO_Pin_Read                          0x000068d0   Section        0  syd8801_gpio.o(i.GPIO_Pin_Read)
+    i.GPIO_Pin_Set                           0x000068fc   Section        0  syd8801_gpio.o(i.GPIO_Pin_Set)
+    i.GPIO_Set_Input                         0x00006930   Section        0  syd8801_gpio.o(i.GPIO_Set_Input)
+    i.GPIO_Set_Output                        0x00006a3c   Section        0  syd8801_gpio.o(i.GPIO_Set_Output)
+    i.SystemInit                             0x00006af0   Section        0  system_armcm0.o(i.SystemInit)
+    i.TIMER0_IRQHandler                      0x00006b00   Section        0  syd8801_timer.o(i.TIMER0_IRQHandler)
+    i.TIMER1_IRQHandler                      0x00006b28   Section        0  syd8801_timer.o(i.TIMER1_IRQHandler)
+    i.TIMER2_IRQHandler                      0x00006b50   Section        0  syd8801_timer.o(i.TIMER2_IRQHandler)
+    i.UART0_IRQHandler                       0x00006b78   Section        0  syd8801_uart.o(i.UART0_IRQHandler)
+    i.UART1_IRQHandler                       0x00006ba4   Section        0  syd8801_uart.o(i.UART1_IRQHandler)
+    i.__0vsprintf                            0x00006bd0   Section        0  printfa.o(i.__0vsprintf)
+    i.__ARM_clz                              0x00006bf4   Section        0  depilogue.o(i.__ARM_clz)
+    i.__scatterload_copy                     0x00006c22   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00006c30   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00006c32   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._fp_digits                             0x00006c40   Section        0  printfa.o(i._fp_digits)
+    _fp_digits                               0x00006c41   Thumb Code   316  printfa.o(i._fp_digits)
+    i._printf_core                           0x00006d98   Section        0  printfa.o(i._printf_core)
+    _printf_core                             0x00006d99   Thumb Code  1754  printfa.o(i._printf_core)
+    i._printf_post_padding                   0x00007484   Section        0  printfa.o(i._printf_post_padding)
+    _printf_post_padding                     0x00007485   Thumb Code    32  printfa.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x000074a4   Section        0  printfa.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x000074a5   Thumb Code    44  printfa.o(i._printf_pre_padding)
+    i._sputc                                 0x000074d0   Section        0  printfa.o(i._sputc)
+    _sputc                                   0x000074d1   Thumb Code    10  printfa.o(i._sputc)
+    i.dbg_init                               0x000074da   Section        0  syd8801_debug.o(i.dbg_init)
+    i.dbg_printf                             0x000074e8   Section        0  syd8801_debug.o(i.dbg_printf)
+    i.delay_ms                               0x00007524   Section        0  syd8801_delay.o(i.delay_ms)
+    i.lis3dh_get_accelerometer_data          0x00007544   Section        0  lis3dh.o(i.lis3dh_get_accelerometer_data)
+    i.lis3dh_init                            0x000075a4   Section        0  lis3dh.o(i.lis3dh_init)
+    i.lis3dh_read_reg                        0x00007618   Section        0  lis3dh.o(i.lis3dh_read_reg)
+    i.lis3dh_strat_accelerometer             0x00007620   Section        0  lis3dh.o(i.lis3dh_strat_accelerometer)
+    i.lis3dh_write_reg                       0x0000762c   Section        0  lis3dh.o(i.lis3dh_write_reg)
+    i.main                                   0x00007634   Section        0  main.o(i.main)
+    i.spi_gpio_init                          0x00007750   Section        0  syd8801_iospi.o(i.spi_gpio_init)
+    i.spi_gpio_read                          0x0000776c   Section        0  syd8801_iospi.o(i.spi_gpio_read)
+    i.spi_gpio_write                         0x00007834   Section        0  syd8801_iospi.o(i.spi_gpio_write)
+    i.uart_0_init                            0x000078e4   Section        0  syd8801_uart.o(i.uart_0_init)
+    i.uart_0_write                           0x0000793c   Section        0  syd8801_uart.o(i.uart_0_write)
+    .constdata                               0x00007958   Section       22  lis3dh.o(.constdata)
+    .data                                    0x20001000   Section       20  syd8801_gpio.o(.data)
+    gpio_callback                            0x20001010   Data           4  syd8801_gpio.o(.data)
+    .data                                    0x20001014   Section        4  syd8801_timer.o(.data)
+    .data                                    0x20001018   Section       16  syd8801_uart.o(.data)
+    uartrx_callback                          0x20001020   Data           8  syd8801_uart.o(.data)
+    .data                                    0x20001028   Section        4  system_armcm0.o(.data)
+    .bss                                     0x2000102c   Section       12  syd8801_timer.o(.bss)
+    timer0_callback                          0x2000102c   Data          12  syd8801_timer.o(.bss)
+    .bss                                     0x20001038   Section      128  syd8801_debug.o(.bss)
+    s_formatBuffer                           0x20001038   Data         128  syd8801_debug.o(.bss)
+    STACK                                    0x200010b8   Section     1024  startup_armcm0.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_armcm0.o ABSOLUTE
+    __Vectors                                0x00006000   Data           4  startup_armcm0.o(RESET)
+    __Vectors_End                            0x000060c0   Data           0  startup_armcm0.o(RESET)
+    __main                                   0x000060c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000060c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000060c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000060c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000060c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000060c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000060c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000060d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000060d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000060d5   Thumb Code     8  startup_armcm0.o(.text)
+    NMI_Handler                              0x000060dd   Thumb Code     2  startup_armcm0.o(.text)
+    HardFault_Handler                        0x000060df   Thumb Code     2  startup_armcm0.o(.text)
+    SVC_Handler                              0x000060e1   Thumb Code     2  startup_armcm0.o(.text)
+    PendSV_Handler                           0x000060e3   Thumb Code     2  startup_armcm0.o(.text)
+    SysTick_Handler                          0x000060e5   Thumb Code     2  startup_armcm0.o(.text)
+    I2C0_IRQHandler                          0x000060e7   Thumb Code     0  startup_armcm0.o(.text)
+    I2C1_IRQHandler                          0x000060e7   Thumb Code     0  startup_armcm0.o(.text)
+    LLC_IRQHandler                           0x000060e7   Thumb Code     0  startup_armcm0.o(.text)
+    TIMER3_IRQHandler                        0x000060e7   Thumb Code     0  startup_armcm0.o(.text)
+    __aeabi_fmul                             0x000060f1   Thumb Code   122  fmul.o(.text)
+    __aeabi_fdiv                             0x0000616b   Thumb Code   124  fdiv.o(.text)
+    __ARM_scalbnf                            0x000061e7   Thumb Code    24  fscalb.o(.text)
+    scalbnf                                  0x000061e7   Thumb Code     0  fscalb.o(.text)
+    __aeabi_i2f                              0x000061ff   Thumb Code    22  fflti.o(.text)
+    __aeabi_f2d                              0x00006215   Thumb Code    40  f2d.o(.text)
+    __aeabi_uidiv                            0x0000623d   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x0000623d   Thumb Code    44  uidiv.o(.text)
+    __aeabi_uldivmod                         0x00006269   Thumb Code    96  uldiv.o(.text)
+    __I$use$fp                               0x000062c9   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x000062c9   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x000062d9   Thumb Code   114  fepilogue.o(.text)
+    __aeabi_dadd                             0x0000634d   Thumb Code   328  dadd.o(.text)
+    __aeabi_dsub                             0x00006495   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x000064a1   Thumb Code    12  dadd.o(.text)
+    __aeabi_dmul                             0x000064b1   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x00006581   Thumb Code   234  ddiv.o(.text)
+    __aeabi_d2ulz                            0x00006671   Thumb Code    54  dfixul.o(.text)
+    __aeabi_cdrcmple                         0x000066b1   Thumb Code    38  cdrcmple.o(.text)
+    __scatterload                            0x000066d9   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000066d9   Thumb Code     0  init.o(.text)
+    __aeabi_llsl                             0x000066fd   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x000066fd   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x0000671d   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x0000671d   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x0000673f   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x0000673f   Thumb Code     0  llsshr.o(.text)
+    _double_round                            0x00006765   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x0000677f   Thumb Code   164  depilogue.o(.text)
+    GPIO_IRQHandler                          0x00006825   Thumb Code   114  syd8801_gpio.o(i.GPIO_IRQHandler)
+    GPIO_Pin_Clear                           0x0000689d   Thumb Code    46  syd8801_gpio.o(i.GPIO_Pin_Clear)
+    GPIO_Pin_Read                            0x000068d1   Thumb Code    40  syd8801_gpio.o(i.GPIO_Pin_Read)
+    GPIO_Pin_Set                             0x000068fd   Thumb Code    46  syd8801_gpio.o(i.GPIO_Pin_Set)
+    GPIO_Set_Input                           0x00006931   Thumb Code   262  syd8801_gpio.o(i.GPIO_Set_Input)
+    GPIO_Set_Output                          0x00006a3d   Thumb Code   174  syd8801_gpio.o(i.GPIO_Set_Output)
+    SystemInit                               0x00006af1   Thumb Code     8  system_armcm0.o(i.SystemInit)
+    TIMER0_IRQHandler                        0x00006b01   Thumb Code    30  syd8801_timer.o(i.TIMER0_IRQHandler)
+    TIMER1_IRQHandler                        0x00006b29   Thumb Code    30  syd8801_timer.o(i.TIMER1_IRQHandler)
+    TIMER2_IRQHandler                        0x00006b51   Thumb Code    30  syd8801_timer.o(i.TIMER2_IRQHandler)
+    UART0_IRQHandler                         0x00006b79   Thumb Code    38  syd8801_uart.o(i.UART0_IRQHandler)
+    UART1_IRQHandler                         0x00006ba5   Thumb Code    38  syd8801_uart.o(i.UART1_IRQHandler)
+    __0vsprintf                              0x00006bd1   Thumb Code    30  printfa.o(i.__0vsprintf)
+    __1vsprintf                              0x00006bd1   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __2vsprintf                              0x00006bd1   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __c89vsprintf                            0x00006bd1   Thumb Code     0  printfa.o(i.__0vsprintf)
+    vsprintf                                 0x00006bd1   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __ARM_clz                                0x00006bf5   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __scatterload_copy                       0x00006c23   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00006c31   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00006c33   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    dbg_init                                 0x000074db   Thumb Code    14  syd8801_debug.o(i.dbg_init)
+    dbg_printf                               0x000074e9   Thumb Code    54  syd8801_debug.o(i.dbg_printf)
+    delay_ms                                 0x00007525   Thumb Code    26  syd8801_delay.o(i.delay_ms)
+    lis3dh_get_accelerometer_data            0x00007545   Thumb Code    94  lis3dh.o(i.lis3dh_get_accelerometer_data)
+    lis3dh_init                              0x000075a5   Thumb Code    56  lis3dh.o(i.lis3dh_init)
+    lis3dh_read_reg                          0x00007619   Thumb Code     8  lis3dh.o(i.lis3dh_read_reg)
+    lis3dh_strat_accelerometer               0x00007621   Thumb Code    12  lis3dh.o(i.lis3dh_strat_accelerometer)
+    lis3dh_write_reg                         0x0000762d   Thumb Code     8  lis3dh.o(i.lis3dh_write_reg)
+    main                                     0x00007635   Thumb Code   192  main.o(i.main)
+    spi_gpio_init                            0x00007751   Thumb Code    28  syd8801_iospi.o(i.spi_gpio_init)
+    spi_gpio_read                            0x0000776d   Thumb Code   194  syd8801_iospi.o(i.spi_gpio_read)
+    spi_gpio_write                           0x00007835   Thumb Code   170  syd8801_iospi.o(i.spi_gpio_write)
+    uart_0_init                              0x000078e5   Thumb Code    76  syd8801_uart.o(i.uart_0_init)
+    uart_0_write                             0x0000793d   Thumb Code    22  syd8801_uart.o(i.uart_0_write)
+    lis3dh_init_data                         0x00007958   Data          22  lis3dh.o(.constdata)
+    Region$$Table$$Base                      0x00007970   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00007990   Number         0  anon$$obj.o(Region$$Table)
+    PIN_CONFIG                               0x20001000   Data           4  syd8801_gpio.o(.data)
+    GPO_CTRL                                 0x20001004   Data           4  syd8801_gpio.o(.data)
+    GPI_CTRL                                 0x20001008   Data           4  syd8801_gpio.o(.data)
+    GPIO_IRQ_CTRL                            0x2000100c   Data           4  syd8801_gpio.o(.data)
+    TIMER_CTRL                               0x20001014   Data           4  syd8801_timer.o(.data)
+    UART_0_CTRL                              0x20001018   Data           4  syd8801_uart.o(.data)
+    UART_1_CTRL                              0x2000101c   Data           4  syd8801_uart.o(.data)
+    SystemCoreClock                          0x20001028   Data           4  system_armcm0.o(.data)
+    __initial_sp                             0x200014b8   Data           0  startup_armcm0.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000060c1
+
+  Load Region LR_IROM1 (Base: 0x00006000, Size: 0x000019bc, Max: 0x00008000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00006000, Size: 0x00001990, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00006000   0x000000c0   Data   RO          842    RESET               startup_armcm0.o
+    0x000060c0   0x00000000   Code   RO          879  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000060c0   0x00000004   Code   RO          920    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000060c4   0x00000004   Code   RO          923    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000060c8   0x00000000   Code   RO          925    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000060c8   0x00000000   Code   RO          927    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000060c8   0x00000008   Code   RO          928    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000060d0   0x00000000   Code   RO          930    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000060d0   0x00000000   Code   RO          932    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000060d0   0x00000004   Code   RO          921    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000060d4   0x0000001c   Code   RO          843    .text               startup_armcm0.o
+    0x000060f0   0x0000007a   Code   RO          910    .text               mf_p.l(fmul.o)
+    0x0000616a   0x0000007c   Code   RO          912    .text               mf_p.l(fdiv.o)
+    0x000061e6   0x00000018   Code   RO          914    .text               mf_p.l(fscalb.o)
+    0x000061fe   0x00000016   Code   RO          916    .text               mf_p.l(fflti.o)
+    0x00006214   0x00000028   Code   RO          918    .text               mf_p.l(f2d.o)
+    0x0000623c   0x0000002c   Code   RO          937    .text               mc_p.l(uidiv.o)
+    0x00006268   0x00000060   Code   RO          939    .text               mc_p.l(uldiv.o)
+    0x000062c8   0x00000000   Code   RO          941    .text               mc_p.l(iusefp.o)
+    0x000062c8   0x00000082   Code   RO          942    .text               mf_p.l(fepilogue.o)
+    0x0000634a   0x00000002   PAD
+    0x0000634c   0x00000164   Code   RO          944    .text               mf_p.l(dadd.o)
+    0x000064b0   0x000000d0   Code   RO          946    .text               mf_p.l(dmul.o)
+    0x00006580   0x000000f0   Code   RO          948    .text               mf_p.l(ddiv.o)
+    0x00006670   0x00000040   Code   RO          950    .text               mf_p.l(dfixul.o)
+    0x000066b0   0x00000028   Code   RO          952    .text               mf_p.l(cdrcmple.o)
+    0x000066d8   0x00000024   Code   RO          954    .text               mc_p.l(init.o)
+    0x000066fc   0x00000020   Code   RO          957    .text               mc_p.l(llshl.o)
+    0x0000671c   0x00000022   Code   RO          959    .text               mc_p.l(llushr.o)
+    0x0000673e   0x00000026   Code   RO          961    .text               mc_p.l(llsshr.o)
+    0x00006764   0x000000be   Code   RO          964    .text               mf_p.l(depilogue.o)
+    0x00006822   0x00000002   PAD
+    0x00006824   0x00000078   Code   RO          325    i.GPIO_IRQHandler   syd8801_gpio.o
+    0x0000689c   0x00000034   Code   RO          326    i.GPIO_Pin_Clear    syd8801_gpio.o
+    0x000068d0   0x0000002c   Code   RO          327    i.GPIO_Pin_Read     syd8801_gpio.o
+    0x000068fc   0x00000034   Code   RO          328    i.GPIO_Pin_Set      syd8801_gpio.o
+    0x00006930   0x0000010c   Code   RO          330    i.GPIO_Set_Input    syd8801_gpio.o
+    0x00006a3c   0x000000b4   Code   RO          331    i.GPIO_Set_Output   syd8801_gpio.o
+    0x00006af0   0x00000010   Code   RO          850    i.SystemInit        system_armcm0.o
+    0x00006b00   0x00000028   Code   RO          428    i.TIMER0_IRQHandler  syd8801_timer.o
+    0x00006b28   0x00000028   Code   RO          429    i.TIMER1_IRQHandler  syd8801_timer.o
+    0x00006b50   0x00000028   Code   RO          430    i.TIMER2_IRQHandler  syd8801_timer.o
+    0x00006b78   0x0000002c   Code   RO          509    i.UART0_IRQHandler  syd8801_uart.o
+    0x00006ba4   0x0000002c   Code   RO          510    i.UART1_IRQHandler  syd8801_uart.o
+    0x00006bd0   0x00000024   Code   RO          889    i.__0vsprintf       mc_p.l(printfa.o)
+    0x00006bf4   0x0000002e   Code   RO          966    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x00006c22   0x0000000e   Code   RO          970    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00006c30   0x00000002   Code   RO          971    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00006c32   0x0000000e   Code   RO          972    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00006c40   0x00000158   Code   RO          890    i._fp_digits        mc_p.l(printfa.o)
+    0x00006d98   0x000006ec   Code   RO          891    i._printf_core      mc_p.l(printfa.o)
+    0x00007484   0x00000020   Code   RO          892    i._printf_post_padding  mc_p.l(printfa.o)
+    0x000074a4   0x0000002c   Code   RO          893    i._printf_pre_padding  mc_p.l(printfa.o)
+    0x000074d0   0x0000000a   Code   RO          895    i._sputc            mc_p.l(printfa.o)
+    0x000074da   0x0000000e   Code   RO          672    i.dbg_init          syd8801_debug.o
+    0x000074e8   0x0000003c   Code   RO          673    i.dbg_printf        syd8801_debug.o
+    0x00007524   0x00000020   Code   RO          402    i.delay_ms          syd8801_delay.o
+    0x00007544   0x0000005e   Code   RO          270    i.lis3dh_get_accelerometer_data  lis3dh.o
+    0x000075a2   0x00000002   PAD
+    0x000075a4   0x00000074   Code   RO          271    i.lis3dh_init       lis3dh.o
+    0x00007618   0x00000008   Code   RO          272    i.lis3dh_read_reg   lis3dh.o
+    0x00007620   0x0000000c   Code   RO          274    i.lis3dh_strat_accelerometer  lis3dh.o
+    0x0000762c   0x00000008   Code   RO          275    i.lis3dh_write_reg  lis3dh.o
+    0x00007634   0x0000011c   Code   RO            3    i.main              main.o
+    0x00007750   0x0000001c   Code   RO          810    i.spi_gpio_init     syd8801_iospi.o
+    0x0000776c   0x000000c8   Code   RO          811    i.spi_gpio_read     syd8801_iospi.o
+    0x00007834   0x000000b0   Code   RO          812    i.spi_gpio_write    syd8801_iospi.o
+    0x000078e4   0x00000058   Code   RO          514    i.uart_0_init       syd8801_uart.o
+    0x0000793c   0x0000001c   Code   RO          516    i.uart_0_write      syd8801_uart.o
+    0x00007958   0x00000016   Data   RO          276    .constdata          lis3dh.o
+    0x0000796e   0x00000002   PAD
+    0x00007970   0x00000020   Data   RO          968    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20001000, Size: 0x000004b8, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20001000   0x00000014   Data   RW          334    .data               syd8801_gpio.o
+    0x20001014   0x00000004   Data   RW          439    .data               syd8801_timer.o
+    0x20001018   0x00000010   Data   RW          521    .data               syd8801_uart.o
+    0x20001028   0x00000004   Data   RW          851    .data               system_armcm0.o
+    0x2000102c   0x0000000c   Zero   RW          438    .bss                syd8801_timer.o
+    0x20001038   0x00000080   Zero   RW          674    .bss                syd8801_debug.o
+    0x200010b8   0x00000400   Zero   RW          840    STACK               startup_armcm0.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       238         60         22          0          0       3113   lis3dh.o
+       284         92          0          0          0      14339   main.o
+         0          0          0          0          0        556   oled.o
+        28          8        192          0       1024        608   startup_armcm0.o
+        74          6          0          0        128       1672   syd8801_debug.o
+        32          6          0          0          0        535   syd8801_delay.o
+       716         34          0         20          0      10062   syd8801_gpio.o
+       404         12          0          0          0       2285   syd8801_iospi.o
+       120         30          0          4         12       1837   syd8801_timer.o
+       204         30          0         16          0       2597   syd8801_uart.o
+        16          8          0          4          0        647   system_armcm0.o
+
+    ----------------------------------------------------------------------
+      2118        286        248         44       1164      38251   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         2          0          2          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        38          0          0          0          0         68   llsshr.o
+        34          0          0          0          0         68   llushr.o
+      2238         96          0          0          0        460   printfa.o
+        44          0          0          0          0         72   uidiv.o
+        96          0          0          0          0         84   uldiv.o
+        40          2          0          0          0         68   cdrcmple.o
+       356          4          0          0          0        140   dadd.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        64         10          0          0          0         68   dfixul.o
+       208          6          0          0          0         88   dmul.o
+        40          0          0          0          0         60   f2d.o
+       124          0          0          0          0         72   fdiv.o
+       130          0          0          0          0        144   fepilogue.o
+        22          0          0          0          0         68   fflti.o
+       122          0          0          0          0         72   fmul.o
+        24          0          0          0          0         60   fscalb.o
+
+    ----------------------------------------------------------------------
+      4178        140          0          0          0       2028   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      2568        112          0          0          0        888   mc_p.l
+      1606         28          0          0          0       1140   mf_p.l
+
+    ----------------------------------------------------------------------
+      4178        140          0          0          0       2028   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6296        426        248         44       1164      38311   Grand Totals
+      6296        426        248         44       1164      38311   ELF Image Totals
+      6296        426        248         44          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6544 (   6.39kB)
+    Total RW  Size (RW Data + ZI Data)              1208 (   1.18kB)
+    Total ROM Size (Code + RO Data + RW Data)       6588 (   6.43kB)
+
+==============================================================================
+

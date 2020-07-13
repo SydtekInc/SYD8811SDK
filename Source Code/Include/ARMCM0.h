@@ -76,7 +76,9 @@ typedef enum IRQn
   #warning Not supported compiler type
 #endif
 
+#ifndef bool
 typedef enum {false = 0, true = !false} bool;
+#endif
 
 
 typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
