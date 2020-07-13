@@ -189,5 +189,6 @@ Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
 7.更新协议栈lib文件，syd8811_ble_lib20200408 145619.lib  
 8.增加工程：Source Code\SYD8811_peripheral_misc\SYD8811_BLE_AES,注意这个工程只有在syd8811_ble_lib20200410 075415.lib之后的lib才有用    
 9.SYD8811SKD新增Freertos DEMO以及相关文件    
-10.增加三线SPI也就是SPI0的工程："Source Code\SYD8811_peripheral_misc\SYD8811 LIS3DH Gsensor_3iospi"    
+10.增加用IO模拟的三线SPI："Source Code\SYD8811_peripheral_misc\SYD8811 LIS3DH Gsensor_3iospi"    
+11.增加硬件三线SPI也就是SPI0的工程："Source Code\SYD8811_peripheral_misc\ThreeTwo-wire SPI"    
 <br/><br/><br/>

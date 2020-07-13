@@ -1,0 +1,6 @@
+-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include
+-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
+-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d --feedback ".\Output\Vendor_Services.fed" "Driver\uart.c"

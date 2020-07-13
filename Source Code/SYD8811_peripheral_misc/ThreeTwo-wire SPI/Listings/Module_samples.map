@@ -1,0 +1,419 @@
+Component: ARM Compiler 5.06 update 1 (build 61) Tool: armlink [4d35a8]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.main) refers to syd8801_uart.o(i.uart_0_init) for uart_0_init
+    main.o(i.main) refers to memcpya.o(.text) for __aeabi_memcpy4
+    main.o(i.main) refers to syd8801_uart.o(i.uart_0_write) for uart_0_write
+    main.o(i.main) refers to main.o(i.uart0Rx_callback) for uart0Rx_callback
+    main.o(i.main) refers to main.o(.bss) for .bss
+    main.o(i.uart0Rx_callback) refers to syd8801_uart.o(i.uart_0_read) for uart_0_read
+    main.o(i.uart0Rx_callback) refers to main.o(.bss) for .bss
+    syd8801_gpio.o(i.GPIO_IRQHandler) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Clear) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Read) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Set) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Pin_Turn) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Set_Input) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.GPIO_Set_Output) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.io_irq_disable) refers to syd8801_gpio.o(.data) for .data
+    syd8801_gpio.o(i.io_irq_enable) refers to syd8801_gpio.o(.data) for .data
+    syd8801_timer.o(i.TIMER0_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER0_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.TIMER1_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER1_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.TIMER2_IRQHandler) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.TIMER2_IRQHandler) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_0_delay_32us) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_0_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_1_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_1_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_timer.o(i.timer_2_disable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_delay.o(i.delay_us) for delay_us
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_timer.o(.data) for .data
+    syd8801_timer.o(i.timer_2_enable) refers to syd8801_timer.o(.bss) for .bss
+    syd8801_uart.o(i.UART0_IRQHandler) refers to led.o(i.led_turn) for led_turn
+    syd8801_uart.o(i.UART0_IRQHandler) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_0_init) refers to syd8801_gpio.o(.data) for PIN_CONFIG
+    syd8801_uart.o(i.uart_0_init) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_0_read) refers to syd8801_uart.o(.data) for .data
+    syd8801_uart.o(i.uart_0_write) refers to led.o(i.led_turn) for led_turn
+    syd8801_uart.o(i.uart_0_write) refers to syd8801_uart.o(.data) for .data
+    key.o(i.get_key) refers to syd8801_gpio.o(i.GPIO_Pin_Read) for GPIO_Pin_Read
+    key.o(i.key_config) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    key.o(i.keylong_config) refers to syd8801_gpio.o(i.GPIO_Set_Input) for GPIO_Set_Input
+    key.o(i.keylong_config) refers to syd8801_timer.o(i.timer_0_enable) for timer_0_enable
+    key.o(i.keylong_config) refers to key.o(i.timer0_callback) for timer0_callback
+    key.o(i.timer0_callback) refers to key.o(i.get_key) for get_key
+    key.o(i.timer0_callback) refers to key.o(.data) for .data
+    led.o(i.led_close) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    led.o(i.led_config) refers to syd8801_gpio.o(i.GPIO_Set_Output) for GPIO_Set_Output
+    led.o(i.led_config) refers to syd8801_gpio.o(i.GPIO_Pin_Set) for GPIO_Pin_Set
+    led.o(i.led_open) refers to syd8801_gpio.o(i.GPIO_Pin_Clear) for GPIO_Pin_Clear
+    led.o(i.led_turn) refers to syd8801_gpio.o(i.GPIO_Pin_Turn) for GPIO_Pin_Turn
+    startup_armcm0.o(RESET) refers to startup_armcm0.o(STACK) for __initial_sp
+    startup_armcm0.o(RESET) refers to startup_armcm0.o(.text) for Reset_Handler
+    startup_armcm0.o(RESET) refers to syd8801_uart.o(i.UART0_IRQHandler) for UART0_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER0_IRQHandler) for TIMER0_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER1_IRQHandler) for TIMER1_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_timer.o(i.TIMER2_IRQHandler) for TIMER2_IRQHandler
+    startup_armcm0.o(RESET) refers to syd8801_gpio.o(i.GPIO_IRQHandler) for GPIO_IRQHandler
+    startup_armcm0.o(.text) refers to system_armcm0.o(i.SystemInit) for SystemInit
+    startup_armcm0.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_armcm0.o(i.SystemCoreClockUpdate) refers to system_armcm0.o(.data) for .data
+    system_armcm0.o(i.SystemInit) refers to system_armcm0.o(.data) for .data
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_armcm0.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_armcm0.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing syd8801_gpio.o(.rev16_text), (4 bytes).
+    Removing syd8801_gpio.o(.revsh_text), (4 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Pin_Clear), (52 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Pin_Read), (44 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Pin_Set), (52 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Set_Input), (268 bytes).
+    Removing syd8801_gpio.o(i.GPIO_Set_Output), (180 bytes).
+    Removing syd8801_gpio.o(i.io_irq_disable), (32 bytes).
+    Removing syd8801_gpio.o(i.io_irq_enable), (92 bytes).
+    Removing syd8801_delay.o(.rev16_text), (4 bytes).
+    Removing syd8801_delay.o(.revsh_text), (4 bytes).
+    Removing syd8801_delay.o(i.delay_ms), (32 bytes).
+    Removing syd8801_delay.o(i.delay_us), (24 bytes).
+    Removing syd8801_timer.o(.rev16_text), (4 bytes).
+    Removing syd8801_timer.o(.revsh_text), (4 bytes).
+    Removing syd8801_timer.o(i.timer_0_delay_32us), (68 bytes).
+    Removing syd8801_timer.o(i.timer_0_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_0_enable), (88 bytes).
+    Removing syd8801_timer.o(i.timer_1_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_1_enable), (88 bytes).
+    Removing syd8801_timer.o(i.timer_2_disable), (32 bytes).
+    Removing syd8801_timer.o(i.timer_2_enable), (88 bytes).
+    Removing syd8801_uart.o(.rev16_text), (4 bytes).
+    Removing syd8801_uart.o(.revsh_text), (4 bytes).
+    Removing syd8801_uart.o(i.uart_0_close), (12 bytes).
+    Removing syd8801_uart.o(.data), (4 bytes).
+    Removing key.o(.rev16_text), (4 bytes).
+    Removing key.o(.revsh_text), (4 bytes).
+    Removing key.o(i.get_key), (70 bytes).
+    Removing key.o(i.key_config), (12 bytes).
+    Removing key.o(i.keylong_config), (28 bytes).
+    Removing key.o(i.timer0_callback), (112 bytes).
+    Removing key.o(.data), (8 bytes).
+    Removing led.o(.rev16_text), (4 bytes).
+    Removing led.o(.revsh_text), (4 bytes).
+    Removing led.o(i.led_close), (8 bytes).
+    Removing led.o(i.led_config), (16 bytes).
+    Removing led.o(i.led_open), (8 bytes).
+    Removing startup_armcm0.o(HEAP), (3072 bytes).
+    Removing system_armcm0.o(.rev16_text), (4 bytes).
+    Removing system_armcm0.o(.revsh_text), (4 bytes).
+    Removing system_armcm0.o(i.SystemCoreClockUpdate), (16 bytes).
+
+44 unused section(s) (total 4634 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_armcm0.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    Driver\\key.c                            0x00000000   Number         0  key.o ABSOLUTE
+    Driver\\led.c                            0x00000000   Number         0  led.o ABSOLUTE
+    Driver\\syd8801_delay.c                  0x00000000   Number         0  syd8801_delay.o ABSOLUTE
+    Driver\\syd8801_gpio.c                   0x00000000   Number         0  syd8801_gpio.o ABSOLUTE
+    Driver\\syd8801_timer.c                  0x00000000   Number         0  syd8801_timer.o ABSOLUTE
+    Driver\\syd8801_uart.c                   0x00000000   Number         0  syd8801_uart.o ABSOLUTE
+    Driver\key.c                             0x00000000   Number         0  key.o ABSOLUTE
+    Driver\led.c                             0x00000000   Number         0  led.o ABSOLUTE
+    Driver\syd8801_delay.c                   0x00000000   Number         0  syd8801_delay.o ABSOLUTE
+    Driver\syd8801_gpio.c                    0x00000000   Number         0  syd8801_gpio.o ABSOLUTE
+    Driver\syd8801_timer.c                   0x00000000   Number         0  syd8801_timer.o ABSOLUTE
+    Driver\syd8801_uart.c                    0x00000000   Number         0  syd8801_uart.o ABSOLUTE
+    Main\\main.c                             0x00000000   Number         0  main.o ABSOLUTE
+    Main\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    RTE\Device\ARMCM0\startup_ARMCM0.s       0x00000000   Number         0  startup_armcm0.o ABSOLUTE
+    RTE\Device\ARMCM0\system_ARMCM0.c        0x00000000   Number         0  system_armcm0.o ABSOLUTE
+    RTE\\Device\\ARMCM0\\system_ARMCM0.c     0x00000000   Number         0  system_armcm0.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x000000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000000d4   Section       28  startup_armcm0.o(.text)
+    .text                                    0x000000f0   Section        0  memcpya.o(.text)
+    .text                                    0x00000114   Section       36  init.o(.text)
+    i.GPIO_IRQHandler                        0x00000138   Section        0  syd8801_gpio.o(i.GPIO_IRQHandler)
+    i.GPIO_Pin_Turn                          0x000001b0   Section        0  syd8801_gpio.o(i.GPIO_Pin_Turn)
+    i.SystemInit                             0x000001c0   Section        0  system_armcm0.o(i.SystemInit)
+    i.TIMER0_IRQHandler                      0x000001d0   Section        0  syd8801_timer.o(i.TIMER0_IRQHandler)
+    i.TIMER1_IRQHandler                      0x000001f8   Section        0  syd8801_timer.o(i.TIMER1_IRQHandler)
+    i.TIMER2_IRQHandler                      0x00000220   Section        0  syd8801_timer.o(i.TIMER2_IRQHandler)
+    i.UART0_IRQHandler                       0x00000248   Section        0  syd8801_uart.o(i.UART0_IRQHandler)
+    i.__scatterload_copy                     0x00000288   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000296   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000298   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.led_turn                               0x000002a6   Section        0  led.o(i.led_turn)
+    i.main                                   0x000002b0   Section        0  main.o(i.main)
+    i.uart0Rx_callback                       0x0000033c   Section        0  main.o(i.uart0Rx_callback)
+    uart0Rx_callback                         0x0000033d   Thumb Code    34  main.o(i.uart0Rx_callback)
+    i.uart_0_init                            0x00000368   Section        0  syd8801_uart.o(i.uart_0_init)
+    i.uart_0_read                            0x000003d4   Section        0  syd8801_uart.o(i.uart_0_read)
+    i.uart_0_write                           0x000003e0   Section        0  syd8801_uart.o(i.uart_0_write)
+    .data                                    0x20000000   Section       20  syd8801_gpio.o(.data)
+    gpio_callback                            0x20000010   Data           4  syd8801_gpio.o(.data)
+    .data                                    0x20000014   Section        4  syd8801_timer.o(.data)
+    .data                                    0x20000018   Section       16  syd8801_uart.o(.data)
+    tx_flag0                                 0x20000018   Data           1  syd8801_uart.o(.data)
+    uartrx_callback                          0x20000020   Data           8  syd8801_uart.o(.data)
+    .data                                    0x20000028   Section        4  system_armcm0.o(.data)
+    .bss                                     0x2000002c   Section     1032  main.o(.bss)
+    uart_rx_buf                              0x2000002c   Data        1032  main.o(.bss)
+    .bss                                     0x20000434   Section       12  syd8801_timer.o(.bss)
+    timer0_callback                          0x20000434   Data          12  syd8801_timer.o(.bss)
+    STACK                                    0x20000440   Section     1024  startup_armcm0.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_armcm0.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_armcm0.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_armcm0.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000000d5   Thumb Code     8  startup_armcm0.o(.text)
+    NMI_Handler                              0x000000dd   Thumb Code     2  startup_armcm0.o(.text)
+    HardFault_Handler                        0x000000df   Thumb Code     2  startup_armcm0.o(.text)
+    SVC_Handler                              0x000000e1   Thumb Code     2  startup_armcm0.o(.text)
+    PendSV_Handler                           0x000000e3   Thumb Code     2  startup_armcm0.o(.text)
+    SysTick_Handler                          0x000000e5   Thumb Code     2  startup_armcm0.o(.text)
+    I2C0_IRQHandler                          0x000000e7   Thumb Code     0  startup_armcm0.o(.text)
+    I2C1_IRQHandler                          0x000000e7   Thumb Code     0  startup_armcm0.o(.text)
+    LLC_IRQHandler                           0x000000e7   Thumb Code     0  startup_armcm0.o(.text)
+    TIMER3_IRQHandler                        0x000000e7   Thumb Code     0  startup_armcm0.o(.text)
+    UART1_IRQHandler                         0x000000e7   Thumb Code     0  startup_armcm0.o(.text)
+    __aeabi_memcpy                           0x000000f1   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x000000f1   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x000000f1   Thumb Code     0  memcpya.o(.text)
+    __scatterload                            0x00000115   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000115   Thumb Code     0  init.o(.text)
+    GPIO_IRQHandler                          0x00000139   Thumb Code   114  syd8801_gpio.o(i.GPIO_IRQHandler)
+    GPIO_Pin_Turn                            0x000001b1   Thumb Code    12  syd8801_gpio.o(i.GPIO_Pin_Turn)
+    SystemInit                               0x000001c1   Thumb Code     8  system_armcm0.o(i.SystemInit)
+    TIMER0_IRQHandler                        0x000001d1   Thumb Code    30  syd8801_timer.o(i.TIMER0_IRQHandler)
+    TIMER1_IRQHandler                        0x000001f9   Thumb Code    30  syd8801_timer.o(i.TIMER1_IRQHandler)
+    TIMER2_IRQHandler                        0x00000221   Thumb Code    30  syd8801_timer.o(i.TIMER2_IRQHandler)
+    UART0_IRQHandler                         0x00000249   Thumb Code    60  syd8801_uart.o(i.UART0_IRQHandler)
+    __scatterload_copy                       0x00000289   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000297   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000299   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    led_turn                                 0x000002a7   Thumb Code     8  led.o(i.led_turn)
+    main                                     0x000002b1   Thumb Code    90  main.o(i.main)
+    uart_0_init                              0x00000369   Thumb Code    94  syd8801_uart.o(i.uart_0_init)
+    uart_0_read                              0x000003d5   Thumb Code     8  syd8801_uart.o(i.uart_0_read)
+    uart_0_write                             0x000003e1   Thumb Code    26  syd8801_uart.o(i.uart_0_write)
+    Region$$Table$$Base                      0x00000400   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000420   Number         0  anon$$obj.o(Region$$Table)
+    PIN_CONFIG                               0x20000000   Data           4  syd8801_gpio.o(.data)
+    GPO_CTRL                                 0x20000004   Data           4  syd8801_gpio.o(.data)
+    GPI_CTRL                                 0x20000008   Data           4  syd8801_gpio.o(.data)
+    GPIO_IRQ_CTRL                            0x2000000c   Data           4  syd8801_gpio.o(.data)
+    TIMER_CTRL                               0x20000014   Data           4  syd8801_timer.o(.data)
+    UART_0_CTRL                              0x2000001c   Data           4  syd8801_uart.o(.data)
+    SystemCoreClock                          0x20000028   Data           4  system_armcm0.o(.data)
+    __initial_sp                             0x20000840   Data           0  startup_armcm0.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000044c, Max: 0x00006000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000420, Max: 0x00006000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          393    RESET               startup_armcm0.o
+    0x000000c0   0x00000000   Code   RO          430  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          437    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          440    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          442    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO          444    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO          445    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO          447    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO          449    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO          438    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x0000001c   Code   RO          394    .text               startup_armcm0.o
+    0x000000f0   0x00000024   Code   RO          433    .text               mc_p.l(memcpya.o)
+    0x00000114   0x00000024   Code   RO          451    .text               mc_p.l(init.o)
+    0x00000138   0x00000078   Code   RO           77    i.GPIO_IRQHandler   syd8801_gpio.o
+    0x000001b0   0x00000010   Code   RO           81    i.GPIO_Pin_Turn     syd8801_gpio.o
+    0x000001c0   0x00000010   Code   RO          401    i.SystemInit        system_armcm0.o
+    0x000001d0   0x00000028   Code   RO          180    i.TIMER0_IRQHandler  syd8801_timer.o
+    0x000001f8   0x00000028   Code   RO          181    i.TIMER1_IRQHandler  syd8801_timer.o
+    0x00000220   0x00000028   Code   RO          182    i.TIMER2_IRQHandler  syd8801_timer.o
+    0x00000248   0x00000040   Code   RO          261    i.UART0_IRQHandler  syd8801_uart.o
+    0x00000288   0x0000000e   Code   RO          455    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00000296   0x00000002   Code   RO          456    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00000298   0x0000000e   Code   RO          457    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x000002a6   0x00000008   Code   RO          358    i.led_turn          led.o
+    0x000002ae   0x00000002   PAD
+    0x000002b0   0x0000008c   Code   RO            3    i.main              main.o
+    0x0000033c   0x0000002c   Code   RO            4    i.uart0Rx_callback  main.o
+    0x00000368   0x0000006c   Code   RO          263    i.uart_0_init       syd8801_uart.o
+    0x000003d4   0x0000000c   Code   RO          264    i.uart_0_read       syd8801_uart.o
+    0x000003e0   0x00000020   Code   RO          265    i.uart_0_write      syd8801_uart.o
+    0x00000400   0x00000020   Data   RO          453    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000840, Max: 0x00000c00, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000014   Data   RW           86    .data               syd8801_gpio.o
+    0x20000014   0x00000004   Data   RW          191    .data               syd8801_timer.o
+    0x20000018   0x00000010   Data   RW          266    .data               syd8801_uart.o
+    0x20000028   0x00000004   Data   RW          402    .data               system_armcm0.o
+    0x2000002c   0x00000408   Zero   RW            5    .bss                main.o
+    0x20000434   0x0000000c   Zero   RW          190    .bss                syd8801_timer.o
+    0x20000440   0x00000400   Zero   RW          391    STACK               startup_armcm0.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         8          0          0          0          0        391   led.o
+       184         60          0          0       1032      15251   main.o
+        28          8        192          0       1024        576   startup_armcm0.o
+       136         10          0         20          0       7815   syd8801_gpio.o
+       120         30          0          4         12       1685   syd8801_timer.o
+       216         28          0         16          0       2520   syd8801_uart.o
+        16          8          0          4          0        587   system_armcm0.o
+
+    ----------------------------------------------------------------------
+       710        144        224         44       2068      28825   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0         60   memcpya.o
+
+    ----------------------------------------------------------------------
+       122         16          0          0          0        128   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       122         16          0          0          0        128   mc_p.l
+
+    ----------------------------------------------------------------------
+       122         16          0          0          0        128   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       832        160        224         44       2068      28709   Grand Totals
+       832        160        224         44       2068      28709   ELF Image Totals
+       832        160        224         44          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 1056 (   1.03kB)
+    Total RW  Size (RW Data + ZI Data)              2112 (   2.06kB)
+    Total ROM Size (Code + RO Data + RW Data)       1100 (   1.07kB)
+
+==============================================================================
+
