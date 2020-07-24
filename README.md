@@ -191,4 +191,5 @@ Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
 9.SYD8811SKD新增Freertos DEMO以及相关文件    
 10.增加用IO模拟的三线SPI："Source Code\SYD8811_peripheral_misc\SYD8811 LIS3DH Gsensor_3iospi"    
 11.增加硬件三线SPI也就是SPI0的工程："Source Code\SYD8811_peripheral_misc\ThreeTwo-wire SPI"    
+12、增加WDT的demo，路径SYD8811_SDK\Source Code\SYD8811_peripheral\wdt  
 <br/><br/><br/>
