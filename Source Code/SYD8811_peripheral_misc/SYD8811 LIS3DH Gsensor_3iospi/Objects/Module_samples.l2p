@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\led.o"
+".\objects\key.o"
+".\objects\oled.o"
+".\objects\lis3dh.o"
+".\objects\syd8801_gpio.o"
+".\objects\syd8801_delay.o"
+".\objects\syd8801_timer.o"
+".\objects\syd8801_uart.o"
+".\objects\syd8801_wdt.o"
+".\objects\syd8801_pwm.o"
+".\objects\syd8801_debug.o"
+".\objects\syd8801_adc.o"
+".\objects\syd8801_ioi2c.o"
+".\objects\syd8801_iospi.o"
+".\objects\startup_armcm0.o"
+".\objects\system_armcm0.o"
+--library_type=microlib --strict --scatter ".\Objects\Module_samples.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Module_samples.map" -o .\Objects\Module_samples.axf

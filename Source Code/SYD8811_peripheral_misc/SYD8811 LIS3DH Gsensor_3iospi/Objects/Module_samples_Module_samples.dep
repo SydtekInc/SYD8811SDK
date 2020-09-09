@@ -1,0 +1,175 @@
+Dependencies for Project 'Module_samples', Target 'Module_samples': (DO NOT MODIFY !)
+F (.\Main\main.c)(0x5AA6620C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+I (.\Include\syd8801_delay.h)(0x57883961)
+I (.\Include\syd8801_timer.h)(0x57904383)
+I (.\Include\syd8801_uart.h)(0x57906D5A)
+I (.\Include\syd8801_wdt.h)(0x57907CC4)
+I (.\Include\syd8801_pwm.h)(0x57909598)
+I (.\Include\syd8801_debug.h)(0x56B40024)
+I (.\Include\syd8801_adc.h)(0x578C2CCC)
+I (Main\lis3dh.h)(0x5791A969)
+I (Main\led.h)(0x5795CAAE)
+I (Main\key.h)(0x57904508)
+I (Main\oled.h)(0x5790AC11)
+F (.\Main\led.c)(0x5795CC76)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (Main\led.h)(0x5795CAAE)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+F (.\Main\key.c)(0x57904508)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (Main\key.h)(0x57904508)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+I (.\Include\syd8801_timer.h)(0x57904383)
+F (.\Main\oled.c)(0x57916EC5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
+I (Main\oled.h)(0x5790AC11)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (Main\font.h)(0x5790A6E7)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+I (.\Include\syd8801_delay.h)(0x57883961)
+I (d:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
+F (.\Main\lis3dh.c)(0x5AA66237)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\lis3dh.o --omf_browse .\objects\lis3dh.crf --depend .\objects\lis3dh.d)
+I (Main\lis3dh.h)(0x5791A969)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_iospi.h)(0x5AA6637B)
+I (.\Include\syd8801_debug.h)(0x56B40024)
+F (.\Driver\syd8801_gpio.c)(0x57E9E25A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_gpio.o --omf_browse .\objects\syd8801_gpio.crf --depend .\objects\syd8801_gpio.d)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (.\Driver\syd8801_delay.c)(0x5790306A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_delay.o --omf_browse .\objects\syd8801_delay.crf --depend .\objects\syd8801_delay.d)
+I (.\Include\syd8801_delay.h)(0x57883961)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (.\Driver\syd8801_timer.c)(0x57AAB10D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_timer.o --omf_browse .\objects\syd8801_timer.crf --depend .\objects\syd8801_timer.d)
+I (.\Include\syd8801_timer.h)(0x57904383)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_delay.h)(0x57883961)
+F (.\Driver\syd8801_uart.c)(0x579096F3)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_uart.o --omf_browse .\objects\syd8801_uart.crf --depend .\objects\syd8801_uart.d)
+I (.\Include\syd8801_uart.h)(0x57906D5A)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+F (.\Driver\syd8801_wdt.c)(0x57907CC4)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_wdt.o --omf_browse .\objects\syd8801_wdt.crf --depend .\objects\syd8801_wdt.d)
+I (.\Include\syd8801_wdt.h)(0x57907CC4)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (.\Driver\syd8801_pwm.c)(0x5799B3C6)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_pwm.o --omf_browse .\objects\syd8801_pwm.crf --depend .\objects\syd8801_pwm.d)
+I (.\Include\syd8801_pwm.h)(0x57909598)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+F (.\Driver\syd8801_debug.c)(0x579097E1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_debug.o --omf_browse .\objects\syd8801_debug.crf --depend .\objects\syd8801_debug.d)
+I (.\Include\syd8801_debug.h)(0x56B40024)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_uart.h)(0x57906D5A)
+I (d:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
+F (.\Driver\syd8801_adc.c)(0x5791709E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_adc.o --omf_browse .\objects\syd8801_adc.crf --depend .\objects\syd8801_adc.d)
+I (.\Include\syd8801_adc.h)(0x578C2CCC)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+F (.\Driver\syd8801_ioi2c.c)(0x5791D70F)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_ioi2c.o --omf_browse .\objects\syd8801_ioi2c.crf --depend .\objects\syd8801_ioi2c.d)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_ioi2c.h)(0x5791C10E)
+F (.\Driver\syd8801_iospi.c)(0x5AA65F54)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\syd8801_iospi.o --omf_browse .\objects\syd8801_iospi.crf --depend .\objects\syd8801_iospi.d)
+I (.\Include\syd8801_iospi.h)(0x5AA6637B)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (.\Include\syd8801_gpio.h)(0x5795CC76)
+F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5782F81C)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\listings\startup_armcm0.lst --xref -o .\objects\startup_armcm0.o --depend .\objects\startup_armcm0.d)
+F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5782F81C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main-I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\objects\system_armcm0.o --omf_browse .\objects\system_armcm0.crf --depend .\objects\system_armcm0.d)
+I (.\Include\ARMCM0.h)(0x5790304B)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)

@@ -1,0 +1,89 @@
+<Profile XmlName="Self Define Profile" Name="Self Define Profile">
+      <Service XmlName="org.bluetooth.service.generic_access" Name="GENERIC ACCESS" Uuid="1800" Handle="0001">
+              <Characteristic XmlName="org.bluetooth.characteristic.gap.device_name" Name="DEVICE NAME" Uuid="2A00" Properties="10" Handle="0002" ValueHandle="0003" IsEncrypt="False">
+                      <Field Name="Name" Value="SYD BLE Mouse" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.gap.appearance" Name="APPEARANCE" Uuid="2A01" Properties="2" Handle="0004" ValueHandle="0005" IsEncrypt="False">
+                      <Field Name="Category" Value="0x03 0xC2" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters" Name="Peripheral Preferred Connection Parameters" Uuid="2A04" Properties="2" Handle="0006" ValueHandle="0007" IsEncrypt="False">
+                      <Field Name="Minimum Connection Interval" Value="0x0006" IsReverse="True" Format=""/>
+                      <Field Name="Maximum Connection Interval" Value="0x0006" IsReverse="True" Format=""/>
+                      <Field Name="Slave Latency" Value="0x0030" IsReverse="True" Format=""/>
+                      <Field Name="Connection Supervision Timeout Multiplier" Value="0x0064" IsReverse="True" Format=""/>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.generic_attribute" Name="Generic Attribute" Uuid="1801" Handle="0008">
+              <Characteristic XmlName="org.bluetooth.characteristic.gatt.service_changed" Name="Service Changed" Uuid="2A05" Properties="2" Handle="0009" ValueHandle="000A" IsEncrypt="False">
+                      <Field Name="Start of Affected Attribute Handle Range" Value="0x0000" IsReverse="True" Format=""/>
+                      <Field Name="End of Affected Attribute Handle Range" Value="0x0000" IsReverse="True" Format=""/>
+                      <Descriptor XmlName="org.bluetooth.descriptor.gatt.client_characteristic_configuration" Name="Client Characteristic Configuration" Uuid="2902" Handle="000B" IsEncrypt="False">
+                                      <Field Name="Properties" Value="0x00 0x00" IsReverse="True" Format=""/>
+                      </Descriptor>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.device_information" Name="Device Information" Uuid="180A" Handle="000C">
+              <Characteristic XmlName="org.bluetooth.characteristic.manufacturer_name_string" Name="MANUFACTURER_NAME_STRING" Uuid="2A29" Properties="2" Handle="000D" ValueHandle="000E" IsEncrypt="False">
+                      <Field Name="Manufacturer Name" Value="SYD" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.model_number_string" Name="MODEL_NUMBER_STRING" Uuid="2A24" Properties="2" Handle="000F" ValueHandle="0010" IsEncrypt="False">
+                      <Field Name="Model Number" Value="BLE-MODEL-001" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.serial_number_string" Name="SERIAL_NUMBER_STRING" Uuid="2A25" Properties="2" Handle="0011" ValueHandle="0012" IsEncrypt="False">
+                      <Field Name="Serial Number" Value="BLE-001" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.hardware_revision_string" Name="HARDWARE_REVISION_STRING" Uuid="2A27" Properties="2" Handle="0013" ValueHandle="0014" IsEncrypt="False">
+                      <Field Name="Hardware Revision" Value="1.0" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.firmware_revision_string" Name="FIRMWARE_REVISION_STRING" Uuid="2A26" Properties="2" Handle="0015" ValueHandle="0016" IsEncrypt="False">
+                      <Field Name="Firmware Revision" Value="1.0" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.software_revision_string" Name="SOFTWARE_REVISION_STRING" Uuid="2A28" Properties="2" Handle="0017" ValueHandle="0018" IsEncrypt="False">
+                      <Field Name="Software Revision" Value="1.0" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.pnp_id" Name="PNP_ID" Uuid="2A50" Properties="2" Handle="0019" ValueHandle="001A" IsEncrypt="False">
+                      <Field Name="Vendor ID Source" Value="0x02" IsReverse="True" Format=""/>
+                      <Field Name="Vendor ID" Value="0x093A" IsReverse="True" Format=""/>
+                      <Field Name="Product ID" Value="0x4254" IsReverse="True" Format=""/>
+                      <Field Name="Product Version" Value="0x0001" IsReverse="True" Format=""/>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.vender_define_service" Name="UART" Uuid="0001" Handle="001B">
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="UART Write" Uuid="0002" Properties="8" Handle="001C" ValueHandle="001D" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="False" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="UART NOTIFY" Uuid="0003" Properties="16" Handle="001E" ValueHandle="001F" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="True" Format=""/>
+                      <Descriptor XmlName="org.bluetooth.descriptor.gatt.client_characteristic_configuration" Name="CLIENT_CHARACTERISTIC_CONFIGURATION" Uuid="2902" Handle="0020" IsEncrypt="False">
+                                      <Field Name="Properties" Value="0x00 0x00" IsReverse="True" Format=""/>
+                      </Descriptor>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.vender_define_service" Name="OTA" Uuid="FF00" Handle="0021">
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="OTA Read Write" Uuid="FF01" Properties="14" Handle="0022" ValueHandle="0023" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="False" Format=""/>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.battery_service" Name="BATTERY_SERVICE" Uuid="180F" Handle="0024">
+              <Characteristic XmlName="org.bluetooth.characteristic.battery_level" Name="Battry Level" Uuid="2A19" Properties="18" Handle="0025" ValueHandle="0026" IsEncrypt="False">
+                      <Field Name="Level" Value="0x64" IsReverse="True" Format=""/>
+                      <Descriptor XmlName="org.bluetooth.descriptor.gatt.client_characteristic_configuration" Name="CLIENT_CHARACTERISTIC_CONFIGURATION" Uuid="2902" Handle="0027" IsEncrypt="False">
+                                      <Field Name="Properties" Value="0x00 0x00" IsReverse="True" Format=""/>
+                      </Descriptor>
+              </Characteristic>
+      </Service>
+      <Service XmlName="org.bluetooth.service.vender_define_service" Name="WECHAT" Uuid="fee7" Handle="0028">
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="WECHAT WRITE" Uuid="FEC7" Properties="8" Handle="0029" ValueHandle="002A" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="True" Format=""/>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="WECHAT Indication" Uuid="FEC8" Properties="34" Handle="002B" ValueHandle="002C" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="True" Format=""/>
+                      <Descriptor XmlName="org.bluetooth.descriptor.gatt.client_characteristic_configuration" Name="CLIENT_CHARACTERISTIC_CONFIGURATION" Uuid="2902" Handle="002D" IsEncrypt="False">
+                                      <Field Name="Properties" Value="0x00 0x00" IsReverse="True" Format=""/>
+                      </Descriptor>
+              </Characteristic>
+              <Characteristic XmlName="org.bluetooth.characteristic.vender_define_characteristic" Name="WECHAT Read" Uuid="FEC9" Properties="2" Handle="002E" ValueHandle="002F" IsEncrypt="False">
+                      <Field Name="Vender Define Value" Value="0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00" IsReverse="True" Format=""/>
+              </Characteristic>
+      </Service>
+</Profile>
