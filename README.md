@@ -1,6 +1,23 @@
 # SYD8811SDK  
 ## 本程序版权属于成都盛芯微科技SYDTEK，更多内容请看官网：<a href="http://www.sydtek.com/" title="Title">http://www.sydtek.com/</a>
 
+# 使用方法:  
+这里可以点击右上角的"Code"按钮然后点击"Download ZIP"进行下载  
+如果您的电脑上安装了Git工具,可以使用下面的方式进行克隆:  
+国内站点克隆:  
+git clone --recursive https://gitee.com/SydtekInc/SYD8811SDK.git  
+国外站点克隆:  
+git clone --recursive https://github.com/SydtekInc/SYD8811SDK.git  
+
+# 注意:过于git目录的调整(20200923 110431)  
+从该版本起不再<README.md>文件中追加更新内容,以后的内容更新都放在commit的详细内容中,方便管理以及简化readme.  
+从该版本起删除<tool>并且会增加子模块"SydtekInc inform"该子模块指向仓库"https://gitee.com/SydtekInc/SydtekInc_inform.git".  
+Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版本或者适合自己的版本  
+Studio factory工具请从SydtekInc_inform/SYDTEK Studio factory获取最新版本或者适合自己的版本  
+SydtekInc inform包含了官方所有工具的更新和一些公司的公告  
+<br/><br/><br/>
+
+
 2018-12-26  
 1.第一版
 <br/><br/><br/>
@@ -191,12 +208,4 @@ Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
 9.SYD8811SKD新增Freertos DEMO以及相关文件    
 10.增加用IO模拟的三线SPI："Source Code\SYD8811_peripheral_misc\SYD8811 LIS3DH Gsensor_3iospi"    
 11.增加硬件三线SPI也就是SPI0的工程："Source Code\SYD8811_peripheral_misc\ThreeTwo-wire SPI"    
-<br/><br/><br/>
-
-20200923 110431
-从该版本起不再<README.md>文件中追加更新内容,以后的内容更新都放在commit的详细内容中,方便管理以及简化readme.  
-从该版本起删除<tool>并且会增加子模块"SydtekInc inform"该子模块指向仓库"https://gitee.com/SydtekInc/SydtekInc_inform.git".  
-Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版本或者适合自己的版本  
-Studio factory工具请从SydtekInc_inform/SYDTEK Studio factory获取最新版本或者适合自己的版本  
-SydtekInc inform包含了官方所有工具的更新和一些公司的公告  
 <br/><br/><br/>
