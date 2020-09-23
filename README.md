@@ -20,8 +20,8 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 # Source Code\SYD8811_ble_peripheral下工程简介:  
 1.SYD8811_BLE_UART_notifyen_open_power: 这是蓝牙透传的工程,作用是能够把手机APP通过BLE蓝牙发给SYD8811的数据通过串口发送出来给电脑或者其他MCU,同时也可以把电脑或者其他MCU串口发给SYD8811的数据通过BLE蓝牙发送给手机APP,相当于把蓝牙当成一种无线的通讯模块,其中notifyen_open_power的意思是在打开(或者说使能)notify后SYD8811设置UARTEN功能,在SYD8811平台上设置UARTEN功能后串口才能够正常工作,也就是说在未使能notify之前SYD8811是不能够正确接收串口的数据的  
 2.SYD8811_HID: 这个是BLE的HID(人机交互)的工程,目前该工程并没有打开睡眠的功能,所以也没有上面关于uarten的设置,在蓝牙鼠标键盘以及遥控器都是基于该工程开发  
-3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power:该工程基于上面的"1.SYD8811_BLE_UART_notifyen_open_power"工程,他们的区别是本工程会在开发板的OLED屏幕上显示一些打印信息,并且LED1会随着工程的运行翻转状态已之表示睡眠的频率  
-
+3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power: 该工程基于上面的"1.SYD8811_BLE_UART_notifyen_open_power"工程,他们的区别是本工程会在开发板的OLED屏幕上显示一些打印信息,并且LED1会随着工程的运行翻转状态已之表示睡眠的频率  
+4.SYD8811_BLE_UART_GPIO_open_power: 该工程基于"1.SYD8811_BLE_UART_notifyen_open_power"工程,这里GPIO_open_power的意思是串口这边增加一个GPIO来作为数据的开始结束信号.该信号默认是高电平;当电脑或者其他MCU要发送串口数据之前先拉低这个GPIO信号,然后发送串口数据;当串口数据发送完成后,拉高该GPIO.然后SYD8811根据这个GPIO来控制UARTEN.相对于"1.SYD8811_BLE_UART_notifyen_open_power"工程,本工程能够做到没有使能notify的时候也能够接收串口数据然后缓存.他们本质的区别是设置UARTEN的时基不同.  
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
