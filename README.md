@@ -19,8 +19,8 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 
 
 
-
-
+# Source Code\SYD8811_ble_peripheral下工程简介:  
+1.SYD8811_BLE_UART_notifyen_open_power:这是蓝牙透传的工程,作用是能够把手机APP通过BLE蓝牙发给SYD8811的数据通过串口发送出来给电脑或者其他MCU,同时也可以把电脑或者其他MCU串口发给SYD8811的数据通过BLE蓝牙发送给手机APP,相当于把蓝牙当成一种无线的通讯模块,其中notifyen_open_power的意思是在打开(或者说使能)notify后SYD8811设置UARTEN功能,在SYD8811平台上设置UARTEN功能后串口才能够正常工作,也就是说在未使能notify之前SYD8811是不能够正确接收串口的数据的  
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
