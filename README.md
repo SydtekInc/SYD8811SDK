@@ -9,7 +9,7 @@ git clone --recursive https://gitee.com/SydtekInc/SYD8811SDK.git
 国外站点克隆:  
 git clone --recursive https://github.com/SydtekInc/SYD8811SDK.git  
 
-# 注意:过于git目录的调整(20200923 110431)  
+# 注意:GIT目录的调整(20200923 110431)  
 从该版本起不再<README.md>文件中追加更新内容,以后的内容更新都放在commit的详细内容中,方便管理以及简化readme.  
 从该版本起删除<tool>并且会增加子模块"SydtekInc inform"该子模块指向仓库"https://gitee.com/SydtekInc/SydtekInc_inform.git".  
 Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版本或者适合自己的版本  
