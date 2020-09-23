@@ -192,3 +192,11 @@ Source Code\SYD8811_ble_peripheral\1.SYD8811_BLE_UART_notifyen_open_power
 10.增加用IO模拟的三线SPI："Source Code\SYD8811_peripheral_misc\SYD8811 LIS3DH Gsensor_3iospi"    
 11.增加硬件三线SPI也就是SPI0的工程："Source Code\SYD8811_peripheral_misc\ThreeTwo-wire SPI"    
 <br/><br/><br/>
+
+20200923 110431
+从该版本起不再<README.md>文件中追加更新内容,以后的内容更新都放在commit的详细内容中,方便管理以及简化readme.  
+从该版本起删除<tool>并且会增加子模块"SydtekInc inform"该子模块指向仓库"https://gitee.com/SydtekInc/SydtekInc_inform.git".  
+Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版本或者适合自己的版本  
+Studio factory工具请从SydtekInc_inform/SYDTEK Studio factory获取最新版本或者适合自己的版本  
+SydtekInc inform包含了官方所有工具的更新和一些公司的公告  
+<br/><br/><br/>
