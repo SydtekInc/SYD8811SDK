@@ -18,15 +18,27 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 <br/><br/><br/>
 
 # 工程简介:  
-## Source Code\SYD8811_ble_peripheral工程目录  
-- ***1.SYD8811_BLE_UART_notifyen_open_power*** 这是蓝牙透传的工程,作用是能够把手机APP通过BLE蓝牙发给SYD8811的数据通过串口发送出来给电脑或者其他MCU,同时也可以把电脑或者其他MCU串口发给SYD8811的数据通过BLE蓝牙发送给手机APP,相当于把蓝牙当成一种无线的通讯模块,其中notifyen_open_power的意思是在打开(或者说使能)notify后SYD8811设置UARTEN功能,在SYD8811平台上设置UARTEN功能后串口才能够正常工作,也就是说在未使能notify之前SYD8811是不能够正确接收串口的数据的  
-- ***2.SYD8811_HID*** 这个是BLE的HID(人机交互)的工程,目前该工程并没有打开睡眠的功能,所以也没有上面关于uarten的设置,在蓝牙鼠标键盘以及遥控器都是基于该工程开发  
-- ***3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power*** 该工程基于上面的"1.SYD8811_BLE_UART_notifyen_open_power"工程,他们的区别是本工程会在开发板的OLED屏幕上显示一些打印信息,并且LED1会随着工程的运行翻转状态已之表示睡眠的频率  
-- ***4.SYD8811_BLE_UART_GPIO_open_power*** 该工程基于"1.SYD8811_BLE_UART_notifyen_open_power"工程,这里GPIO_open_power的意思是串口这边增加一个GPIO来作为数据的开始结束信号.该信号默认是高电平;当电脑或者其他MCU要发送串口数据之前先拉低这个GPIO信号,然后发送串口数据;当串口数据发送完成后,拉高该GPIO.然后SYD8811根据这个GPIO来控制UARTEN.相对于"1.SYD8811_BLE_UART_notifyen_open_power"工程,本工程能够做到没有使能notify的时候也能够接收串口数据然后缓存.他们本质的区别是设置UARTEN的时基不同.  
-- ***5.SYD8811_BLE_UART_EVBOLED_Scan*** 这个工程基于"3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power"工程,他们的区别是本工程去掉广播的功能,改成扫描的功能,本工程也是扫描的例程  
-- ***6.SYD8811_ANCS:*** 这个是ANCS(苹果消息通知中心系统)的demo,用来获取IOS或者IPAD上面的消息,该工程基于Syd8811_ancs_lib.lib  
-
-
+## Source Code\SYD8811_ble_peripheral目录中的工程说明  
+- ***1.SYD8811_BLE_UART_notifyen_open_power***   这是蓝牙透传的工程,作用是能够把手机APP通过BLE蓝牙发给SYD8811的数据通过串口发送出来给电脑或者其他MCU,同时也可以把电脑或者其他MCU串口发给SYD8811的数据通过BLE蓝牙发送给手机APP,相当于把蓝牙当成一种无线的通讯模块,其中notifyen_open_power的意思是在打开(或者说使能)notify后SYD8811设置UARTEN功能,在SYD8811平台上设置UARTEN功能后串口才能够正常工作,也就是说在未使能notify之前SYD8811是不能够正确接收串口的数据的  
+- ***2.SYD8811_HID***   这个是BLE的HID(人机交互)的工程,目前该工程并没有打开睡眠的功能,所以也没有上面关于uarten的设置,在蓝牙鼠标键盘以及遥控器都是基于该工程开发  
+- ***3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power***   该工程基于上面的"1.SYD8811_BLE_UART_notifyen_open_power"工程,他们的区别是本工程会在开发板的OLED屏幕上显示一些打印信息,并且LED1会随着工程的运行翻转状态已之表示睡眠的频率  
+- ***4.SYD8811_BLE_UART_GPIO_open_power***   该工程基于"1.SYD8811_BLE_UART_notifyen_open_power"工程,这里GPIO_open_power的意思是串口这边增加一个GPIO来作为数据的开始结束信号.该信号默认是高电平;当电脑或者其他MCU要发送串口数据之前先拉低这个GPIO信号,然后发送串口数据;当串口数据发送完成后,拉高该GPIO.然后SYD8811根据这个GPIO来控制UARTEN.相对于"1.SYD8811_BLE_UART_notifyen_open_power"工程,本工程能够做到没有使能notify的时候也能够接收串口数据然后缓存.他们本质的区别是设置UARTEN的时基不同.  
+- ***5.SYD8811_BLE_UART_EVBOLED_Scan***   这个工程基于"3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power"工程,他们的区别是本工程去掉广播的功能,改成扫描的功能,本工程也是扫描的例程  
+- ***6.SYD8811_ANCS***   这个是ANCS(苹果消息通知中心系统)的demo,用来获取IOS或者IPAD上面的消息,该工程基于Syd8811_ancs_lib.lib  
+## Source Code\SYD8811_peripheral目录中的工程说明  
+- ***adc***   单纯ADC的工程,适合用来测试ADC  
+- ***Capdet_Touch***   SYD8811/8810芯片内部触摸(Capdet)的例程,芯片内部一共有4个通道的单点触摸,本例程只使用了通道0(GPIO6)    
+- ***GPIO***   该工程实现了简单的GPIO驱动,包含了4个按键的GPIO输入和4个LED的GPIO输出,在开发板上验证    
+- ***GPIO_IRQ***   本工程在上面的GPIO工程上把按键4从原来的普通GPIO输出模式改成中断输入的模式    
+- ***I2C***   本例程用I2C接口驱动一个Gsensor,作为I2C的简单应用和DEMO    
+- ***I2C***   本例程用I2C接口驱动一个Gsensor(KX022),作为I2C的简单应用和DEMO(因为I2C需要从机配合)    
+- ***I2C_OLED12864***   本例程用I2C接口驱动OLED(焊接在开发板上),作为驱动OLED的demo,能够在OLED上看到效果    
+- ***ISO7816***   ISO7816是一个芯片卡的总线接口协议,本工程给了一个驱动卡的简单例程,实现了7816卡的读写    
+- ***PWM***   SYD8811/8810内部集成了3路单通道的低速PWM(PWMx/LEDx时钟源是低速的LPO或者外部晶振,频率是32.768KHZ,在睡眠的时候依旧可以工作)和一路四通道的高速PWM(时钟源和MCU一样,最高64MHZ,在睡眠是不工作),本例程介绍了高/低速PWM的使用    
+- ***RTC***   RTC作为驱动SYD8811/8810内部的RTC模块的例子,这个RTC是一个真正的RTC模块   
+- ***SPI_Master_FLASH***   在开发板上有一个挂接在SPI1总线上的FLASH,这个是驱动例程   
+- ***timer***   这个是驱动芯片内部的低速定时器的例,时钟源是低速的LPO或者外部晶振,频率是32.768KHZ,在睡眠的时候依旧可以工作   
+- ***wdt***   这个是驱动芯片内部的看门狗的例程,看门狗超时芯片就会复位   
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
