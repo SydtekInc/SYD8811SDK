@@ -28,7 +28,7 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 该工程基于"1.SYD8811_BLE_UART_notifyen_open_power"工程,这里GPIO_open_power的意思是串口这边增加一个GPIO来作为数据的开始结束信号.该信号默认是高电平;当电脑或者其他MCU要发送串口数据之前先拉低这个GPIO信号,然后发送串口数据;当串口数据发送完成后,拉高该GPIO.然后SYD8811根据这个GPIO来控制UARTEN.相对于"1.SYD8811_BLE_UART_notifyen_open_power"工程,本工程能够做到没有使能notify的时候也能够接收串口数据然后缓存.他们本质的区别是设置UARTEN的时基不同.  
 ###### 5.SYD8811_BLE_UART_EVBOLED_Scan
 这个工程基于"3.SYD8811_BLE_UART_EVBOLED_notifyen_open_power"工程,他们的区别是本工程去掉广播的功能,改成扫描的功能,本工程也是扫描的例程  
-6.SYD8811_ANCS: 这个是ANCS(苹果消息通知中心系统)的demo,用来获取IOS或者IPAD上面的消息,该工程基于Syd8811_ancs_lib.lib  
+>6.SYD8811_ANCS: 这个是ANCS(苹果消息通知中心系统)的demo,用来获取IOS或者IPAD上面的消息,该工程基于Syd8811_ancs_lib.lib  
 
 
 
