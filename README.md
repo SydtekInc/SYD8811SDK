@@ -39,6 +39,8 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 - ***SPI_Master_FLASH***   在开发板上有一个挂接在SPI1总线上的FLASH,这个是驱动例程   
 - ***timer***   这个是驱动芯片内部的低速定时器的例,时钟源是低速的LPO或者外部晶振,频率是32.768KHZ,在睡眠的时候依旧可以工作   
 - ***wdt***   这个是驱动芯片内部的看门狗的例程,看门狗超时芯片就会复位   
+## Source Code\SYD8811_peripheral_misc目录中的工程说明  
+- ***adc_VBAT***   该工程基于Source Code\SYD8811_peripheral目录下的adc工程,当一个小于3.6V的电池挂在VBAT管脚上的时候可以通过该工程测量电池的电压    
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
