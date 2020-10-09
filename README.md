@@ -43,6 +43,7 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 - ***adc_VBAT***   该工程基于Source Code\SYD8811_peripheral目录下的adc工程,当一个小于3.6V的电池挂在VBAT管脚上的时候可以通过该工程测量电池的电压    
 - ***CLK_XO16_To_Gpio***   该工程把XO的时钟拉到GPIO来,以便于观察或者其他模块使用,因为RF模块给32MXO晶振做了2分频,所以这里看到的是16MHZ    
 - ***flash peotect***   该工程介绍了怎么保护代码      
+- ***flash_internal_custom_3k***   该工程介绍了怎么使用内部协议栈未占用的一段3K的数据(存在flash中),也是所谓的profile_data      
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
