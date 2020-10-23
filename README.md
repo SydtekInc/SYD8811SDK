@@ -46,6 +46,7 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 - ***flash_internal_custom_3k***   该工程介绍了怎么使用内部协议栈未占用的一段3K的数据(存在flash中),也是所谓的profile_data      
 - ***flash_internal_custom_Anysize***   该工程怎么使用自定义分配的flash空间，就是所谓的flashdata   
 - ***flash_internal_custom_CodeB***   该工程把OTA备份区(代码区叫做CODEA,备份区是CODEB)当做一段存储空间给用户使用,最大空间是代码的最大大小减去16KB        
+- ***GPIO_Speed***   该工程介绍怎么让GPIO的输出或者输入速度更快,主要是采用指针操作,让编译器编译出来的代码更加少      
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
