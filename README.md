@@ -47,6 +47,7 @@ SydtekInc inform包含了官方所有工具的更新和一些公司的公告
 - ***flash_internal_custom_Anysize***   该工程怎么使用自定义分配的flash空间，就是所谓的flashdata   
 - ***flash_internal_custom_CodeB***   该工程把OTA备份区(代码区叫做CODEA,备份区是CODEB)当做一段存储空间给用户使用,最大空间是代码的最大大小减去16KB        
 - ***GPIO_Speed***   该工程介绍怎么让GPIO的输出或者输入速度更快,主要是采用指针操作,让编译器编译出来的代码更加少      
+- ***I2C_OLED12864_buff_irq***   该工程来自于Source Code\SYD8811_peripheral\I2C_OLED12864,介绍了怎么使用I2C的中断功能来进行数据发送,具体请看工程目录下的PDF        
 
 <br/><br/><br/>
 # 下面是之前的README.MD的内容,将来不再更新:  
