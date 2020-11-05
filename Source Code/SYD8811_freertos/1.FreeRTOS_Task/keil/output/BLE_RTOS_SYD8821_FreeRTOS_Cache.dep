@@ -1,213 +1,0 @@
-Dependencies for Project 'BLE_RTOS', Target 'SYD8821_FreeRTOS_Cache': (DO NOT MODIFY !)
-F (..\main.c)(0x5EEEF70B)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
-I (..\..\..\Include\ARMCM0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
-I (..\config.h)(0x5EEEECD4)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\..\..\Lib\lib.h)(0x5E8FDC17)
-I (..\profile\SYD_ble_service_Profile.h)(0x5E5098B5)
-I (..\application\ble.h)(0x5E5098B5)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\timers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\queue.h)(0x5E5098B3)
-I (..\..\..\Include\debug.h)(0x5EEEECE1)
-I (..\..\..\Include\gpio.h)(0x5E54EA11)
-I (..\..\..\Include\led_key.h)(0x5EEEEBF5)
-F (..\application\ble.c)(0x5EEEF6B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\ble.o --omf_browse .\output\ble.crf --depend .\output\ble.d)
-I (..\config.h)(0x5EEEECD4)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\..\..\Include\armcm0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
-I (..\..\..\Include\debug.h)(0x5EEEECE1)
-I (..\profile\SYD_ble_service_Profile.h)(0x5E5098B5)
-I (..\application\ble.h)(0x5E5098B5)
-I (..\..\..\Lib\lib.h)(0x5E8FDC17)
-I (..\..\..\Include\led_key.h)(0x5EEEEBF5)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\timers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\queue.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-F (..\..\..\Driver\debug.c)(0x5E54EA15)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\debug.o --omf_browse .\output\debug.crf --depend .\output\debug.d)
-I (..\..\..\Include\debug.h)(0x5EEEECE1)
-I (..\..\..\Include\ARMCM0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
-I (..\config.h)(0x5EEEECD4)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\..\..\Include\uart.h)(0x5E6EF0FC)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (..\..\..\Driver\gpio.c)(0x5E54EA15)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\gpio.o --omf_browse .\output\gpio.crf --depend .\output\gpio.d)
-I (..\..\..\Include\gpio.h)(0x5E54EA11)
-I (..\..\..\Include\ARMCM0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
-I (..\..\..\Lib\lib.h)(0x5E8FDC17)
-F (..\..\..\Driver\uart.c)(0x5E54EA15)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d)
-I (..\..\..\Include\uart.h)(0x5E6EF0FC)
-I (..\..\..\Include\ARMCM0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
-I (..\..\..\Include\gpio.h)(0x5E54EA11)
-I (..\..\..\Lib\lib.h)(0x5E8FDC17)
-F (..\..\..\FreeRTOS\source\croutine.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\croutine.o --omf_browse .\output\croutine.crf --depend .\output\croutine.d)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\croutine.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\event_groups.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\event_groups.o --omf_browse .\output\event_groups.crf --depend .\output\event_groups.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\timers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\event_groups.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\list.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\list.o --omf_browse .\output\list.crf --depend .\output\list.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\queue.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\queue.o --omf_browse .\output\queue.crf --depend .\output\queue.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\queue.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\tasks.c)(0x5EEEF6EB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\tasks.o --omf_browse .\output\tasks.crf --depend .\output\tasks.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\timers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\StackMacros.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\timers.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\timers.o --omf_browse .\output\timers.crf --depend .\output\timers.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\queue.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\timers.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\source\portable\MemMang\heap_4.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\heap_4.o --omf_browse .\output\heap_4.crf --depend .\output\heap_4.d)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-F (..\..\..\FreeRTOS\portable\ARM\SYD8811\port.c)(0x5E5098B3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\port.o --omf_browse .\output\port.crf --depend .\output\port.d)
-I (..\..\..\FreeRTOS\source\include\FreeRTOS.h)(0x5E5098B3)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\FreeRTOSConfig.h)(0x5E5098B6)
-I (..\..\..\FreeRTOS\source\include\projdefs.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\portable.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\deprecated_definitions.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\portable\ARM\SYD8811\portmacro.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\mpu_wrappers.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\task.h)(0x5E5098B3)
-I (..\..\..\FreeRTOS\source\include\list.h)(0x5E5098B3)
-F (..\..\..\Lib\syd8811_ble_lib.lib)(0x5E8FDC17)()
-F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5E5098B5)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\startup_armcm0.lst --xref -o .\output\startup_armcm0.o --depend .\output\startup_armcm0.d)
-F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5E5098B5)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\..\Lib -I ..\..\..\BLE -I ..\..\..\FreeRTOS\source\include -I ..\..\..\FreeRTOS\config -I ..\..\..\FreeRTOS\portable\ARM\SYD8811 -I ..\..\..\FreeRTOS\portable\CMSIS\SYD8811 -I ..\..\..\Include -I ..\application -I ..\profile -I ..\-I.\RTE\_SYD8821_FreeRTOS_Cache-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include"-I"C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\Include"-D__UVISION_VERSION="527" -D_RTE_ -DARMCM0-o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d)
-I (..\..\..\Include\ARMCM0.h)(0x5EEEF4BD)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F3E94)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B5843C6)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B617084)
-I (C:\SoftWare\Office SoftWare\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x5B617086)
