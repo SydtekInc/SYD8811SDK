@@ -1,94 +1,0 @@
-Dependencies for Project 'Module_samples', Target 'Module_samples': (DO NOT MODIFY !)
-F (.\Main\main.c)(0x5AA73492)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-I (.\Include\uart.h)(0x5A409310)
-I (.\Include\delay.h)(0x5A40921B)
-I (.\Include\debug.h)(0x579F0147)
-I (.\Include\wdt.h)(0x57907CC4)
-I (.\Include\gpio.h)(0x5A7C0812)
-I (.\Include\spi.h)(0x5AA731FC)
-F (.\Main\lis3dh.c)(0x5AA1F2DB)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\lis3dh.o --omf_browse .\output\lis3dh.crf --depend .\output\lis3dh.d)
-I (Main\lis3dh.h)(0x5791A969)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-F (.\Driver\debug.c)(0x5AA1231B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\debug.o --omf_browse .\output\debug.crf --depend .\output\debug.d)
-I (.\Include\debug.h)(0x579F0147)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-I (.\Include\uart.h)(0x5A409310)
-I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
-F (.\Driver\uart.c)(0x5A9F90E4)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d)
-I (.\Include\uart.h)(0x5A409310)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-I (.\Include\gpio.h)(0x5A7C0812)
-I (.\Include\delay.h)(0x5A40921B)
-F (.\Driver\gpio.c)(0x5A976E78)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\gpio.o --omf_browse .\output\gpio.crf --depend .\output\gpio.d)
-I (.\Include\gpio.h)(0x5A7C0812)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-I (.\Include\debug.h)(0x579F0147)
-F (.\Driver\delay.c)(0x5A40921B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
-I (.\Include\delay.h)(0x5A40921B)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-F (.\Driver\wdt.c)(0x5A9E0CB5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\wdt.o --omf_browse .\output\wdt.crf --depend .\output\wdt.d)
-I (.\Include\wdt.h)(0x57907CC4)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-F (.\Driver\spi.c)(0x5AA72FCD)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\spi.o --omf_browse .\output\spi.crf --depend .\output\spi.d)
-I (.\Include\spi.h)(0x5AA731FC)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
-F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5811B83B)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\listings\startup_armcm0.lst --xref -o .\output\startup_armcm0.o --depend .\output\startup_armcm0.d)
-F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5811B83B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include-I "E:\Lost Cost\test source\ThreeTwo-wire SPI\ThreeTwo-wire SPI\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d)
-I (.\Include\ARMCM0.h)(0x5AA72FCD)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)

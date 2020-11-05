@@ -1,6 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.\Include
--I E:\03IIC_UART_256_0\RTE
--I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
--D__UVISION_VERSION="517" -D_RTE_ -DARMCM0
--o .\output\i2c.o --omf_browse .\output\i2c.crf --depend .\output\i2c.d --feedback ".\Output\Vendor_Services.fed" "Driver\i2c.c"

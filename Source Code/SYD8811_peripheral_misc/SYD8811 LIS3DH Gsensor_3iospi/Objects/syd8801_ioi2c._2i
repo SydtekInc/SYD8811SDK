@@ -1,6 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include -I.\Main
--I "C:\Users\Administrator\Desktop\13LIS3DH Gsensor_iospi\RTE"
--I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
--D__UVISION_VERSION="516" -D_RTE_ -DARMCM0
--o .\objects\syd8801_ioi2c.o --omf_browse .\objects\syd8801_ioi2c.crf --depend .\objects\syd8801_ioi2c.d --feedback ".\Objects\Module_samples.fed" "Driver\syd8801_ioi2c.c"

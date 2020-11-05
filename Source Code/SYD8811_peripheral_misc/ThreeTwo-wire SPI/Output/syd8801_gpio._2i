@@ -1,6 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB --li -g -O2 --apcs=interwork --split_sections -I.\Include
--I E:\03UART_IIC_221\RTE
--I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
--D__UVISION_VERSION="517" -D_RTE_ -DARMCM0
--o .\output\syd8801_gpio.o --omf_browse .\output\syd8801_gpio.crf --depend .\output\syd8801_gpio.d --feedback ".\Output\Vendor_Services.fed" "Driver\syd8801_gpio.c"
