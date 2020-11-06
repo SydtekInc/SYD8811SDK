@@ -1,0 +1,15 @@
+.\output\rtc_handler.o: ..\rtc_handler.c
+.\output\rtc_handler.o: ..\..\Lib\softtimer.h
+.\output\rtc_handler.o: ..\config.h
+.\output\rtc_handler.o: ..\..\..\Include\ARMCM0.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\output\rtc_handler.o: ..\..\Lib\lib.h
+.\output\rtc_handler.o: D:\Keil_v525\ARM\ARMCC\Bin\..\include\string.h
+.\output\rtc_handler.o: ..\..\..\RTT\DebugLog.h
+.\output\rtc_handler.o: ..\..\..\RTT\SEGGER_RTT.h
+.\output\rtc_handler.o: ..\..\..\RTT\SEGGER_RTT_Conf.h

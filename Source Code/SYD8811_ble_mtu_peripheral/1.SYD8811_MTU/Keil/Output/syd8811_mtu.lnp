@@ -1,0 +1,18 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\gpio.o"
+".\output\delay.o"
+".\output\ota.o"
+".\output\timer_handler.o"
+".\output\rtc_handler.o"
+"..\..\..\Lib\Syd8811_softtimer_lib.lib"
+"..\..\Lib\syd8811_ble_mtu_lib.lib"
+".\output\segger_rtt.o"
+".\output\segger_rtt_printf.o"
+".\output\segger_rtt_syscalls_keil.o"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib --strict --scatter ".\Output\syd8811_mtu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\syd8811_mtu.map" -o .\Output\syd8811_mtu.axf

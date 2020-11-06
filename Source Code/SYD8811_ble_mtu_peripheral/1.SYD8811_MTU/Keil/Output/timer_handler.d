@@ -1,0 +1,15 @@
+.\output\timer_handler.o: ..\timer_handler.c
+.\output\timer_handler.o: ..\..\Lib\calender.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\timer_handler.o: ..\..\Lib\softtimer.h
+.\output\timer_handler.o: ..\config.h
+.\output\timer_handler.o: ..\..\..\Include\ARMCM0.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\output\timer_handler.o: D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\output\timer_handler.o: ..\..\Lib\lib.h
+.\output\timer_handler.o: ..\..\..\RTT\DebugLog.h
+.\output\timer_handler.o: ..\..\..\RTT\SEGGER_RTT.h
+.\output\timer_handler.o: ..\..\..\RTT\SEGGER_RTT_Conf.h

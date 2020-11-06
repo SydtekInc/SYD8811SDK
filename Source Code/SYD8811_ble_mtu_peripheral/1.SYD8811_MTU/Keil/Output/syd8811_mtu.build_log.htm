@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Microsoft, Microsoft, LIC=32BRA-1KLIL-7R2X3-ADK1A-PN10K-7RABW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  D:\Keil_v525\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+E:\SDK\Git SDK\SYD8811 SDK\Source Code\SYD8811_ble_mtu_peripheral\1.SYD8811_MTU\Keil\syd8811_MTU.uvprojx
+Project File Date:  11/03/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v525\ARM\ARMCC\Bin'
+Build target 'syd8811_mtu'
+compiling main.c...
+linking...
+Program Size: Code=29858 RO-data=302 RW-data=332 ZI-data=5788  
+FromELF: creating hex file...
+After Build - User command #1: "Output\HEX2BIN.EXE" "Output\syd8811_mtu.hex"
+hex2bin v1.0.6, Copyright (C) 1998 Jacques Pelletier
+checksum extensions Copyright (C) 2004 Rockwell Automation
+improved P.G. 2007
+Lowest address  = 00000000
+Highest address = 00007677
+Pad Byte        = FF
+8-bit Checksum = 1C
+After Build - User command #2: fromelf -c  .\output\syd8811_mtu.axf  -o  .\output\syd8811_mtu.txt
+".\Output\syd8811_mtu.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_syd8811_mtu
+  D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  D:\Keil_v525\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+
+   * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
+      Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
