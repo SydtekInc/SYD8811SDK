@@ -1,0 +1,34 @@
+03:48:22:595: Information: SYDTEK_Studio initialize satat
+03:48:23:006: Information: SYDTEK_Studio initialize end
+03:48:27:420: Debug: Write_u32buff addr:20001000 size:1170  check:1
+03:48:27:447: Debug: ICE write to memery succeed
+03:48:27:453: Debug: go to ram 20001000!
+04:19:24:283: Debug: Can not operation memory addr:20000000
+04:19:24:285: Debug: Write_u32buff addr:20001000 size:1170  check:1
+04:19:24:312: Debug: ICE write to memery succeed
+04:19:24:318: Debug: go to ram 20001000!
+04:37:08:713: Debug: Can not operation memory addr:20000000
+04:37:08:715: Debug: Write_u32buff addr:20001000 size:1170  check:1
+04:37:08:858: Debug: ICE write to memery failure
+04:37:18:826: Debug: Can not operation memory addr:20000000
+04:37:18:828: Debug: Write_u32buff addr:20001000 size:1170  check:1
+04:37:18:978: Debug: ICE write to memery failure
+04:37:30:931: Debug: Can not operation memory addr:20000000
+04:37:30:932: Debug: Write_u32buff addr:20001000 size:1170  check:1
+04:37:30:960: Debug: ICE write to memery succeed
+04:37:30:968: Debug: go to ram 20001000!
+04:42:54:721: Debug: Can not operation memory addr:20000000
+04:42:54:722: Debug: Write_u32buff addr:20001000 size:3140  check:1
+04:42:54:998: Debug: ICE write to memery succeed
+04:42:55:005: Debug: go to ram 20001000!
+04:42:58:282: Debug: Write_u32buff addr:20001000 size:3140  check:1
+04:42:58:558: Debug: ICE write to memery succeed
+04:42:58:564: Debug: go to ram 20001000!
+04:45:37:517: Debug: Can not operation memory addr:20000000
+04:45:37:518: Debug: Write_u32buff addr:20001000 size:3140  check:1
+04:45:37:795: Debug: ICE write to memery succeed
+04:45:37:803: Debug: go to ram 20001000!
+04:46:19:914: Debug: Can not operation memory addr:20000000
+04:46:19:915: Debug: Write_u32buff addr:20001000 size:3140  check:1
+04:46:20:191: Debug: ICE write to memery succeed
+04:46:20:197: Debug: go to ram 20001000!

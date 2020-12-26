@@ -1,0 +1,11 @@
+10:04:50:790: Information: SYDTEK_Studio initialize satat
+10:04:51:183: Information: SYDTEK_Studio initialize end
+10:09:17:599: Debug: Write_u32buff addr:20001000 size:3140  check:1
+10:09:17:673: Debug: ICE write to memery succeed
+10:09:17:679: Debug: go to ram 20001000!
+10:10:13:745: Debug: SWD Start:200076b0
+10:10:13:748: Debug: RTT pBuffer:0
+RTT acID:
+10:10:30:351: Debug: SWD Start:20007f00
+10:10:30:356: Debug: RTT pBuffer:20003a24
+RTT acID:SEGGER RTT

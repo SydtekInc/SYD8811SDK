@@ -1,0 +1,36 @@
+23:34:22:307   #@#  
+error:1
+StartAdv
+23:34:26:237   #@#  
+error:1
+23:34:32:306   #@#  
+battery adc:0066 pin_vol:0.359 bat_vol:0.478 level:0
+23:34:36:643   #@#  
+StopAdv
+23:34:39:877   #@#  
+>>setting:
+[0000] CC 06 00 00 00 00 00 00 00 00 00 00 A5 A5 A5 A5 
+[0010] DA E4 7D 3F 04 C4 13 29 3B 0D 33 4D 16 40 59 12 
+[0020] DD A4 6E D8 36 4D 51 23 B5 53 DE C9 AA 3C 2D 78 
+[0030] 01 09 15 00 00 00 01 01 01 01 00 01 00 04 87 6E 
+[0040] 00 00 00 00 00 0B 00 6E 
+device addr:[0000] BC BD 87 33 68 F9 
+<<setting:
+[0000] CC 06 00 00 00 00 00 00 00 00 00 00 A5 A5 A5 A5 
+[0010] DA E4 7D 3F 04 C4 13 29 3B 0D 33 4D 16 40 59 12 
+[0020] DD A4 6E D8 36 4D 51 23 B5 53 DE C9 AA 3C 2D 78 
+[0030] 01 09 
+23:34:39:912   #@#  
+15 00 00 00 01 01 01 01 00 01 00 04 87 6E 
+[0040] 00 00 00 00 00 0B 00 6E 
+23:34:40:122   #@#  
+Wakeup_handdle
+power_on
+23:34:42:311   #@#  
+battery adc:0054 pin_vol:0.295 bat_vol:0.394 level:0
+23:34:52:305   #@#  
+battery adc:00C1 pin_vol:0.679 bat_vol:0.905 level:0
+23:35:02:307   #@#  
+battery adc:0059 pin_vol:0.313 bat_vol:0.417 level:0
+23:35:12:305   #@#  
+battery adc:0060 pin_vol:0.338 bat_vol:0.450 level:0

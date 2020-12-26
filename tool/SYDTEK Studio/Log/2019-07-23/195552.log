@@ -1,0 +1,6 @@
+07:55:52:827: Information: SYDTEK_Studio initialize satat
+07:55:53:805: Information: SYDTEK_Studio initialize end
+07:56:00:149: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:3140  check:1
+07:56:00:423: Debug: ICE write to memery succeed
+07:56:00:428: Debug: go to ram 20001000!

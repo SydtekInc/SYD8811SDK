@@ -1,0 +1,40 @@
+06:46:01:969: Information: SYDTEK_Studio initialize satat
+06:46:02:593: Information: SYDTEK_Studio initialize end
+06:46:08:114: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:46:08:141: Debug: ICE write to memery succeed
+06:46:08:147: Debug: go to ram 20001000!
+06:48:55:106: Debug: Can not operation memory addr:20000000
+06:48:55:107: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:48:55:135: Debug: ICE write to memery succeed
+06:48:55:141: Debug: go to ram 20001000!
+06:49:02:266: Information: Mtp connect cu succeed
+06:49:02:372: Information: FlashRead Click
+06:49:02:372: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710006 End Addr:D513D3720000
+06:49:05:071: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:49:05:099: Debug: ICE write to memery succeed
+06:49:05:105: Debug: go to ram 20001000!
+06:49:05:349: Information: Mtp connect cu succeed
+06:49:05:453: Information: FlashRead Click
+06:49:05:454: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710006 End Addr:D513D3720000
+06:49:10:223: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:49:10:251: Debug: ICE write to memery succeed
+06:49:10:257: Debug: go to ram 20001000!
+06:49:10:533: Information: Mtp connect cu succeed
+06:49:10:647: Information: FlashRead Click
+06:49:10:647: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710006 End Addr:D513D3720000
+06:50:02:435: Information: FlashRead Click
+06:50:02:436: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710006 End Addr:D513D3720000
+06:51:11:133: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:51:11:161: Debug: ICE write to memery succeed
+06:51:11:166: Debug: go to ram 20001000!
+06:51:11:490: Information: Mtp connect cu succeed
+06:51:11:591: Information: FlashRead Click
+06:51:11:591: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710006 End Addr:D513D3720000
+06:57:36:364: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:57:36:392: Debug: ICE write to memery succeed
+06:57:36:398: Debug: go to ram 20001000!
+06:57:36:610: Information: Mtp connect cu succeed
+06:57:36:717: Information: FlashRead Click
+06:57:36:717: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710014 End Addr:D513D3720000
+06:59:48:417: Information: FlashRead Click
+06:59:48:417: Information: CU Mac Range   Start :D513D3710000 Now Addr:D513D3710014 End Addr:D513D3720000

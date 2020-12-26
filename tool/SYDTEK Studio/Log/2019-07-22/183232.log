@@ -1,0 +1,100 @@
+06:32:32:271: Information: SYDTEK_Studio initialize satat
+06:32:32:574: Information: SYDTEK_Studio initialize end
+06:32:43:254: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+06:32:43:302: Debug: ICE write to memery failure
+06:32:54:605: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+06:32:54:607: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:32:54:655: Debug: ICE write to memery failure
+06:33:08:569: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+06:33:08:571: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:33:08:618: Debug: ICE write to memery failure
+06:34:02:985: Debug: Can not operation memory addr:20000000
+06:34:02:987: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:34:03:040: Debug: ICE write to memery succeed
+06:34:03:048: Debug: go to ram 20001000!
+06:34:11:439: Information: Mtp connect cu succeed
+06:34:48:266: Information: Flash Execute Click File C:\Users\Administrator\Desktop\sydtek_clone_mrd_v1.0.0_20190722.bin
+06:34:48:298: Information: Execute CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:36:56:291: Information: FlashRead Click
+06:36:56:292: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:03:092: Information: FlashRead Click
+06:37:03:093: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:04:051: Information: FlashRead Click
+06:37:04:051: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:04:860: Information: FlashRead Click
+06:37:04:861: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:05:372: Information: FlashRead Click
+06:37:05:373: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:05:923: Information: FlashRead Click
+06:37:05:923: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:06:434: Information: FlashRead Click
+06:37:06:435: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:07:059: Information: FlashRead Click
+06:37:07:060: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:08:394: Information: FlashRead Click
+06:37:08:394: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:09:600: Information: FlashRead Click
+06:37:09:600: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:10:404: Information: FlashRead Click
+06:37:10:405: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:11:094: Information: FlashRead Click
+06:37:11:095: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:11:885: Information: FlashRead Click
+06:37:11:885: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:12:664: Information: FlashRead Click
+06:37:12:665: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:21:176: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:37:21:230: Debug: ICE write to memery succeed
+06:37:21:236: Debug: go to ram 20001000!
+06:37:26:119: Information: Mtp connect cu succeed
+06:37:26:224: Information: FlashRead Click
+06:37:26:225: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:27:340: Information: FlashRead Click
+06:37:27:340: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:28:032: Information: FlashRead Click
+06:37:28:033: Information: CU Mac Range   Start :FFFFFFFFFFFF Now Addr:FFFFFFFFFFFF End Addr:FFFFFFFFFFFF
+06:37:49:272: Information: Flash Execute Click File C:\Users\Administrator\Desktop\sydtek_clone_mrd_v1.0.0_20190722.bin
+06:37:49:273: Information: Execute CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+06:39:56:443: Information: FlashRead Click
+06:39:56:443: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+06:42:15:701: Information: FlashRead Click
+06:42:15:702: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+06:42:16:566: Information: FlashRead Click
+06:42:16:566: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+06:46:00:446: Debug: Can not operation memory addr:20000000
+06:46:00:448: Debug: Write_u32buff addr:20001000 size:1170  check:1
+06:46:00:502: Debug: ICE write to memery succeed
+06:46:00:509: Debug: go to ram 20001000!
+06:46:00:739: Information: Mtp connect cu succeed
+06:46:00:841: Information: FlashRead Click
+06:46:00:841: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:19:23:967: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:19:24:113: Debug: ICE write to memery failure
+07:19:30:914: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:19:31:061: Debug: ICE write to memery failure
+07:19:43:319: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:19:43:373: Debug: ICE write to memery succeed
+07:19:43:379: Debug: go to ram 20001000!
+07:19:46:119: Information: Mtp connect cu succeed
+07:19:46:220: Information: FlashRead Click
+07:19:46:220: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:22:44:086: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+ICE write to memery succeed
+go to ram 20001000!

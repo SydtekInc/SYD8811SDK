@@ -1,0 +1,141 @@
+07:22:47:677: Information: SYDTEK_Studio initialize satat
+07:22:48:067: Information: SYDTEK_Studio initialize end
+07:22:51:062: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:22:51:116: Debug: ICE write to memery succeed
+07:22:51:123: Debug: go to ram 20001000!
+07:22:59:131: Information: Mtp connect cu succeed
+07:22:59:237: Information: FlashRead Click
+07:22:59:237: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:23:00:694: Information: FlashRead Click
+07:23:00:695: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:39:39:392: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:39:39:447: Debug: ICE write to memery succeed
+07:39:39:453: Debug: go to ram 20001000!
+07:39:39:806: Information: Mtp connect cu succeed
+07:39:39:915: Information: FlashRead Click
+07:39:39:915: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:39:41:940: Information: FlashRead Click
+07:39:41:941: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:41:10:238: Debug: Can not operation memory addr:20000000
+07:41:10:240: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:41:10:408: Debug: ICE write to memery failure
+07:41:19:388: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:41:19:443: Debug: ICE write to memery succeed
+07:41:19:450: Debug: go to ram 20001000!
+07:41:19:691: Information: Mtp connect cu succeed
+07:41:19:803: Information: FlashRead Click
+07:41:19:803: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:43:34:377: Debug: Can not operation memory addr:20000000
+07:43:34:379: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:43:34:433: Debug: ICE write to memery succeed
+07:43:34:439: Debug: go to ram 20001000!
+07:43:34:694: Information: Mtp connect cu succeed
+07:43:34:810: Information: FlashRead Click
+07:43:34:811: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+07:47:01:488: Debug: Write_u32buff addr:20001000 size:1170  check:1
+07:47:01:542: Debug: ICE write to memery succeed
+07:47:01:548: Debug: go to ram 20001000!
+07:47:04:114: Information: Mtp connect cu succeed
+07:47:04:235: Information: FlashRead Click
+07:47:04:236: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:20:55:755: Debug: Can not operation memory addr:20000000
+08:20:55:756: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:20:55:810: Debug: ICE write to memery succeed
+08:20:55:817: Debug: go to ram 20001000!
+08:31:35:600: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:31:35:747: Debug: ICE write to memery failure
+08:31:43:440: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:31:43:494: Debug: ICE write to memery succeed
+08:31:43:500: Debug: go to ram 20001000!
+08:31:45:788: Information: Mtp connect cu succeed
+08:31:45:888: Information: FlashRead Click
+08:31:45:889: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:31:47:440: Information: FlashRead Click
+08:31:47:441: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:37:37:510: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:37:37:565: Debug: ICE write to memery succeed
+08:37:37:571: Debug: go to ram 20001000!
+08:37:37:814: Information: Mtp connect cu succeed
+08:37:37:927: Information: FlashRead Click
+08:37:37:927: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:49:19:823: Debug: Can not operation memory addr:20000000
+08:49:19:825: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:49:19:879: Debug: ICE write to memery succeed
+08:49:19:885: Debug: go to ram 20001000!
+08:49:20:147: Information: Mtp connect cu succeed
+08:49:20:251: Information: FlashRead Click
+08:49:20:252: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:49:21:794: Information: FlashRead Click
+08:49:21:795: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+08:57:23:757: Debug: Can not operation memory addr:20000000
+08:57:23:759: Debug: Write_u32buff addr:20001000 size:1170  check:1
+08:57:23:814: Debug: ICE write to memery succeed
+08:57:23:821: Debug: go to ram 20001000!
+08:57:50:730: Debug: >>SpiFlashRead
+08:59:18:747: Debug: <<SpiFlashRead
+09:03:03:261: Debug: Can not operation memory addr:20000000
+09:03:03:263: Debug: Write_u32buff addr:20001000 size:1170  check:1
+09:03:03:317: Debug: ICE write to memery succeed
+09:03:03:324: Debug: go to ram 20001000!
+09:03:07:434: Information: Mtp connect cu succeed
+09:03:07:539: Information: FlashRead Click
+09:03:07:541: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+09:05:36:881: Debug: Can not operation memory addr:20000000
+09:05:36:882: Debug: Write_u32buff addr:20001000 size:1170  check:1
+09:05:36:936: Debug: ICE write to memery succeed
+09:05:36:942: Debug: go to ram 20001000!
+09:05:37:338: Information: Mtp connect cu succeed
+09:05:37:476: Information: FlashRead Click
+09:05:37:476: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+10:10:28:013: Debug: Write_u32buff addr:20001000 size:1170  check:1
+10:10:28:067: Debug: ICE write to memery succeed
+10:10:28:073: Debug: go to ram 20001000!
+10:10:28:318: Information: Mtp connect cu succeed
+10:10:28:419: Information: FlashRead Click
+10:10:28:419: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+11:46:24:541: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:46:24:543: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:46:24:617: Debug: ICE write to memery failure
+11:46:57:773: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:46:57:798: Debug: ICE write to memery succeed
+11:46:57:804: Debug: go to ram 20001000!
+11:47:00:831: Information: Mtp connect cu succeed
+11:47:06:178: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:47:06:203: Debug: ICE write to memery succeed
+11:47:06:209: Debug: go to ram 20001000!
+11:47:16:946: Debug: >>SpiFlashErase
+11:47:26:584: Debug: <<SpiFlashErase
+11:49:05:497: Debug: <<SpiFlashWrite
+11:49:17:300: Debug: >>SpiFlashRead
+11:50:42:185: Debug: <<SpiFlashRead
+11:51:38:494: Debug: >>SpiFlashErase
+11:51:48:058: Debug: <<SpiFlashErase
+11:53:25:925: Debug: <<SpiFlashWrite
+11:53:31:716: Debug: >>SpiFlashRead
+11:54:57:134: Debug: <<SpiFlashRead
+12:11:24:168: Debug: Can not operation memory addr:20000000
+12:11:24:170: Debug: Write_u32buff addr:20001000 size:1170  check:1
+12:11:24:195: Debug: ICE write to memery succeed
+12:11:24:200: Debug: go to ram 20001000!
+12:13:46:701: Debug: Can not operation memory addr:20000000
+12:13:46:704: Debug: Write_u32buff addr:20001000 size:1170  check:1
+12:13:46:728: Debug: ICE write to memery succeed
+12:13:46:734: Debug: go to ram 20001000!
+12:17:43:901: Debug: Can not operation memory addr:20000000
+12:17:43:902: Debug: Write_u32buff addr:20001000 size:1170  check:1
+12:17:43:957: Debug: ICE write to memery succeed
+12:17:43:963: Debug: go to ram 20001000!
+12:17:48:721: Information: Mtp connect cu succeed
+12:17:48:830: Information: FlashRead Click
+12:17:48:846: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+12:17:50:391: Information: FlashRead Click
+12:17:50:391: Information: CU Mac Range   Start :D513D3810000 Now Addr:D513D38110BE End Addr:D513D3820000
+12:19:36:241: Debug: Can not operation memory addr:20000000
+12:19:36:243: Debug: Write_u32buff addr:20001000 size:1170  check:1
+12:19:36:267: Debug: ICE write to memery succeed
+12:19:36:273: Debug: go to ram 20001000!

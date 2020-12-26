@@ -1,0 +1,172 @@
+11:02:44:801: Information: SYDTEK_Studio initialize satat
+11:02:45:040: Information: SYDTEK_Studio initialize end
+11:02:49:460: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:02:49:514: Debug: ICE write to memery succeed
+11:02:49:520: Debug: go to ram 20001000!
+11:02:54:748: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:02:54:804: Debug: ICE write to memery succeed
+11:02:54:810: Debug: go to ram 20001000!
+11:02:57:947: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:02:58:002: Debug: ICE write to memery succeed
+11:02:58:008: Debug: go to ram 20001000!
+11:03:06:658: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:03:06:665: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:03:06:735: Debug: ICE write to memery failure
+11:20:36:345: Debug: Can not operation memory addr:20000000
+11:20:36:346: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:20:36:400: Debug: ICE write to memery succeed
+11:20:36:406: Debug: go to ram 20001000!
+11:20:39:324: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:20:39:379: Debug: ICE write to memery succeed
+11:20:39:385: Debug: go to ram 20001000!
+11:20:42:642: Debug: Can not operation memory addr:20000000
+11:20:42:644: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:20:42:697: Debug: ICE write to memery succeed
+11:20:42:703: Debug: go to ram 20001000!
+11:20:55:024: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:20:55:027: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:20:55:077: Debug: ICE write to memery failure
+11:29:39:870: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:29:39:924: Debug: ICE write to memery succeed
+11:29:39:930: Debug: go to ram 20001000!
+11:29:43:368: Debug: Can not operation memory addr:20000000
+11:29:43:369: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:29:43:423: Debug: ICE write to memery succeed
+11:29:43:429: Debug: go to ram 20001000!
+11:29:51:779: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:29:51:780: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:29:51:872: Debug: ICE write to memery failure
+11:31:03:079: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:31:03:133: Debug: ICE write to memery succeed
+11:31:03:139: Debug: go to ram 20001000!
+11:31:06:697: Debug: Can not operation memory addr:20000000
+11:31:06:699: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:31:06:753: Debug: ICE write to memery succeed
+11:31:06:758: Debug: go to ram 20001000!
+11:31:14:848: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:31:14:900: Debug: ICE write to memery failure
+11:32:43:306: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:32:43:360: Debug: ICE write to memery succeed
+11:32:43:366: Debug: go to ram 20001000!
+11:32:47:073: Debug: Can not operation memory addr:20000000
+11:32:47:075: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:32:47:129: Debug: ICE write to memery succeed
+11:32:47:135: Debug: go to ram 20001000!
+11:32:55:786: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:32:55:800: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:32:55:858: Debug: ICE write to memery failure
+11:33:49:607: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:33:49:661: Debug: ICE write to memery succeed
+11:33:49:667: Debug: go to ram 20001000!
+11:33:52:681: Debug: Can not operation memory addr:20000000
+11:33:52:682: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:33:52:736: Debug: ICE write to memery succeed
+11:33:52:742: Debug: go to ram 20001000!
+11:34:00:370: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:34:00:424: Debug: ICE write to memery failure
+11:36:08:294: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:36:08:348: Debug: ICE write to memery succeed
+11:36:08:365: Debug: go to ram 20001000!
+11:36:11:789: Debug: Can not operation memory addr:20000000
+11:36:11:790: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:36:11:843: Debug: ICE write to memery succeed
+11:36:11:849: Debug: go to ram 20001000!
+11:36:19:899: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:36:19:902: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:36:19:954: Debug: ICE write to memery failure
+11:36:47:440: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:36:47:442: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:36:47:505: Debug: ICE write to memery failure
+11:37:17:822: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:37:17:877: Debug: ICE write to memery succeed
+11:37:17:883: Debug: go to ram 20001000!
+11:37:21:307: Debug: Can not operation memory addr:20000000
+11:37:21:308: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:37:21:362: Debug: ICE write to memery succeed
+11:37:21:368: Debug: go to ram 20001000!
+11:37:29:063: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:37:29:065: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:37:29:115: Debug: ICE write to memery failure
+11:38:16:328: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:38:16:330: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:38:16:384: Debug: ICE write to memery succeed
+11:38:16:390: Debug: go to ram 20001000!
+11:38:25:641: Debug: Can not operation memory addr:20000000
+11:38:25:642: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:38:25:696: Debug: ICE write to memery succeed
+11:38:25:702: Debug: go to ram 20001000!
+11:38:33:750: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+11:38:33:828: Debug: ICE write to memery failure
+11:43:43:977: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:43:44:031: Debug: ICE write to memery succeed
+11:43:44:037: Debug: go to ram 20001000!
+11:43:47:043: Debug: Can not operation memory addr:20000000
+11:43:47:045: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:43:47:098: Debug: ICE write to memery succeed
+11:43:47:104: Debug: go to ram 20001000!
+11:43:54:817: Debug: Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+Can not operation memory addr:20000000
+11:43:54:819: Debug: Write_u32buff addr:20001000 size:1170  check:1
+11:43:54:871: Debug: ICE write to memery failure

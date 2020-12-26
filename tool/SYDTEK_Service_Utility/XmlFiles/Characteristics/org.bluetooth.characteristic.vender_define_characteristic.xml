@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2014 Bluetooth SIG, Inc. All rights reserved.-->
+<Characteristic xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Vender Define Characteristic" 
+                type="org.bluetooth.characteristic.vender_define_characteristic" uuid="0000" last-modified="2016-07-13" approved="Yes">
+    <InformativeText>
+        <Abstract>Vender define characteristic</Abstract>
+	</InformativeText>
+    <Value>
+    <Field name="Vender Define Value">
+
+    </Field>
+	</Value>
+</Characteristic>

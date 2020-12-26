@@ -1,0 +1,70 @@
+01:56:14:638: Information: SYDTEK_Studio initialize satat
+01:56:14:951: Information: SYDTEK_Studio initialize end
+01:56:18:276: Debug: Write_u32buff addr:20001000 size:1170  check:1
+01:56:18:301: Debug: ICE write to memery succeed
+01:56:18:307: Debug: go to ram 20001000!
+01:56:25:629: Information: Mtp connect cu succeed
+01:56:25:736: Information: FlashRead Click
+01:56:25:737: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:56:37:375: Information: FlashRead Click
+01:56:37:375: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:56:42:776: Information: Flash Execute Click File E:\EVBUtility\52.SWD connect\EVBUtility\bin\Release\MT_TestResult\sydtek_clone_tw64_v1.0.0_20190717.bin
+01:56:42:790: Information: Execute CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:58:50:319: Information: FlashRead Click
+01:58:50:320: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:59:05:578: Information: FlashRead Click
+01:59:05:578: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:59:12:760: Information: FlashRead Click
+01:59:12:760: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+01:59:41:834: Information: FlashRead Click
+01:59:41:835: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:09:06:938: Debug: Can not operation memory addr:20000000
+Write_u32buff addr:20001000 size:1170  check:1
+02:09:06:965: Debug: ICE write to memery succeed
+02:09:06:971: Debug: go to ram 20001000!
+02:09:07:319: Information: Mtp connect cu succeed
+02:09:07:421: Information: FlashRead Click
+02:09:07:421: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:09:24:070: Information: Flash Execute Click File E:\EVBUtility\52.SWD connect\EVBUtility\bin\Release\MT_TestResult\sydtek_clone_tw64_v1.0.1_20190717.bin
+02:09:24:079: Information: Execute CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:32:514: Information: FlashRead Click
+02:11:32:514: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:35:101: Information: FlashRead Click
+02:11:35:101: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:43:140: Information: FlashRead Click
+02:11:43:140: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:49:140: Information: FlashRead Click
+02:11:49:142: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:49:918: Information: FlashRead Click
+02:11:49:919: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:11:53:139: Information: FlashRead Click
+02:11:53:139: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:12:23:177: Information: Flash Execute Click File F:\SYD8801\Company data\SYDTEK Studio  release\MT_TestResult\log_temp.bin
+02:12:23:186: Information: Execute CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:14:39:393: Information: FlashRead Click
+02:14:39:393: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:14:44:265: Information: FlashRead Click
+02:14:44:265: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:17:18:466: Debug: Write_u32buff addr:20001000 size:1170  check:1
+02:17:18:492: Debug: ICE write to memery succeed
+02:17:18:498: Debug: go to ram 20001000!
+02:17:18:771: Information: Mtp connect cu succeed
+02:17:18:871: Information: FlashRead Click
+02:17:18:871: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:17:20:653: Information: FlashRead Click
+02:17:20:654: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:17:34:492: Information: FlashRead Click
+02:17:34:492: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D3790069 End Addr:D513D37A0000
+02:20:00:472: Debug: Write_u32buff addr:20001000 size:1170  check:1
+02:20:00:498: Debug: ICE write to memery succeed
+02:20:00:504: Debug: go to ram 20001000!
+02:20:00:827: Information: Mtp connect cu succeed
+02:20:00:930: Information: FlashRead Click
+02:20:00:932: Information: CU Mac Range   Start :D513D3790050 Now Addr:D513D379006E End Addr:D513D37A0000
+02:50:06:246: Debug: Can not operation memory addr:20000000
+02:50:06:247: Debug: Write_u32buff addr:20001000 size:1170  check:1
+02:50:06:273: Debug: ICE write to memery succeed
+02:50:06:279: Debug: go to ram 20001000!
+02:50:09:594: Information: Mtp connect cu succeed
+02:50:09:701: Information: FlashRead Click
+02:50:09:701: Information: CU Mac Range   Start :D513D3710050 Now Addr:D513D3710069 End Addr:D513D3720000
